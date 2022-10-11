@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="peli.css">
     <title>Kierrätys</title>
 </head>
 <body>
-    <style src="peli.css"></style>
-    <h2>EPic</h2>
+    <div class="ylapalkki">
+        <h1>Kierrätyspeli</h1>
+    </div>
+    <div id="page">
+        <div class="alkuruutu">
+            <img src="kuvat/suomi.jpg" width="64px" height="64px" id="kieli">
+            <br>
+            <button type="button" class="nappulat" id="ohjenappula" onclick="ohjeet()">Ohjeet</button>
+            <br>
+            <div class="ohjeruutu" style="display: none">
+                <p>Ohje kurwa</p>
+            </div>
+            <button type="button" class="nappulat" onclick="peliAloitus()">Aloita peli</button>
+        </div>
+        
+        
+        <div class="peliruutu" style="display: none">
+                <p>cum</p>
+        </div>
+    </div>
 </body>
 <script src="peli.js"></script>
 </html>
