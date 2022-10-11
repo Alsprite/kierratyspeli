@@ -19,6 +19,8 @@ body {
     cursor: pointer;
 }
 #kieli {
+    width: 100px;
+    height: 100px;
     cursor: pointer;
 }
 #page {
