@@ -1,4 +1,5 @@
 let kieli;
+var eramaara = 1;
 
 var astia1 = new Image()
 astia1.src="kuvat/1metalli.jpg";

@@ -26,6 +26,7 @@ body {
 
 .kielikuvat:hover {
     border: 2px solid black;
+    cursor: pointer;
 }
 .dropdownkielet {
     position: relative;
