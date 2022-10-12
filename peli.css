@@ -18,9 +18,14 @@ body {
 .nappulat:hover {
     cursor: pointer;
 }
-#kielikuvat {
+.kielikuvat {
     width: 80px;
     height: 80px;
+    border-style: none;
+}
+
+.kielikuvat:hover {
+    border: 2px solid black;
 }
 .dropdownkielet {
     position: relative;
