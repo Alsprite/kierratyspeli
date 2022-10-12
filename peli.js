@@ -17,7 +17,7 @@ function peliAloitus() {
 
 function setLang(lang) {
     localStorage.setItem('kieli', lang);
-    $('#ohjeruutu').text(kieli.roska);
+    $('#ohjeruutu').innerText(kieli.roska);
 }
 
 function getLang() {
