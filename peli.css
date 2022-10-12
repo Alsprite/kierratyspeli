@@ -6,9 +6,7 @@ body {
     color: black;
     font-family:'Trebuchet MS';
     text-align: center;
-}
-.ylapalkkisisalto {
-    display: inline-block;
+    display: inline;
 }
 .nappulat {
     width: 100px;
@@ -20,10 +18,14 @@ body {
 .nappulat:hover {
     cursor: pointer;
 }
-#kielikuvat {
+.kielikuvat {
     width: 80px;
     height: 80px;
-    cursor: pointer;
+    border-style: none;
+}
+
+.kielikuvat:hover {
+    border: 2px solid black;
 }
 .dropdownkielet {
     position: relative;

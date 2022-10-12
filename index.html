@@ -9,30 +9,31 @@
 </head>
 <body>
     <div class="ylapalkki">
-        <img src="kuvat/banner.png" onclick="erat()">
+        <h1>Kierrätyspeli</h1>
     </div>
     <div id="page">
         <div class="alkuruutu">
             <div class="dropdownkielet">
-                <img src="kuvat/suomi.jpg" class="dropbtn" id="kielikuvat" onclick="setLang('suomi')">
+                <img src="kuvat/suomi.jpg" onclick="setLang('fi')" class="dropbtn, kielikuvat" id="suomenLippu">
                 <div class="dropdown-sisalto">
-                  <img src="kuvat/englanti.jpg" id="kielikuvat" onclick="setLang('englanti')">
+                  <img src="kuvat/englanti.jpg" onclick="setLang('eng')" class="kielikuvat" id="enkunLippu">
                 </div>
               </div>
             <br>
             <button type="button" class="nappulat" id="ohjenappula" onclick="ohjeet()">Ohjeet</button>
             <br>
-            <div class="ohjeruutu" style="display: none">
+            <div class="ohjeruutu" id="ohjeruutu" style="display: none">
                 <p>Ohje kurwa</p>
             </div>
             <button type="button" class="nappulat" onclick="peliAloitus()">Aloita peli</button>
         </div>
         
+        
         <div class="peliruutu" style="display: none">
             <h1><span id="era">1</span>/10</h1>
-            
         </div>
     </div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="peli.js"></script>
 </html>

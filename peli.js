@@ -1,3 +1,4 @@
+let kieli;
 var era = 1;
 
 function erat() {
@@ -6,6 +7,7 @@ function erat() {
         document.getElementById("era").innerHTML = era;
     }
 }
+
 function ohjeet() {
     let ohje = document.querySelector(".ohjeruutu");
     if (ohje.style.display == "none") {
@@ -20,6 +22,17 @@ function peliAloitus() {
     document.querySelector(".alkuruutu").style.display = "none";
     document.querySelector(".peliruutu").style.display = "block";
 }
+
 function setLang(lang) {
-    document.querySelector('#text').setAttribute('value',lang);
+    localStorage.setItem('kieli', lang);
+    $('#ohjeruutu').text(kieli.roska);
+}
+
+function getLang() {
+    (localStorage.getItem('kieli') == null) ? setLang('eng') : false;
+    $.ajax({
+        url: '/kielet/' + localStorage.getItem('kieli') + '.json',
+        dataType: 'json', async: false, dataType: 'json',
+        success: function (lang) { kieli = lang}
+    })
 }
