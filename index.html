@@ -9,14 +9,14 @@
 </head>
 <body>
     <div class="ylapalkki">
-        <h1>Kierrätyspeli</h1>
+        <img src="kuvat/banner.png" onclick="erat()">
     </div>
     <div id="page">
         <div class="alkuruutu">
             <div class="dropdownkielet">
-                <img src="kuvat/suomi.jpg" class="dropbtn" id="kielikuvat">
+                <img src="kuvat/suomi.jpg" class="dropbtn" id="kielikuvat" onclick="setLang('suomi')">
                 <div class="dropdown-sisalto">
-                  <img src="kuvat/englanti.jpg" id="kielikuvat">
+                  <img src="kuvat/englanti.jpg" id="kielikuvat" onclick="setLang('englanti')">
                 </div>
               </div>
             <br>
@@ -28,9 +28,8 @@
             <button type="button" class="nappulat" onclick="peliAloitus()">Aloita peli</button>
         </div>
         
-        
         <div class="peliruutu" style="display: none">
-                <p>tää</p>
+            <h1><span id="era">1</span>/10</h1>
         </div>
     </div>
 </body>

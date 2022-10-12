@@ -1,3 +1,11 @@
+var era = 1;
+
+function erat() {
+    if (era < 10) {
+        era = era + 1;
+        document.getElementById("era").innerHTML = era;
+    }
+}
 function ohjeet() {
     let ohje = document.querySelector(".ohjeruutu");
     if (ohje.style.display == "none") {
@@ -11,4 +19,7 @@ function ohjeet() {
 function peliAloitus() {
     document.querySelector(".alkuruutu").style.display = "none";
     document.querySelector(".peliruutu").style.display = "block";
+}
+function setLang(lang) {
+    document.querySelector('#text').setAttribute('value',lang);
 }
