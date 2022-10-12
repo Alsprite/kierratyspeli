@@ -40,6 +40,9 @@ function peliAloitus() {
     document.querySelector(".alkuruutu").style.display = "none";
     document.querySelector(".peliruutu").style.display = "block";
 }
+function lipunVaihto() {
+    
+}
 
 function setLang(lang) {
     localStorage.setItem('kieli', lang);
