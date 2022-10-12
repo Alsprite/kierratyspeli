@@ -2,38 +2,38 @@ let kieli;
 var eramaara = 1;
 
 var astia1 = new Image()
-astia1.src="kuvat/1metalli.png";
+astia1.src="kuvat/astiat/1metalli.png";
 var astia2 = new Image()
-astia2.src="kuvat/2vaarallinen.png";
+astia2.src="kuvat/astiat/2vaarallinen.png";
 astia3 = new Image()
-astia3.src="kuvat/3kartonki.png";
+astia3.src="kuvat/astiat/3kartonki.png";
 var astia4 = new Image()
-astia4.src="kuvat/4paperi.png";
+astia4.src="kuvat/astiat/4paperi.png";
 var astia5 = new Image()
-astia5.src="kuvat/5seka.png";
+astia5.src="kuvat/astiat/5seka.png";
 var astia6 = new Image()
-astia6.src="kuvat/6muovi.png";
+astia6.src="kuvat/astiat/6muovi.png";
 var astia7 = new Image()
-astia7.src="kuvat/7lasi.png";
+astia7.src="kuvat/astiat/7lasi.png";
 var astia8 = new Image()
-astia8.src="kuvat/8energia.png";
+astia8.src="kuvat/astiat/8energia.png";
 var astia9 = new Image()
-astia9.src="kuvat/9bio.png";
+astia9.src="kuvat/astiat/9bio.png";
 var astia10 = new Image()
-astia10.src="kuvat/10ser.png";
+astia10.src="kuvat/astiat/10ser.png";
 var astia11 = new Image()
-astia11.src="kuvat/11pullonpalautus.png";
+astia11.src="kuvat/astiat/11pullonpalautus.png";
 var astia12 = new Image()
-astia12.src="kuvat/12paristo.png";
+astia12.src="kuvat/astiat/12paristo.png";
 
 function ohjeet() {
     let ohje = document.querySelector(".ohjeruutu");
     if (ohje.style.display == "none") {
         ohje.style.display = "block";
-        document.getElementById("ohjenappula").innerText = "Takaisin";
+        document.getElementById("ohjeNappula").innerText = "Takaisin";
     } else {
         ohje.style.display = "none";
-        document.getElementById("ohjenappula").innerText = "Ohjeet";
+        document.getElementById("ohjeNappula").innerText = "Ohjeet";
     }
 }
 function peliAloitus() {
@@ -54,3 +54,21 @@ function getLang() {
         success: function (lang) { kieli = lang}
     })
 }
+
+function allowDrop(event) {
+    event.preventDefault();
+  }
+  
+  function drag(event) {
+    event.dataTransfer.setData("text", event.target.id);
+  }
+  
+  function drop(event) {
+    event.preventDefault();
+    var data = event.dataTransfer.getData("text");
+    event.target.appendChild(document.getElementById(data));
+  }
+
+document.getElementById("h3eka").innerText = "SER";
+document.getElementById("h3toka").innerText = "Pullonpalautus";
+document.getElementById("h3kolmas").innerText = "Paristot";

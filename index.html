@@ -17,24 +17,38 @@
                 <img src="kuvat/suomi.jpg" onclick="setLang('fi')" class="dropbtn, kielikuvat" id="suomenLippu">
                 <div class="dropdown-sisalto">
                   <img src="kuvat/englanti.jpg" onclick="setLang('eng')" class="kielikuvat" id="enkunLippu">
+                  <br>
+                  <img src="kuvat/venaja.jpg" onclick="setLang('rus')" class="kielikuvat" id="venajanLippu">
                 </div>
               </div>
             <br>
-            <button type="button" class="nappulat" id="ohjenappula" onclick="ohjeet()">Ohjeet</button>
+            <button class="nappulat" id="ohjeNappula" onclick="ohjeet()">Ohjeet</button>
             <br>
             <div class="ohjeruutu" id="ohjeruutu" style="display: none">
                 <p>Ohje kurwa</p>
             </div>
-            <button type="button" class="nappulat" onclick="peliAloitus()">Aloita peli</button>
+            <button class="nappulat" onclick="peliAloitus()">Aloita peli</button>
         </div>
         
         
         <div class="peliruutu" style="display: none">
                 <h1><span id="eraMaara">1</span>/10</h1>
                 <div class="jateastiat">
-                    <img src="kuvat/astiat/10ser.png">
-                    <img src="kuvat/astiat/11pullonpalautus.png">
-                    <img src="kuvat/astiat/12paristo.png">
+                    <div id="dropzone1" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <img src="kuvat/astiat/10ser.png">
+                        <h3 id="h3eka"></h3>
+                    </div>
+                    <div id="dropzone2" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <img src="kuvat/astiat/11pullonpalautus.png">
+                        <h3 id="h3toka"></h3>
+                    </div>
+                    <div id="dropzone3" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <img src="kuvat/astiat/12paristo.png">
+                        <h3 id="h3kolmas"></h3>
+                    </div>
+                </div>
+                <div id="dropattava" ondrop="drop(event)" draggable="true">
+                    <p ondragstart="drag(event)" id="dragP">Roska</p>
                 </div>
         </div>
     </div>
