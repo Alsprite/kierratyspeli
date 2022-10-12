@@ -12,3 +12,7 @@ function peliAloitus() {
     document.querySelector(".alkuruutu").style.display = "none";
     document.querySelector(".peliruutu").style.display = "block";
 }
+
+function setLang(lang) {
+    document.querySelector('#text').setAttribute('value',lang);
+}
