@@ -18,11 +18,18 @@ body {
 .nappulat:hover {
     cursor: pointer;
 }
-#kieli {
-    width: 100px;
-    height: 100px;
-    cursor: pointer;
+#kielikuvat {
+    width: 80px;
+    height: 80px;
 }
+.dropdownkielet {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-sisalto {
+    display: none;
+}
+.dropdownkielet:hover .dropdown-sisalto {display: block;}
 #page {
     width: 100%;
     display: flex;
