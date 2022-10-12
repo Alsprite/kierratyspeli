@@ -1,3 +1,5 @@
+let kieli;
+
 function ohjeet() {
     let ohje = document.querySelector(".ohjeruutu");
     if (ohje.style.display == "none") {
@@ -14,5 +16,15 @@ function peliAloitus() {
 }
 
 function setLang(lang) {
-    document.querySelector('#text').setAttribute('value',lang);
+    localStorage.setItem('kieli', lang);
+    $('#ohjeruutu').text(kieli.roska);
+}
+
+function getLang() {
+    (localStorage.getItem('kieli') == null) ? setLang('eng') : false;
+    $.ajax({
+        url: '/kielet/' + localStorage.getItem('kieli') + '.json',
+        dataType: 'json', async: false, dataType: 'json',
+        success: function (lang) { kieli = lang}
+    })
 }
