@@ -6,7 +6,7 @@ body {
     color: black;
     font-family:'Trebuchet MS';
     text-align: center;
-    display: inline;
+    display: inline-block;
 }
 .nappulat {
     width: 100px;
