@@ -1,4 +1,4 @@
-let kieli;
+
 var eramaara = 1;
 
 var astia1 = new Image()
@@ -42,20 +42,6 @@ function peliAloitus() {
 }
 function lipunVaihto() {
     
-}
-
-function setLang(lang) {
-    localStorage.setItem('kieli', lang);
-    $('#ohjeruutu').innerText(kieli.ohjeet);
-}
-
-function getLang() {
-    (localStorage.getItem('kieli') == null) ? setLang('eng') : false;
-    $.ajax({
-        url: '/kielet/' + localStorage.getItem('kieli') + '.json',
-        dataType: 'json', async: false, dataType: 'json',
-        success: function (lang) { kieli = lang}
-    })
 }
 
 function allowDrop(event) {
