@@ -1,4 +1,4 @@
-
+var multilang
 var eramaara = 1;
 
 var astia1 = new Image()
@@ -79,3 +79,16 @@ function allowDrop(event) {
 document.getElementById("h3eka").innerText = "SER";
 document.getElementById("h3toka").innerText = "Pullonpalautus";
 document.getElementById("h3kolmas").innerText = "Paristot";
+
+
+function onLoad() {
+  multilang = new Multilang('kielete.json', 'fi', this.initList);
+}
+
+function langSelectChange(sel) {
+  multilang.setLanguage(sel.value);
+  refreshLabels();
+}
+
+function initList() {
+}
