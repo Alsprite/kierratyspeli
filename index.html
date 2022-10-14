@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="peli.css">
     <title>Kierrätys</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="peli.js"></script>
+    <script src="multilang.js"></script>
 </head>
+
 <body onload="multilangInit()">
     <div class="ylapalkki">
         <img src="kuvat/banner.png">
     </div>
     <div id="page">
         <div class="alkuruutu">
-                <div class="kielet">
-                    <img src="kuvat/suomi.jpg" class="kielikuvat" id="fi" onclick="langSelectChange('fi')">
-                    <img src="kuvat/englanti.jpg" class="kielikuvat" id="en" onclick="langSelectChange('en')">
-                    <img src="kuvat/venaja.jpg" class="kielikuvat" id="ru" onclick="langSelectChange('ru')">
-                </div>
+            <div class="kielet">
+                <img src="kuvat/suomi.jpg" class="kielikuvat" id="fi" onclick="langSelectChange('fi')">
+                <img src="kuvat/englanti.jpg" class="kielikuvat" id="en" onclick="langSelectChange('en')">
+                <img src="kuvat/venaja.jpg" class="kielikuvat" id="ru" onclick="langSelectChange('ru')">
+            </div>
             <button class="nappulat" id="ohjeNappula" onclick="ohjeet()">Ohjeet</button>
             <br>
             <div class="ohjeruutu" id="ohjeruutu" style="display: none">
@@ -25,31 +30,29 @@
             </div>
             <button class="nappulat" id="aloitapeli" onclick="peliAloitus()">Aloita peli</button>
         </div>
-        
-        
+
+
         <div class="peliruutu" style="display: none">
-                <h1><span id="eraMaara">1</span>/10</h1>
-                <div class="jateastiat" id="jateastiat">
-                    <div id="dropzone1" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
-                        <img id="slot1" src="kuvat/astiat/10ser.png">
-                        <h3 id="h3eka"></h3>
-                    </div>
-                    <div id="dropzone2" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
-                        <img id="slot2" src="kuvat/astiat/11pullonpalautus.png">
-                        <h3 id="h3toka"></h3>
-                    </div>
-                    <div id="dropzone3" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
-                        <img id="slot3" src="kuvat/astiat/12paristo.png">
-                        <h3 id="h3kolmas"></h3>
-                    </div>
+            <h1><span id="eraMaara">1</span>/10</h1>
+            <div class="jateastiat" id="jateastiat">
+                <div id="dropzone1" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img id="slot1" src="kuvat/astiat/10ser.png">
+                    <h3 id="h3eka"></h3>
                 </div>
-                <div id="dropattava" ondrop="drop(event)" draggable="true">
-                    <p ondragstart="drag(event)" id="dragP">ES</p>
+                <div id="dropzone2" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img id="slot2" src="kuvat/astiat/11pullonpalautus.png">
+                    <h3 id="h3toka"></h3>
                 </div>
+                <div id="dropzone3" class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">
+                    <img id="slot3" src="kuvat/astiat/12paristo.png">
+                    <h3 id="h3kolmas"></h3>
+                </div>
+            </div>
+            <div id="dropattava" ondrop="drop(event)" draggable="true">
+                <p ondragstart="drag(event)" id="dragP">ES</p>
+            </div>
         </div>
     </div>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="peli.js"></script>
-<script src="multilang.js"></script>
+
 </html>

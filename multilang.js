@@ -1,7 +1,7 @@
 // MultiLang - BdR 2016
 // JavaScript object to handle multilanguage, load phrases from JSON etc.
 
-var MultiLang = function(url, lang, onload)
+var MultiLang = function(url, lang)
 {
 	// variables
 	this.phrases = {};
