@@ -1,8 +1,10 @@
 {
     "fi": {
-        "ohjeet": "Ohjeet"
+        "ohjeet": "Ohjeet",
+        "aloita peli": "Aloita Peli"
     },
     "en": {
-        "ohjeet": "Instructions"
+        "ohjeet": "Instructions",
+        "alota peli": "Start game"
     }
 }
