@@ -28,7 +28,7 @@ h3 {
     border-style: none;
 }
 .kielikuvat:hover {
-    border: 2px solid black;
+    outline: 2px solid black;
     cursor: pointer;
 }
 #page {
@@ -59,7 +59,7 @@ h3 {
   border: solid 2px white;
 }
 #dropattava:hover {
-    border: 2px solid black;
+    outline: 2px solid black;
     cursor: pointer;
 }
 #dragP {
@@ -69,7 +69,7 @@ h3 {
     background-color: #bfe4ff;
     border: dashed 4px transparent;
     border-radius: 4px;
-    margin: 10px auto 30px;
+    margin: 10px 2px 30px;
     padding: 10px;
     width: 80%;
 }
@@ -78,6 +78,6 @@ h3 {
     flex-direction: row;
 }
 .dropzone:hover {
-    border: 2px solid black;
+    outline: 2px solid black;
     cursor: pointer;
 }

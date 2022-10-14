@@ -1,4 +1,4 @@
-var multilang
+var multilang;
 var eramaara = 1;
 
 var astia1 = new Image()
@@ -125,7 +125,7 @@ document.getElementById("h3toka").innerText = "Pullonpalautus";
 document.getElementById("h3kolmas").innerText = "Paristot";
 
 
-function onLoad() {
+function multilangInit() {
   multilang = new Multilang('kielet.json', 'fi');
 }
 

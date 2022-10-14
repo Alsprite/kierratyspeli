@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="peli.css">
     <title>Kierrätys</title>
 </head>
-<body>
+<body onload="multilangInit()">
     <div class="ylapalkki">
         <img src="kuvat/banner.png">
     </div>
     <div id="page">
         <div class="alkuruutu">
                 <div class="kielet">
-                    <img src="kuvat/suomi.jpg" class="kielikuvat" id="fi" onclick="langSelectChange(this.id)">
-                    <img src="kuvat/englanti.jpg" class="kielikuvat" id="en" onclick="langSelectChange(this.id)">
-                    <img src="kuvat/venaja.jpg" class="kielikuvat" id="ru" onclick="langSelectChange(this.id)">
+                    <img src="kuvat/suomi.jpg" class="kielikuvat" id="fi" onclick="langSelectChange('fi')">
+                    <img src="kuvat/englanti.jpg" class="kielikuvat" id="en" onclick="langSelectChange('en')">
+                    <img src="kuvat/venaja.jpg" class="kielikuvat" id="ru" onclick="langSelectChange('ru')">
                 </div>
             <button class="nappulat" id="ohjeNappula" onclick="ohjeet()">Ohjeet</button>
             <br>
@@ -51,4 +51,5 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="peli.js"></script>
+<script src="multilang.js"></script>
 </html>
