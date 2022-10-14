@@ -35,46 +35,46 @@ englantiKuva.src="kuvat/englanti.jpg";
 var venajaKuva = new Image()
 venajaKuva.src="kuvat/venaja.jpg";
 
-function vaihdaKuva() {
+function vaihdaKuva(slot) {
   var image = "";
   randInt = Math.floor((Math.random() * 5) + 1);
   console.log(randInt);
   switch(randInt) {
     case 1 :
-        image = astia1;
+        image = "kuvat/astiat/1metalli.png";
         break;
     case 2 :
-        image = astia2;
+        image = "kuvat/astiat/2vaarallinen.png";
         break;
     case 3:
-        image = astia3;
+        image = "kuvat/astiat/3kartonki.png";
         break;
     case 4:
-        image = astia4;
+        image = "kuvat/astiat/4paperi.png";
         break;
     case 5:
-        image = astia5;
+        image = "kuvat/astiat/5seka.png";
         break;
         case 6 :
-          image = astia6;
+          image = "kuvat/astiat/6muovi.png";
           break;
           case 7 :
-        image = astia7;
+        image = "kuvat/astiat/7lasi.png";
         break;
         case 8 :
-          image = astia8;
+          image = "kuvat/astiat/8energia.png";
           break;
           case 9 :
-        image = astia9;
+        image = "kuvat/astiat/9bio.png";
         break;
         case 10 :
-        image = astia10;
+        image = "kuvat/astiat/10ser.png";
         break;
         case 11 :
-        image = astia11;
+        image = "kuvat/astiat/11pullonpalautus.png";
         break;
         case 12 :
-        image = astia12;
+        image = "kuvat/astiat/12paristo.png";
         break;
   }
   document.getElementById("jateastiat").src = image;
