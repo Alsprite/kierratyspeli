@@ -52,13 +52,13 @@ function peliAloitus() {
 function lipunVaihto(value) {
   var empty = document.getElementById("tyhja");
   if (value == 1) {
-    empty.src="kuvat/suomi.jpg";
+    console.log("suomi");
   }
   if (value == 2) {
-    empty.src="kuvat/englanti.jpg";
+    console.log("englanti");
   }
   if (value == 3) {
-    empty.src="kuvat/venaja.jpg";
+    console.log("venaja");
   }
 }
 
