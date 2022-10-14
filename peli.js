@@ -1,11 +1,11 @@
-var multilang;
+
 var eramaara = 1;
 
 var astia1 = new Image()
 astia1.src="kuvat/astiat/1metalli.png";
 var astia2 = new Image()
 astia2.src="kuvat/astiat/2vaarallinen.png";
-astia3 = new Image()
+var astia3 = new Image()
 astia3.src="kuvat/astiat/3kartonki.png";
 var astia4 = new Image()
 astia4.src="kuvat/astiat/4paperi.png";
@@ -125,25 +125,6 @@ document.getElementById("h3toka").innerText = "Pullonpalautus";
 document.getElementById("h3kolmas").innerText = "Paristot";
 
 
-function multilangInit() {
-  multilang = new Multilang('kielet.json', 'fi');
-}
 
-function langSelectChange(sel) {
-  multilang.setLanguage(sel.value);
-  refreshLabels();
-}
-
-function refreshLabels() {
-  var allnodes = document.body.getElementsByTagName('*');
-
-  for (var i = 0, limit = allnodes.length; i < limit; i++) {
-    var idname = allnodes[i].id;
-
-    if (idname != '') {
-      allnodes[i].textContent = multilang.get(idname);
-    }
-  }
-}
 
 

@@ -8,8 +8,33 @@
     <link rel="stylesheet" href="peli.css">
     <title>Kierrätys</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="peli.js"></script>
-    <script src="multilang.js"></script>
+    <script type="text/javascript" src="multilang.js"></script>
+    <script>
+        var multilang;
+        
+        function multilangInit() {
+            multilang = new MultiLang('kielet.json', 'fi');
+        }
+
+        function langSelectChange(sel) {
+            multilang.setLanguage(sel.value);
+            refreshLabels();
+        }
+
+        function refreshLabels() {
+            var allnodes = document.body.getElementsByTagName('*');
+
+            for (var i = 0, limit = allnodes.length; i < limit; i++) {
+                var idname = allnodes[i].id;
+
+                if (idname != '') {
+                    allnodes[i].textContent = multilang.get(idname);
+                }
+            }
+        }
+    </script>
+
+
 </head>
 
 <body onload="multilangInit()">
@@ -53,6 +78,7 @@
             </div>
         </div>
     </div>
+    <script src="peli.js"></script>
 </body>
 
 </html>

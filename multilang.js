@@ -79,3 +79,4 @@ var MultiLang = function(url, lang)
 		return str;
 	};
 }
+
