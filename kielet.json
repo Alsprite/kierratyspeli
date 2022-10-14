@@ -1,10 +1,13 @@
 {
     "fi": {
         "ohjeet": "Ohjeet",
-        "aloita peli": "Aloita Peli"
+        "aloitapeli": "Aloita Peli",
+        "dragP": "Roska"
+        
     },
     "en": {
         "ohjeet": "Instructions",
-        "alota peli": "Start game"
+        "alotapeli": "Start game",
+        "dragP": "Shit"
     }
 }

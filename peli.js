@@ -126,7 +126,7 @@ document.getElementById("h3kolmas").innerText = "Paristot";
 
 
 function onLoad() {
-  multilang = new Multilang('kielete.json', 'fi', this.initList);
+  multilang = new Multilang('kielet.json', 'fi');
 }
 
 function langSelectChange(sel) {
@@ -134,5 +134,16 @@ function langSelectChange(sel) {
   refreshLabels();
 }
 
-function initList() {
+function refreshLabels() {
+  var allnodes = document.body.getElementsByTagName('*');
+
+  for (var i = 0, limit = allnodes.length; i < limit; i++) {
+    var idname = allnodes[i].id;
+
+    if (idname != '') {
+      allnodes[i].textContent = multilang.get(idname);
+    }
+  }
 }
+
+
