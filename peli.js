@@ -35,6 +35,51 @@ englantiKuva.src="kuvat/englanti.jpg";
 var venajaKuva = new Image()
 venajaKuva.src="kuvat/venaja.jpg";
 
+function vaihdaKuva() {
+  var image = "";
+  randInt = Math.floor((Math.random() * 5) + 1);
+  console.log(randInt);
+  switch(randInt) {
+    case 1 :
+        image = astia1;
+        break;
+    case 2 :
+        image = astia2;
+        break;
+    case 3:
+        image = astia3;
+        break;
+    case 4:
+        image = astia4;
+        break;
+    case 5:
+        image = astia5;
+        break;
+        case 6 :
+          image = astia6;
+          break;
+          case 7 :
+        image = astia7;
+        break;
+        case 8 :
+          image = astia8;
+          break;
+          case 9 :
+        image = astia9;
+        break;
+        case 10 :
+        image = astia10;
+        break;
+        case 11 :
+        image = astia11;
+        break;
+        case 12 :
+        image = astia12;
+        break;
+  }
+  document.getElementById("jateastiat").src = image;
+}
+
 function ohjeet() {
     let ohje = document.querySelector(".ohjeruutu");
     if (ohje.style.display == "none") {
@@ -48,6 +93,8 @@ function ohjeet() {
 function peliAloitus() {
     document.querySelector(".alkuruutu").style.display = "none";
     document.querySelector(".peliruutu").style.display = "block";
+
+    vaihdaKuva();
 }
 function lipunVaihto(value) {
   var empty = document.getElementById("tyhja");
@@ -63,18 +110,15 @@ function lipunVaihto(value) {
 }
 
 function allowDrop(event) {
-    event.preventDefault();
-  }
-  
-  function drag(event) {
-    event.dataTransfer.setData("text", event.target.id);
-  }
-  
-  function drop(event) {
-    event.preventDefault();
-    var data = event.dataTransfer.getData("text");
-    event.target.appendChild(document.getElementById(data));
-  }
+  event.preventDefault();
+}
+function drag(event) {
+  event.dataTransfer.setData("text", event.target.id);
+}  
+function drop(event) {
+  event.preventDefault();
+  console.log("joo");
+}
 
 document.getElementById("h3eka").innerText = "SER";
 document.getElementById("h3toka").innerText = "Pullonpalautus";
