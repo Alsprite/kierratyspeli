@@ -26,6 +26,15 @@ astia11.src="kuvat/astiat/11pullonpalautus.png";
 var astia12 = new Image()
 astia12.src="kuvat/astiat/12paristo.png";
 
+var tyhjaKuva = new Image()
+tyhjaKuva.src="kuvat/tyhja.jpg";
+var suomiKuva = new Image()
+suomiKuva.src="kuvat/suomi.jpg";
+var englantiKuva = new Image()
+englantiKuva.src="kuvat/englanti.jpg";
+var venajaKuva = new Image()
+venajaKuva.src="kuvat/venaja.jpg";
+
 function ohjeet() {
     let ohje = document.querySelector(".ohjeruutu");
     if (ohje.style.display == "none") {
@@ -40,8 +49,17 @@ function peliAloitus() {
     document.querySelector(".alkuruutu").style.display = "none";
     document.querySelector(".peliruutu").style.display = "block";
 }
-function lipunVaihto() {
-    
+function lipunVaihto(value) {
+  var empty = document.getElementById("tyhja");
+  if (value == 1) {
+    empty.src="kuvat/suomi.jpg";
+  }
+  if (value == 2) {
+    empty.src="kuvat/englanti.jpg";
+  }
+  if (value == 3) {
+    empty.src="kuvat/venaja.jpg";
+  }
 }
 
 function allowDrop(event) {
