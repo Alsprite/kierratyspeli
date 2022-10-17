@@ -84,10 +84,10 @@ function ohjeet() {
     let ohje = document.querySelector(".ohjeruutu");
     if (ohje.style.display == "none") {
         ohje.style.display = "block";
-        document.getElementById("ohjeNappula").innerText = "Takaisin";
+        //document.getElementById("ohjeNappula").innerText = "Takaisin";
     } else {
         ohje.style.display = "none";
-        document.getElementById("ohjeNappula").innerText = "Ohjeet";
+        //document.getElementById("ohjeNappula").innerText = "Ohjeet";
     }
 }
 function peliAloitus() {

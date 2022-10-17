@@ -9,9 +9,6 @@ var MultiLang = function(url, lang)
 	// language code from parameter or if null then default to browser language preference
 	// Keep only first two characters, for example 'en-US' -> 'en', or 'nl-NL' -> 'nl' etc.
 	this.selectedLanguage = (lang || navigator.language || navigator.userLanguage).substring(0, 2);
-	
-	// onLoad callback function, call after loading JSON
-	this.onLoad = onload;
 
 	// load json from url
 	if (typeof url !== 'undefined') {
@@ -31,10 +28,7 @@ var MultiLang = function(url, lang)
 				// verify that the currently selected language exists in the translations
 				this.setLanguage(this.selectedLanguage);
 				
-				// do callback when loading JSON is ready
-				if (this.onLoad) {
-					this.onLoad();
-				}
+			
 
 			};
 		}.bind(obj); // NOTE: bind onreadyfunction to MultiLang instead of XMLHttpRequest, so MultiLang.phrases will be set instead of added to XMLHttpRequest
