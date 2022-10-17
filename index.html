@@ -27,7 +27,7 @@
             for (var i = 0, limit = allnodes.length; i < limit; i++) {
                 var idname = allnodes[i].id;
 
-                if (idname != '') {
+                if (idname != '' && idname.includes('_')) {
                     allnodes[i].textContent = multilang.get(idname);
                 }
             }
@@ -48,12 +48,12 @@
                 <img src="kuvat/englanti.jpg" class="kielikuvat" id="en" onclick="langSelectChange('en')">
                 <img src="kuvat/venaja.jpg" class="kielikuvat" id="ru" onclick="langSelectChange('ru')">
             </div>
-            <button class="nappulat" id="ohjeNappula" onclick="ohjeet()">Ohjeet</button>
+            <button class="nappulat" id="ohjeNappula_" onclick="ohjeet()">Ohjeet</button>
             <br>
             <div class="ohjeruutu" id="ohjeruutu" style="display: none">
-                <p id="ohjeet">Ohje kurwa</p>
+                <p id="ohjeet_">Ohje kurwa</p>
             </div>
-            <button class="nappulat" id="aloitapeli" onclick="peliAloitus()">Aloita peli</button>
+            <button class="nappulat" id="aloitaPeli_" onclick="peliAloitus()">Aloita peli</button>
         </div>
 
 
@@ -74,7 +74,7 @@
                 </div>
             </div>
             <div id="dropattava" ondrop="drop(event)" draggable="true">
-                <p ondragstart="drag(event)" id="dragP">ES</p>
+                <p ondragstart="drag(event)" id="dragP_">ES</p>
             </div>
         </div>
     </div>

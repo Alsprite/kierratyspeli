@@ -1,13 +1,24 @@
 {
     "fi": {
-        "ohjeet": "Ohjeet",
-        "aloitapeli": "Aloita Peli",
-        "dragP": "Roska"
+        "ohjeet_": "Ohjeet kurwa",
+        "ohjeNappula_": "Ohjeet",
+        "aloitaPeli_": "Aloita Peli",
+        "dragP_": "Roska"
         
     },
     "en": {
-        "ohjeet": "Instructions",
-        "alotapeli": "Start game",
-        "dragP": "Shit"
+        "ohjeet_": "Instructions kurwa",
+        "ohjeNappula_": "Instructions",
+        "aloitaPeli_": "Start game",
+        "dragP_": "Trash"
+        
+    },
+    "fi": {
+        "ohjeet_": "Cyka blyat",
+        "ohjeNappula_": "Vodka",
+        "aloitaPeli_": "Rush B",
+        "dragP_": "Da"
+        
     }
+   
 }
