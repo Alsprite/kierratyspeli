@@ -50,7 +50,7 @@ function vaihdaRoskaAstiat() {
 
   for (let i = 0; i < 4; i++) {
     var image = "";
-    switch (tarkastusArray.i) {
+    switch (tarkastusArray[i]) {
       case 1:
         image = "kuvat/astiat/1metalli.png";
         break;
