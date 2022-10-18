@@ -16,12 +16,12 @@
             multilang = new MultiLang('kielet.json', 'fi');
         }
 
-        function langChange(sel) {
-            multilang.setLanguage(sel);
-            refreshLabels();
+        function vaihdaKieli(kieli) {
+            multilang.setLanguage(kieli);
+            tarkastaKieli()
         }
 
-        function refreshLabels() {
+        function tarkastaKieli() {
             var allnodes = document.body.getElementsByTagName('*');
 
             for (var i = 0, limit = allnodes.length; i < limit; i++) {
@@ -44,16 +44,16 @@
     <div id="page">
         <div class="alkuruutu">
             <div class="kielet">
-                <img src="kuvat/suomi.jpg" class="kielikuvat" id="fi" onclick="langChange('fi')">
-                <img src="kuvat/englanti.jpg" class="kielikuvat" id="en" onclick="langChange('en')">
-                <img src="kuvat/venaja.jpg" class="kielikuvat" id="ru" onclick="langChange('ru')">
+                <img src="kuvat/suomi.jpg" class="kielikuvat" id="fi" onclick="vaihdaKieli('fi')">
+                <img src="kuvat/englanti.jpg" class="kielikuvat" id="en" onclick="vaihdaKieli('en')">
+                <img src="kuvat/venaja.jpg" class="kielikuvat" id="ru" onclick="vaihdaKieli('ru')">
             </div>
-            <button class="nappulat" id="ohjeNappula_" onclick="ohjeet()">Ohjeet</button>
+            <button class="nappulat" id="ohjeNappula_" onclick="ohjeet(), tarkastaKieli()">Ohjeet</button>
             <br>
             <div class="ohjeruutu" id="ohjeruutu" style="display: none">
                 <p id="ohjeet_">Ohje kurwa</p>
             </div>
-            <button class="nappulat" id="aloitaPeli_" onclick="peliAloitus()">Aloita peli</button>
+            <button class="nappulat" id="aloitaPeli_" onclick="peliAloitus(), tarkastaKieli()">Aloita peli</button>
         </div>
 
 

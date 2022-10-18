@@ -2,22 +2,25 @@
     "fi": {
         "ohjeet_": "Ohjeet kurwa",
         "ohjeNappula_": "Ohjeet",
-        "aloitaPeli_": "Aloita Peli",
-        "dragP_": "Roska"
+        "aloitaPeli_": "Aloita peli",
+        "dragP_": "Roska",
+        "takaisinOhjeista_": "Takaisin"
         
     },
     "en": {
         "ohjeet_": "Instructions kurwa",
         "ohjeNappula_": "Instructions",
         "aloitaPeli_": "Start game",
-        "dragP_": "Trash"
+        "dragP_": "Trash",
+        "takaisinOhjeista_": "Go back"
         
     },
     "ru": {
         "ohjeet_": "Cyka blyat",
         "ohjeNappula_": "Vodka",
         "aloitaPeli_": "Rush B",
-        "dragP_": "Da"
+        "dragP_": "Da",
+        "takaisinOhjeista_": "Go back blyat"
         
     }
    

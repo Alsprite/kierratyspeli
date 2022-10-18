@@ -84,10 +84,10 @@ function ohjeet() {
     let ohje = document.querySelector(".ohjeruutu");
     if (ohje.style.display == "none") {
         ohje.style.display = "block";
-        //document.getElementById("ohjeNappula").innerText = "Takaisin";
+        document.getElementById("ohjeNappula_").id = "takaisinOhjeista_";
     } else {
         ohje.style.display = "none";
-        //document.getElementById("ohjeNappula").innerText = "Ohjeet";
+        document.getElementById("takaisinOhjeista_").id = "ohjeNappula_";
     }
 }
 function peliAloitus() {
@@ -96,18 +96,7 @@ function peliAloitus() {
 
     vaihdaKuva();
 }
-function lipunVaihto(value) {
-  var empty = document.getElementById("tyhja");
-  if (value == 1) {
-    console.log("suomi");
-  }
-  if (value == 2) {
-    console.log("englanti");
-  }
-  if (value == 3) {
-    console.log("venaja");
-  }
-}
+
 
 function allowDrop(event) {
   event.preventDefault();
