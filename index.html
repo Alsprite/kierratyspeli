@@ -17,8 +17,18 @@
         }
 
         function vaihdaKieli(kieli) {
+            var otsikkoKuva = document.getElementById("otsikko");
             multilang.setLanguage(kieli);
-            tarkastaKieli()
+            tarkastaKieli();
+            if (kieli == "fi") {
+                otsikkoKuva.src = "kuvat/bannerfi.png";
+            }
+            if (kieli == "en") {
+                otsikkoKuva.src = "kuvat/banneren.png";
+            }
+            if (kieli == "ru") {
+                otsikkoKuva.src = "kuvat/bannerrus.png";
+            }
         }
 
         function tarkastaKieli() {
@@ -39,7 +49,7 @@
 
 <body onload="multilangInit()">
     <div class="ylapalkki">
-        <img src="kuvat/bannerfi.png">
+        <img src="kuvat/bannerfi.png" id="otsikko" width="333" height="68">
     </div>
     <div id="page">
         <div class="alkuruutu">
