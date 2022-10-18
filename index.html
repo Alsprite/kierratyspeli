@@ -16,7 +16,7 @@
             multilang = new MultiLang('kielet.json', 'fi');
         }
 
-        function langSelectChange(sel) {
+        function langChange(sel) {
             multilang.setLanguage(sel);
             refreshLabels();
         }
@@ -44,9 +44,9 @@
     <div id="page">
         <div class="alkuruutu">
             <div class="kielet">
-                <img src="kuvat/suomi.jpg" class="kielikuvat" id="fi" onclick="langSelectChange('fi')">
-                <img src="kuvat/englanti.jpg" class="kielikuvat" id="en" onclick="langSelectChange('en')">
-                <img src="kuvat/venaja.jpg" class="kielikuvat" id="ru" onclick="langSelectChange('ru')">
+                <img src="kuvat/suomi.jpg" class="kielikuvat" id="fi" onclick="langChange('fi')">
+                <img src="kuvat/englanti.jpg" class="kielikuvat" id="en" onclick="langChange('en')">
+                <img src="kuvat/venaja.jpg" class="kielikuvat" id="ru" onclick="langChange('ru')">
             </div>
             <button class="nappulat" id="ohjeNappula_" onclick="ohjeet()">Ohjeet</button>
             <br>
