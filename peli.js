@@ -173,11 +173,44 @@ function drop(event) {
   console.log("joo");
 }
 
-document.getElementById("h3eka").innerText = "SER";
-document.getElementById("h3toka").innerText = "Pullonpalautus";
-document.getElementById("h3kolmas").innerText = "Paristot";
+interact('.dropzone').dropzone({
+  accept: '#dropattava',
+  overlap: 0.75,
 
+  ondropactivate: function (event) {
+    event.target.classList.add('drop-active')
+  },
+  ondragenter: function (event) {
+    var draggableElement = event.relatedTarget
+    var dropzoneElement = event.target
 
+    dropzoneElement.classList.add('drop-target')
+    draggableElement.classList.add('can-drop')
+    draggableElement.textContent = 'Dragged in'
+  },
+  ondragleave: function (event) {
+    event.target.classList.remove('drop-target')
+    event.relatedTarget.classList.remove('can-drop')
+    event.relatedTarget.textContent = 'Dragged out'
+  },
+  ondrop: function (event) {
+    event.relatedTarget.textContent = 'Dropped'
+  },
+  ondropdeactivate: function (event) {
+    event.target.classList.remove('drop-active')
+    event.target.classList.remove('drop-target')
+  }
+})
 
-
-
+interact('.drag-drop')
+  .draggable({
+    inertia: true,
+    modifiers: [
+      interact.modifiers.restrictRect({
+        restriction: 'parent',
+        endOnly: true
+      })
+    ],
+    autoScroll: true,
+    listeners: { move: dragMoveListener }
+  })
