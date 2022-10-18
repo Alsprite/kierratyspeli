@@ -47,7 +47,6 @@ h3 {
 }
 .pelialue {
     width: 75%;
-    
 }
 #dropattava {
     display: inline-block;
@@ -66,11 +65,8 @@ h3 {
 }
 .dropzone {
     background-color: #bfe4ff;
-    border: dashed 4px transparent;
-    border-radius: 4px;
     margin: 10px 2px 30px;
-    padding: 10px;
-    width: 80%;
+    width: 50%;
 }
 .jateastiat {
     display: flex;
@@ -79,4 +75,13 @@ h3 {
 .dropzone:hover {
     outline: 2px solid black;
     cursor: pointer;
+}
+#slot1 {
+    width: 50%;
+}
+#slot2 {
+    width: 50%;
+}
+#slot3 {
+    width: 50%;
 }
