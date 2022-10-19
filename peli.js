@@ -1,4 +1,3 @@
-
 var eramaara = 1;
 
 var astia1 = new Image()
