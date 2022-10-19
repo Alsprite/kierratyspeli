@@ -93,15 +93,10 @@ function vaihdaRoskaAstiat() {
 }
 
 
-<<<<<<< HEAD
-function vaihdaKuva(slot) {
-  var image = "";
-=======
 
 
 // function vaihdaKuva(slot) {
 //   var image = "";
->>>>>>> 8bc89aa765ce5a7506b23fdde68ccee74bdb6372
 
 
 //   let randInt = Math.floor((Math.random() * 5) + 1);
