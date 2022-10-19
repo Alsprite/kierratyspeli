@@ -34,8 +34,6 @@ englantiKuva.src = "kuvat/englanti.jpg";
 var venajaKuva = new Image()
 venajaKuva.src = "kuvat/venaja.jpg";
 
-
-
 function vaihdaRoskaAstiat() {
   let tarkastusArray = [];
   var j = 0;
@@ -90,6 +88,8 @@ function vaihdaRoskaAstiat() {
     }
     document.getElementById("slot" + j).src = image.src;
   }
+
+  
 
 }
 function ohjeet() {
