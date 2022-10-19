@@ -92,9 +92,6 @@ function vaihdaRoskaAstiat() {
   }
 
 }
-function hoverKuva() {
-  
-}
 function ohjeet() {
   let ohje = document.querySelector(".ohjeruutu");
   if (ohje.style.display == "none") {
