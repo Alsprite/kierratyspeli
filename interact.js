@@ -35,7 +35,7 @@ function dragMoveListener (event) {
 // this function is used later in the resizing and gesture demos
 window.dragMoveListener = dragMoveListener
 
-interact('.dropzone').dropzone({
+interact('#oikeeDropzone').dropzone({
     // only accept elements matching this CSS selector
     accept: '#dropattava',
     // Require a 75% element overlap for a drop to be possible
@@ -63,6 +63,7 @@ interact('.dropzone').dropzone({
       // event.relatedTarget.textContent = 'Dragged out'
     },
     ondrop: function (event) {
+      console.log("joo");
       // event.relatedTarget.textContent = 'Dropped'
     },
     ondropdeactivate: function (event) {
