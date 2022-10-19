@@ -37,6 +37,22 @@ venajaKuva.src = "kuvat/venaja.jpg";
 
 
 function vaihdaRoskaAstiat() {
+
+  for (let i = 1; i <= 3; i++) {
+    document.getElementById(i + "metallinkerays_").style.display = "none";
+    document.getElementById(i + "vaarallinenjate_").style.display = "none";
+    document.getElementById(i + "kerayskartonki_").style.display = "none";
+    document.getElementById(i + "paperinkerays_").style.display = "none";
+    document.getElementById(i + "sekajate_").style.display = "none";
+    document.getElementById(i + "muovinkerays_").style.display = "none";
+    document.getElementById(i + "lasinkerays_").style.display = "none";
+    document.getElementById(i + "energiajate_").style.display = "none";
+    document.getElementById(i + "biojate_").style.display = "none";
+    document.getElementById(i + "ser_").style.display = "none";
+    document.getElementById(i + "pullonpalautus_").style.display = "none";
+    document.getElementById(i + "paristonkerays_").style.display = "none";
+  }
+
   let tarkastusArray = [];
   var j = 0;
   do {
@@ -89,6 +105,55 @@ function vaihdaRoskaAstiat() {
         break;
     }
     document.getElementById("slot" + j).src = image.src;
+
+    if (image == astia1) {
+      document.getElementById(j + "metallinkerays_").style.display = "block";
+    }
+    
+    if (image == astia2) {
+      document.getElementById(j + "vaarallinenjate_").style.display = "block";
+    }
+    
+    if (image == astia3) {
+      document.getElementById(j + "kerayskartonki_").style.display = "block";
+    }
+    
+    if (image == astia4) {
+      document.getElementById(j + "paperinkerays_").style.display = "block";
+    }
+    
+    if (image == astia5) {
+      document.getElementById(j + "sekajate_").style.display = "block";
+    }
+    
+    if (image == astia6) {
+      document.getElementById(j + "muovinkerays_").style.display = "block";
+    }
+    
+    if (image == astia7) {
+      document.getElementById(j + "lasinkerays_").style.display = "block";
+    }
+    
+    if (image == astia8) {
+      document.getElementById(j + "energiajate_").style.display = "block";
+    }
+    
+    if (image == astia9) {
+      document.getElementById(j + "biojate_").style.display = "block";
+    }
+    
+    if (image == astia10) {
+      document.getElementById(j + "ser_").style.display = "block";
+    }
+    
+    if (image == astia11) {
+      document.getElementById(j + "pullonpalautus_").style.display = "block";
+    }
+    
+    if (image == astia12) {
+      document.getElementById(j + "paristonkerays_").style.display = "block";
+    }
+
   }
 
 }
