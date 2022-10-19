@@ -94,8 +94,6 @@ function vaihdaRoskaAstiat() {
 }
 
 
-
-
 function vaihdaKuva(slot) {
   var image = "";
 
