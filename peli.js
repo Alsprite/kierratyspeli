@@ -26,13 +26,11 @@ var astia12 = new Image()
 astia12.src = "kuvat/astiat/12paristo.png";
 
 let roskatvaikkaautoalalle = {
-  säilyketölkki: [{"roska-astia": metallinkeräys}],
-  näppäimistö: [{"roska-astia": ser}],
-  jäteöljy: [{"roska-astia": vaarallinenjäte}]
+  roska: säilyketölkki, roskanarvot: [{"roska-astia": metallinkeräys, "id": sailyketolkki}],
+  roska: näppäimistö, roskanarvot: [{"roska-astia": ser, "id": nappaimisto}],
+  roska: jäteöljy, roskanarvot: [{"roska-astia": vaarallinenjäte, "id": jateoljy}]
 }
 
-var tyhjaKuva = new Image()
-tyhjaKuva.src = "kuvat/tyhja.jpg";
 var suomiKuva = new Image()
 suomiKuva.src = "kuvat/suomi.jpg";
 var englantiKuva = new Image()
@@ -66,6 +64,9 @@ function vaihdaRoskaAstiat() {
       tarkastusArray.push(randInt)
     }
   } while (tarkastusArray.length < 3)
+
+  let oikeaRoskaAstia = tarkastusArray[Math.floor(Math.random()*tarkastusArray.length)];
+
 
   var image = "";
   for (let i = 0; i < 3; i++) {
