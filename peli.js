@@ -38,56 +38,57 @@ venajaKuva.src = "kuvat/venaja.jpg";
 
 function vaihdaRoskaAstiat() {
   let tarkastusArray = [];
-
+  var j = 0;
   do {
     let randInt = Math.floor((Math.random() * 5) + 1);
 
     if (!tarkastusArray.includes(randInt)) {
       tarkastusArray.push(randInt)
     }
-  } while (tarkastusArray.length < 4)
+  } while (tarkastusArray.length < 3)
 
-  for (let i = 0; i < 4; i++) {
-    var image = "";
+  var image = "";
+  for (let i = 0; i < 3; i++) {
+    j++;
     switch (tarkastusArray[i]) {
       case 1:
-        image = "kuvat/astiat/1metalli.png";
+        image = astia1;
         break;
       case 2:
-        image = "kuvat/astiat/2vaarallinen.png";
+        image = astia2;
         break;
       case 3:
-        image = "kuvat/astiat/3kartonki.png";
+        image = astia3;
         break;
       case 4:
-        image = "kuvat/astiat/4paperi.png";
+        image = astia4;
         break;
       case 5:
-        image = "kuvat/astiat/5seka.png";
+        image = astia5;
         break;
       case 6:
-        image = "kuvat/astiat/6muovi.png";
+        image = astia6;
         break;
       case 7:
-        image = "kuvat/astiat/7lasi.png";
+        image = astia7;
         break;
       case 8:
-        image = "kuvat/astiat/8energia.png";
+        image = astia8;
         break;
       case 9:
-        image = "kuvat/astiat/9bio.png";
+        image = astia9;
         break;
       case 10:
-        image = "kuvat/astiat/10ser.png";
+        image = astia10;
         break;
       case 11:
-        image = "kuvat/astiat/11pullonpalautus.png";
+        image = astia11;
         break;
       case 12:
-        image = "kuvat/astiat/12paristo.png";
+        image = astia12;
         break;
     }
-    document.getElementById("slot" + i + 1).src = image;
+    document.getElementById("slot" + j).src = image.src;
   }
 
 }
@@ -156,6 +157,7 @@ function ohjeet() {
 function peliAloitus() {
   document.querySelector(".alkuruutu").style.display = "none";
   document.querySelector(".peliruutu").style.display = "block";
+  vaihdaRoskaAstiat();
 
   // vaihdaKuva();
 }
