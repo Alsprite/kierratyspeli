@@ -25,6 +25,12 @@ astia11.src = "kuvat/astiat/11pullonpalautus.png";
 var astia12 = new Image()
 astia12.src = "kuvat/astiat/12paristo.png";
 
+let roskatvaikkaautoalalle = {
+  säilyketölkki: [{"roska-astia": metallinkeräys}],
+  näppäimistö: [{"roska-astia": ser}],
+  jäteöljy: [{"roska-astia": vaarallinenjäte}]
+}
+
 var tyhjaKuva = new Image()
 tyhjaKuva.src = "kuvat/tyhja.jpg";
 var suomiKuva = new Image()
@@ -171,6 +177,4 @@ function peliAloitus() {
   document.querySelector(".alkuruutu").style.display = "none";
   document.querySelector(".peliruutu").style.display = "block";
   vaihdaRoskaAstiat();
-
-  // vaihdaKuva();
 }
