@@ -37,7 +37,7 @@ window.dragMoveListener = dragMoveListener
 
 interact('.dropzone').dropzone({
     // only accept elements matching this CSS selector
-    accept: '#yes-drop',
+    accept: '#dropattava',
     // Require a 75% element overlap for a drop to be possible
     overlap: 0.75,
   
@@ -54,16 +54,14 @@ interact('.dropzone').dropzone({
       // feedback the possibility of a drop
       dropzoneElement.classList.add('drop-target')
       draggableElement.classList.add('can-drop')
-      draggableElement.textContent = 'Dragged in'
     },
     ondragleave: function (event) {
       // remove the drop feedback style
       event.target.classList.remove('drop-target')
       event.relatedTarget.classList.remove('can-drop')
-      event.relatedTarget.textContent = 'Dragged out'
     },
     ondrop: function (event) {
-      event.relatedTarget.textContent = 'Dropped'
+      // event.relatedTarget.textContent = 'Dropped'
     },
     ondropdeactivate: function (event) {
       // remove active dropzone feedback
