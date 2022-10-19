@@ -1,6 +1,6 @@
 {
     "fi": {
-        "ohjeet_": "Ohjeet kurwa",
+        "ohjeet_": "Ohjeet",
         "ohjeNappula_": "Ohjeet",
         "aloitaPeli_": "Aloita peli",
         "dragP_": "Roska",
@@ -8,7 +8,7 @@
         
     },
     "en": {
-        "ohjeet_": "Instructions kurwa",
+        "ohjeet_": "Instructions",
         "ohjeNappula_": "Instructions",
         "aloitaPeli_": "Start game",
         "dragP_": "Trash",
@@ -16,12 +16,11 @@
         
     },
     "ru": {
-        "ohjeet_": "Cyka blyat",
-        "ohjeNappula_": "Vodka",
-        "aloitaPeli_": "Rush B",
-        "dragP_": "Da",
-        "takaisinOhjeista_": "Go back blyat"
-        
+        "ohjeet_": "инструкции",
+        "ohjeNappula_": "инструкции",
+        "aloitaPeli_": "начало игры",
+        "dragP_": "мусор",
+        "takaisinOhjeista_": "назад"
     }
    
 }
