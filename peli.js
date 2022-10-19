@@ -25,10 +25,13 @@ astia11.src = "kuvat/astiat/11pullonpalautus.png";
 var astia12 = new Image()
 astia12.src = "kuvat/astiat/12paristo.png";
 
+let perusRoskat = {
+  perus: tonnikalatölkki, roskanarvot: [{"roska-astia": metallinkeräys, "id": tonnikalatolkki_}]
+}
 let roskatvaikkaautoalalle = {
-  roska: säilyketölkki, roskanarvot: [{"roska-astia": metallinkeräys, "id": sailyketolkki}],
-  roska: näppäimistö, roskanarvot: [{"roska-astia": ser, "id": nappaimisto}],
-  roska: jäteöljy, roskanarvot: [{"roska-astia": vaarallinenjäte, "id": jateoljy}]
+  auto: säilyketölkki, roskanarvot: [{"roska-astia": metallinkeräys, "id": sailyketolkki}],
+  auto: näppäimistö, roskanarvot: [{"roska-astia": ser, "id": nappaimisto}],
+  auto: jäteöljy, roskanarvot: [{"roska-astia": vaarallinenjäte, "id": jateoljy}]
 }
 
 var suomiKuva = new Image()
