@@ -96,53 +96,53 @@ function vaihdaRoskaAstiat() {
 
 
 
-function vaihdaKuva(slot) {
-  var image = "";
+// function vaihdaKuva(slot) {
+//   var image = "";
 
 
-  let randInt = Math.floor((Math.random() * 5) + 1);
+//   let randInt = Math.floor((Math.random() * 5) + 1);
 
-  console.log(randInt);
-  switch (randInt) {
-    case 1:
-      image = "kuvat/astiat/1metalli.png";
-      break;
-    case 2:
-      image = "kuvat/astiat/2vaarallinen.png";
-      break;
-    case 3:
-      image = "kuvat/astiat/3kartonki.png";
-      break;
-    case 4:
-      image = "kuvat/astiat/4paperi.png";
-      break;
-    case 5:
-      image = "kuvat/astiat/5seka.png";
-      break;
-    case 6:
-      image = "kuvat/astiat/6muovi.png";
-      break;
-    case 7:
-      image = "kuvat/astiat/7lasi.png";
-      break;
-    case 8:
-      image = "kuvat/astiat/8energia.png";
-      break;
-    case 9:
-      image = "kuvat/astiat/9bio.png";
-      break;
-    case 10:
-      image = "kuvat/astiat/10ser.png";
-      break;
-    case 11:
-      image = "kuvat/astiat/11pullonpalautus.png";
-      break;
-    case 12:
-      image = "kuvat/astiat/12paristo.png";
-      break;
-  }
-  document.getElementById(slot).src = image;
-}
+//   console.log(randInt);
+//   switch (randInt) {
+//     case 1:
+//       image = "kuvat/astiat/1metalli.png";
+//       break;
+//     case 2:
+//       image = "kuvat/astiat/2vaarallinen.png";
+//       break;
+//     case 3:
+//       image = "kuvat/astiat/3kartonki.png";
+//       break;
+//     case 4:
+//       image = "kuvat/astiat/4paperi.png";
+//       break;
+//     case 5:
+//       image = "kuvat/astiat/5seka.png";
+//       break;
+//     case 6:
+//       image = "kuvat/astiat/6muovi.png";
+//       break;
+//     case 7:
+//       image = "kuvat/astiat/7lasi.png";
+//       break;
+//     case 8:
+//       image = "kuvat/astiat/8energia.png";
+//       break;
+//     case 9:
+//       image = "kuvat/astiat/9bio.png";
+//       break;
+//     case 10:
+//       image = "kuvat/astiat/10ser.png";
+//       break;
+//     case 11:
+//       image = "kuvat/astiat/11pullonpalautus.png";
+//       break;
+//     case 12:
+//       image = "kuvat/astiat/12paristo.png";
+//       break;
+//   }
+//   document.getElementById(slot).src = image;
+// }
 
 function ohjeet() {
   let ohje = document.querySelector(".ohjeruutu");
@@ -158,7 +158,7 @@ function peliAloitus() {
   document.querySelector(".alkuruutu").style.display = "none";
   document.querySelector(".peliruutu").style.display = "block";
 
-  vaihdaKuva();
+  // vaihdaKuva();
 }
 
 
@@ -173,44 +173,44 @@ function drop(event) {
   console.log("joo");
 }
 
-interact('.dropzone').dropzone({
-  accept: '#dropattava',
-  overlap: 0.75,
+// interact('.dropzone').dropzone({
+//   accept: '#dropattava',
+//   overlap: 0.75,
 
-  ondropactivate: function (event) {
-    event.target.classList.add('drop-active')
-  },
-  ondragenter: function (event) {
-    var draggableElement = event.relatedTarget
-    var dropzoneElement = event.target
+//   ondropactivate: function (event) {
+//     event.target.classList.add('drop-active')
+//   },
+//   ondragenter: function (event) {
+//     var draggableElement = event.relatedTarget
+//     var dropzoneElement = event.target
 
-    dropzoneElement.classList.add('drop-target')
-    draggableElement.classList.add('can-drop')
-    draggableElement.textContent = 'Dragged in'
-  },
-  ondragleave: function (event) {
-    event.target.classList.remove('drop-target')
-    event.relatedTarget.classList.remove('can-drop')
-    event.relatedTarget.textContent = 'Dragged out'
-  },
-  ondrop: function (event) {
-    event.relatedTarget.textContent = 'Dropped'
-  },
-  ondropdeactivate: function (event) {
-    event.target.classList.remove('drop-active')
-    event.target.classList.remove('drop-target')
-  }
-})
+//     dropzoneElement.classList.add('drop-target')
+//     draggableElement.classList.add('can-drop')
+//     draggableElement.textContent = 'Dragged in'
+//   },
+//   ondragleave: function (event) {
+//     event.target.classList.remove('drop-target')
+//     event.relatedTarget.classList.remove('can-drop')
+//     event.relatedTarget.textContent = 'Dragged out'
+//   },
+//   ondrop: function (event) {
+//     event.relatedTarget.textContent = 'Dropped'
+//   },
+//   ondropdeactivate: function (event) {
+//     event.target.classList.remove('drop-active')
+//     event.target.classList.remove('drop-target')
+//   }
+// })
 
-interact('.drag-drop')
-  .draggable({
-    inertia: true,
-    modifiers: [
-      interact.modifiers.restrictRect({
-        restriction: 'parent',
-        endOnly: true
-      })
-    ],
-    autoScroll: true,
-    listeners: { move: dragMoveListener }
-  })
+// interact('.drag-drop')
+//   .draggable({
+//     inertia: true,
+//     modifiers: [
+//       interact.modifiers.restrictRect({
+//         restriction: 'parent',
+//         endOnly: true
+//       })
+//     ],
+//     autoScroll: true,
+//     listeners: { move: dragMoveListener }
+//   })
