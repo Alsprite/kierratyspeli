@@ -25,14 +25,7 @@ astia11.src = "kuvat/astiat/11pullonpalautus.png";
 var astia12 = new Image()
 astia12.src = "kuvat/astiat/12paristo.png";
 
-let perusRoskat = {
-  perus: tonnikalatölkki, roskanarvot: [{"roska-astia": metallinkeräys, "id": tonnikalatolkki_}]
-}
-let roskatvaikkaautoalalle = {
-  auto: säilyketölkki, roskanarvot: [{"roska-astia": metallinkeräys, "id": sailyketolkki}],
-  auto: näppäimistö, roskanarvot: [{"roska-astia": ser, "id": nappaimisto}],
-  auto: jäteöljy, roskanarvot: [{"roska-astia": vaarallinenjäte, "id": jateoljy}]
-}
+
 
 var suomiKuva = new Image()
 suomiKuva.src = "kuvat/suomi.jpg";
@@ -166,16 +159,6 @@ function vaihdaRoskaAstiat() {
 
   
 
-}
-function ohjeet() {
-  let ohje = document.querySelector(".ohjeruutu");
-  if (ohje.style.display == "none") {
-    ohje.style.display = "block";
-    document.getElementById("ohjeNappula_").id = "takaisinOhjeista_";
-  } else {
-    ohje.style.display = "none";
-    document.getElementById("takaisinOhjeista_").id = "ohjeNappula_";
-  }
 }
 function peliAloitus() {
   document.querySelector(".alkuruutu").style.display = "none";

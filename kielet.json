@@ -1,10 +1,7 @@
 {
     "fi": {
-        "ohjeet_": "Ohjeet",
-        "ohjeNappula_": "Ohjeet",
         "aloitaPeli_": "Aloita peli",
         "dragP_": "Roska",
-        "takaisinOhjeista_": "Takaisin",
         "1metallinkerays_": "Metallinkeräys",
         "2metallinkerays_": "Metallinkeräys",
         "3metallinkerays_": "Metallinkeräys",
@@ -43,11 +40,8 @@
         "3paristonkerays_": "Paristonkeräys"
     },
     "en": {
-        "ohjeet_": "Instructions",
-        "ohjeNappula_": "Instructions",
         "aloitaPeli_": "Start game",
         "dragP_": "Trash",
-        "takaisinOhjeista_": "Go back",
         "1metallinkerays_": "Metal",
         "2metallinkerays_": "Metal",
         "3metallinkerays_": "Metal",
@@ -88,11 +82,8 @@
         
     },
     "ru": {
-        "ohjeet_": "инструкции",
-        "ohjeNappula_": "инструкции",
         "aloitaPeli_": "начало игры",
         "dragP_": "мусор",
-        "takaisinOhjeista_": "назад",
         "1metallinkerays_": "металл",
         "2metallinkerays_": "металл",
         "3metallinkerays_": "металл",
