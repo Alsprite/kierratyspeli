@@ -88,3 +88,7 @@ h3 {
 #slot3 {
     width: 50%;
 }
+#signature {
+    text-align: center;
+    font-family: 'Trebuchet MS';
+}
