@@ -1,5 +1,7 @@
 var eramaara = 1;
 
+let gameLanguage;
+
 var astia1 = new Image()
 astia1.src = "kuvat/astiat/1metalli.png";
 var astia2 = new Image()
@@ -26,50 +28,26 @@ var astia12 = new Image()
 astia12.src = "kuvat/astiat/12paristo.png";
 
 let valittuRoskaArray;
-/*
+
+function setGameLang(lang) {
+  gameLanguage = lang.value;
+}
+
+function getTrashArray(x) {
+  fetch(x)
+}
+
 function valitseAla(ala) {
 
-  let autoAlanRoskat = [];
-  let kondiittoriAlanRoskat = [];
-  let sahkoAlanRoskat = [];
-  let perusRoskat = [];
+if (ala == "autoAla") {
+  if (gameLanguage == "fi") {
 
-  [
-    {
-  "roska" : "maitopurkki",
-      "roskaAstia": "pahvi"
   }
-    
-  ]
-
-  if (ala == "autoAla") {
-    let aAlaRoskat = ["Jäteöljy", "Vanha akku", "Tyhjä spray-pullo", "Vanha rengas", "Pahvilaatikko", "Palanut halogeeniamppu", "Rikkinäinen valoumpio", "Tyhjä pesuainepullo", "Rikkinäinen akkuporakone", "Likaiset paperipyyhkeet"];
-    let aAlaRoskaAstiat = ["ongelmajate_", "ongelmajate_", "metallinkerays_", "ongelmajate_", "kerayskartonki_", "sekajate_", "muovinkerays_", "muovinkerays", "ser_", "energiajate_"];
-    let aAlaIdt = ["jateoljy_", "akku_", "spraypullo_", "rengas_", "pahvilaatikko_", "halogeenilamppu", "valoumpio_", "pesuainepullo_", "vanhatjohdot_", "paperipyyhkeet_"];
-
-    for (let i = 0; i < aAlaRoskat.length; i++) {
-      autoAlanRoskat.push({ roska: aAlaRoskat[i], roskaAstia: aAlaRoskaAstiat[i], id: aAlaIdt[i] })
-    }
-
-    valittuRoskaArray = autoAlanRoskat;
-  }
-
-  if (ala == "kondiittoriAla") {
-    let kAlaRoskat = ["Pilaantunut kananmuna", "Huono paistinpannu", "Katkennut muovilasta", "Vanhaksi mennyt maito", "Tyhjä muovipakkaus", "", "Pahvilaatikko", "Rikkinäinen sähkövatkain", "Pilaantunut liha", "Vanha puinen leikkuulauta"];
-    let kAlaRoskaAstiat = ["biojate_", "metallinkerays_", "energiajate_", "ongelmajate_", "kerayskartonki_", "sekajate_", "muovinkerays_", "muovinkerays", "metallinkerays_", "energiajate_"];
-    let kAlaIdt = ["jateoljy_", "akku_", "spraypullo_", "rengas_", "pahvilaatikko_", "halogeenilamppu", "valoumpio_", "pesuainepullo_", "vanhatjohdot_", "paperipyyhkeet_"];
-
-    for (let i = 0; i < kAlaRoskat.length; i++) {
-      autoAlanRoskat.push({ roska: kAlaRoskat[i], roskaAstia: kAlaRoskaAstiat[i], id: kAlaIdt[i] })
-    }
-
-
-    valittuRoskaArray = kondiittoriAlanRoskat;
-  }
-
 
 }
-*/
+
+}
+
 
 var suomiKuva = new Image()
 suomiKuva.src = "kuvat/suomi.jpg";
