@@ -206,16 +206,6 @@ function vaihdaRoskaAstiat() {
 
 
 }
-function ohjeet() {
-  let ohje = document.querySelector(".ohjeruutu");
-  if (ohje.style.display == "none") {
-    ohje.style.display = "block";
-    document.getElementById("ohjeNappula_").id = "takaisinOhjeista_";
-  } else {
-    ohje.style.display = "none";
-    document.getElementById("takaisinOhjeista_").id = "ohjeNappula_";
-  }
-}
 function peliAloitus() {
   document.querySelector(".alkuruutu").style.display = "none";
   document.querySelector(".peliruutu").style.display = "block";

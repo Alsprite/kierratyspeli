@@ -54,18 +54,23 @@
     <div id="page">
         <div class="alkuruutu">
             <div class="kielet">
-                <img src="kuvat/suomi.jpg" class="kielikuvat" id="fi" onclick="vaihdaKieli('fi')">
-                <img src="kuvat/englanti.jpg" class="kielikuvat" id="en" onclick="vaihdaKieli('en')">
-                <img src="kuvat/venaja.jpg" class="kielikuvat" id="ru" onclick="vaihdaKieli('ru')">
+                <div>
+                    <img src="kuvat/suomi.jpg" class="kielikuvat" id="fi" onclick="vaihdaKieli('fi')">
+                    <p>Suomi</p>
+                </div>
+                <div>
+                    <img src="kuvat/englanti.jpg" class="kielikuvat" id="en" onclick="vaihdaKieli('en')">
+                    <p>English</p>
+                </div>
+                <div>
+                    <img src="kuvat/venaja.jpg" class="kielikuvat" id="ru" onclick="vaihdaKieli('ru')">
+                    <p>ру́сский</p>
+                </div>
             </div>
-            <button class="nappulat" id="ohjeNappula_" onclick="ohjeet(), tarkastaKieli()">Ohjeet</button>
             <br>
-            <div class="ohjeruutu" id="ohjeruutu" style="display: none">
-                <p id="ohjeet_">Ohje kurwa</p>
-            </div>
             <button class="nappulat" id="aloitaPeli_" onclick="peliAloitus(), tarkastaKieli()">Aloita peli</button>
         </div>
-
+        <img src="kuvat/perus.png" width="128" height="128">
 
         <div class="peliruutu" style="display: none">
             <h1><span id="eraMaara">1</span>/10</h1>
