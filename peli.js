@@ -25,13 +25,41 @@ astia11.src = "kuvat/astiat/11pullonpalautus.png";
 var astia12 = new Image()
 astia12.src = "kuvat/astiat/12paristo.png";
 
-let perusRoskat = {
-  perus: tonnikalatölkki, roskanarvot: [{"roska-astia": metallinkeräys, "id": tonnikalatolkki_}]
-}
-let roskatvaikkaautoalalle = {
-  auto: säilyketölkki, roskanarvot: [{"roska-astia": metallinkeräys, "id": sailyketolkki}],
-  auto: näppäimistö, roskanarvot: [{"roska-astia": ser, "id": nappaimisto}],
-  auto: jäteöljy, roskanarvot: [{"roska-astia": vaarallinenjäte, "id": jateoljy}]
+let valittuRoskaArray;
+
+let autoAlanRoskat = [];
+let kondiittoriAlanRoskat = [];
+let sahkoAlanRoskat = [];
+let perusRoskat = [];
+
+function valitseAla(ala) {
+
+  if (ala == "autoAla") {
+    let aAlaRoskat = ["Jäteöljy", "Vanha akku", "Tyhjä spray-pullo", "Vanha rengas", "Pahvilaatikko", "Palanut halogeeniamppu", "Rikkinäinen valoumpio", "Tyhjä pesuainepullo", "Vanhat johdot", "Likaiset paperipyyhkeet"];
+    let aAlaRoskaAstiat = ["ongelmajate_", "ongelmajate_", "metallinkerays_", "ongelmajate_", "kerayskartonki_", "sekajate_", "muovinkerays_", "muovinkerays", "metallinkerays_", "energiajate_"];
+    let aAlaIdt = ["jateoljy_", "akku_", "spraypullo_", "rengas_", "pahvilaatikko_", "halogeenilamppu", "valoumpio_", "pesuainepullo_", "vanhatjohdot_", "paperipyyhkeet_"];
+    
+    for (let i = 0; i < aAlaRoskat.length; i++) {
+      autoAlanRoskat.push({ roska: aAlaRoskat[i], roskaAstia: aAlaRoskaAstiat[i], id: aAlaIdt[i]})
+    }
+
+    return autoAlanRoskat;
+  }
+
+  if (ala == "kondiittoriAla") {
+    let kAlaRoskat = ["Jäteöljy", "Vanha akku", "Tyhjä spray-pullo", "Vanha rengas", "Pahvilaatikko", "Palanut halogeeniamppu", "Rikkinäinen valoumpio", "Tyhjä pesuainepullo", "Vanhat johdot", "Likaiset paperipyyhkeet"];
+    let kAlaRoskaAstiat = ["ongelmajate_", "ongelmajate_", "metallinkerays_", "ongelmajate_", "kerayskartonki_", "sekajate_", "muovinkerays_", "muovinkerays", "metallinkerays_", "energiajate_"];
+    let kAlaIdt = ["jateoljy_", "akku_", "spraypullo_", "rengas_", "pahvilaatikko_", "halogeenilamppu", "valoumpio_", "pesuainepullo_", "vanhatjohdot_", "paperipyyhkeet_"];
+    
+    for (let i = 0; i < kAlaRoskat.length; i++) {
+      autoAlanRoskat.push({ roska: kAlaRoskat[i], roskaAstia: kAlaRoskaAstiat[i], id: kAlaIdt[i]})
+    }
+
+  
+    return autoAlanRoskat;
+  }
+
+
 }
 
 var suomiKuva = new Image()
@@ -68,7 +96,9 @@ function vaihdaRoskaAstiat() {
     }
   } while (tarkastusArray.length < 3)
 
-  let oikeaRoskaAstia = tarkastusArray[Math.floor(Math.random()*tarkastusArray.length)];
+  let oikeaRoskaAstia = tarkastusArray[Math.floor(Math.random() * tarkastusArray.length)];
+
+  let roska = valittuRoskaArray[oikeaRoskaAstia];
 
 
   var image = "";
@@ -117,54 +147,54 @@ function vaihdaRoskaAstiat() {
     if (image == astia1) {
       document.getElementById(j + "metallinkerays_").style.display = "block";
     }
-    
+
     if (image == astia2) {
       document.getElementById(j + "vaarallinenjate_").style.display = "block";
     }
-    
+
     if (image == astia3) {
       document.getElementById(j + "kerayskartonki_").style.display = "block";
     }
-    
+
     if (image == astia4) {
       document.getElementById(j + "paperinkerays_").style.display = "block";
     }
-    
+
     if (image == astia5) {
       document.getElementById(j + "sekajate_").style.display = "block";
     }
-    
+
     if (image == astia6) {
       document.getElementById(j + "muovinkerays_").style.display = "block";
     }
-    
+
     if (image == astia7) {
       document.getElementById(j + "lasinkerays_").style.display = "block";
     }
-    
+
     if (image == astia8) {
       document.getElementById(j + "energiajate_").style.display = "block";
     }
-    
+
     if (image == astia9) {
       document.getElementById(j + "biojate_").style.display = "block";
     }
-    
+
     if (image == astia10) {
       document.getElementById(j + "ser_").style.display = "block";
     }
-    
+
     if (image == astia11) {
       document.getElementById(j + "pullonpalautus_").style.display = "block";
     }
-    
+
     if (image == astia12) {
       document.getElementById(j + "paristonkerays_").style.display = "block";
     }
 
   }
 
-  
+
 
 }
 function ohjeet() {
