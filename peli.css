@@ -4,6 +4,9 @@ body {
 h3 {
     font-family: 'Trebuchet MS';
 }
+p {
+    font-family: 'Trebuchet MS';
+}
 .ylapalkki {
     width: 100%;
     color: black;
@@ -34,6 +37,21 @@ h3 {
     border-style: none;
 }
 .kielikuvat:hover {
+    outline: 2px solid black;
+    cursor: pointer;
+}
+.alat {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.alakuvat {
+    width: 80px;
+    height: 80px;
+    margin: 4px;
+    border-style: none;
+}
+.alakuvat:hover {
     outline: 2px solid black;
     cursor: pointer;
 }
