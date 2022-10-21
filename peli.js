@@ -26,41 +26,50 @@ var astia12 = new Image()
 astia12.src = "kuvat/astiat/12paristo.png";
 
 let valittuRoskaArray;
-
-let autoAlanRoskat = [];
-let kondiittoriAlanRoskat = [];
-let sahkoAlanRoskat = [];
-let perusRoskat = [];
-
+/*
 function valitseAla(ala) {
 
-  if (ala == "autoAla") {
-    let aAlaRoskat = ["Jäteöljy", "Vanha akku", "Tyhjä spray-pullo", "Vanha rengas", "Pahvilaatikko", "Palanut halogeeniamppu", "Rikkinäinen valoumpio", "Tyhjä pesuainepullo", "Vanhat johdot", "Likaiset paperipyyhkeet"];
-    let aAlaRoskaAstiat = ["ongelmajate_", "ongelmajate_", "metallinkerays_", "ongelmajate_", "kerayskartonki_", "sekajate_", "muovinkerays_", "muovinkerays", "metallinkerays_", "energiajate_"];
-    let aAlaIdt = ["jateoljy_", "akku_", "spraypullo_", "rengas_", "pahvilaatikko_", "halogeenilamppu", "valoumpio_", "pesuainepullo_", "vanhatjohdot_", "paperipyyhkeet_"];
+  let autoAlanRoskat = [];
+  let kondiittoriAlanRoskat = [];
+  let sahkoAlanRoskat = [];
+  let perusRoskat = [];
+
+  [
+    {
+  "roska" : "maitopurkki",
+      "roskaAstia": "pahvi"
+  }
     
+  ]
+
+  if (ala == "autoAla") {
+    let aAlaRoskat = ["Jäteöljy", "Vanha akku", "Tyhjä spray-pullo", "Vanha rengas", "Pahvilaatikko", "Palanut halogeeniamppu", "Rikkinäinen valoumpio", "Tyhjä pesuainepullo", "Rikkinäinen akkuporakone", "Likaiset paperipyyhkeet"];
+    let aAlaRoskaAstiat = ["ongelmajate_", "ongelmajate_", "metallinkerays_", "ongelmajate_", "kerayskartonki_", "sekajate_", "muovinkerays_", "muovinkerays", "ser_", "energiajate_"];
+    let aAlaIdt = ["jateoljy_", "akku_", "spraypullo_", "rengas_", "pahvilaatikko_", "halogeenilamppu", "valoumpio_", "pesuainepullo_", "vanhatjohdot_", "paperipyyhkeet_"];
+
     for (let i = 0; i < aAlaRoskat.length; i++) {
-      autoAlanRoskat.push({ roska: aAlaRoskat[i], roskaAstia: aAlaRoskaAstiat[i], id: aAlaIdt[i]})
+      autoAlanRoskat.push({ roska: aAlaRoskat[i], roskaAstia: aAlaRoskaAstiat[i], id: aAlaIdt[i] })
     }
 
-    return autoAlanRoskat;
+    valittuRoskaArray = autoAlanRoskat;
   }
 
   if (ala == "kondiittoriAla") {
-    let kAlaRoskat = ["Jäteöljy", "Vanha akku", "Tyhjä spray-pullo", "Vanha rengas", "Pahvilaatikko", "Palanut halogeeniamppu", "Rikkinäinen valoumpio", "Tyhjä pesuainepullo", "Vanhat johdot", "Likaiset paperipyyhkeet"];
-    let kAlaRoskaAstiat = ["ongelmajate_", "ongelmajate_", "metallinkerays_", "ongelmajate_", "kerayskartonki_", "sekajate_", "muovinkerays_", "muovinkerays", "metallinkerays_", "energiajate_"];
+    let kAlaRoskat = ["Pilaantunut kananmuna", "Huono paistinpannu", "Katkennut muovilasta", "Vanhaksi mennyt maito", "Tyhjä muovipakkaus", "", "Pahvilaatikko", "Rikkinäinen sähkövatkain", "Pilaantunut liha", "Vanha puinen leikkuulauta"];
+    let kAlaRoskaAstiat = ["biojate_", "metallinkerays_", "energiajate_", "ongelmajate_", "kerayskartonki_", "sekajate_", "muovinkerays_", "muovinkerays", "metallinkerays_", "energiajate_"];
     let kAlaIdt = ["jateoljy_", "akku_", "spraypullo_", "rengas_", "pahvilaatikko_", "halogeenilamppu", "valoumpio_", "pesuainepullo_", "vanhatjohdot_", "paperipyyhkeet_"];
-    
+
     for (let i = 0; i < kAlaRoskat.length; i++) {
-      autoAlanRoskat.push({ roska: kAlaRoskat[i], roskaAstia: kAlaRoskaAstiat[i], id: kAlaIdt[i]})
+      autoAlanRoskat.push({ roska: kAlaRoskat[i], roskaAstia: kAlaRoskaAstiat[i], id: kAlaIdt[i] })
     }
 
-  
-    return autoAlanRoskat;
+
+    valittuRoskaArray = kondiittoriAlanRoskat;
   }
 
 
 }
+*/
 
 var suomiKuva = new Image()
 suomiKuva.src = "kuvat/suomi.jpg";
