@@ -1,5 +1,6 @@
 {
     "fi": {
+        "valitseAla_": "Valitse ala",
         "perus_": "Perus",
         "auto_": "Autoala",
         "sahko_": "Sähköala",
@@ -44,6 +45,7 @@
         "3paristonkerays_": "Paristonkeräys"
     },
     "en": {
+        "valitseAla_": "Choose profession",
         "perus_": "Basic",
         "auto_": "Mechanic",
         "sahko_": "Electrical",
@@ -90,6 +92,7 @@
         
     },
     "ru": {
+        "valitseAla_": "выберите профессию",
         "perus_": "базовый",
         "auto_": "механики",
         "sahko_": "электрики",
