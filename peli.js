@@ -1,6 +1,7 @@
 var eramaara = 1;
 
 let gameLanguage;
+let selectedProfession;
 
 var astia1 = new Image()
 astia1.src = "kuvat/astiat/1metalli.png";
@@ -33,18 +34,15 @@ function setGameLang(lang) {
   gameLanguage = lang.value;
 }
 
-function getTrashArray(x) {
+function getTrashArray() {
   fetch(x)
 }
 
-function valitseAla(ala) {
 
-if (ala == "autoAla") {
-  if (gameLanguage == "fi") {
 
-  }
+function setProfession(ala) {
 
-}
+  selectedProfession = ala.value;
 
 }
 
@@ -56,7 +54,7 @@ englantiKuva.src = "kuvat/englanti.jpg";
 var venajaKuva = new Image()
 venajaKuva.src = "kuvat/venaja.jpg";
 
-function vaihdaRoskaAstiat() {
+function randomizeTrashBins() {
 
   for (let i = 1; i <= 3; i++) {
     document.getElementById(i + "metallinkerays_").style.display = "none";
@@ -184,8 +182,8 @@ function vaihdaRoskaAstiat() {
 
 
 }
-function peliAloitus() {
+function startGame() {
   document.querySelector(".alkuruutu").style.display = "none";
   document.querySelector(".peliruutu").style.display = "block";
-  vaihdaRoskaAstiat();
+  randomizeTrashBins();
 }

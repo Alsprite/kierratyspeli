@@ -13,25 +13,25 @@
         var multilang;
         
         function multilangInit() {
-            multilang = new MultiLang('kielet.json', 'fi');
+            multilang = new MultiLang('languages.json', 'fi');
         }
 
-        function vaihdaKieli(kieli) {
+        function setMenuLang(lang) {
             var otsikkoKuva = document.getElementById("otsikko");
-            multilang.setLanguage(kieli);
-            tarkastaKieli();
-            if (kieli == "fi") {
+            multilang.setLanguage(lang);
+            translateMenuElements();
+            if (lang == "fi") {
                 otsikkoKuva.src = "kuvat/bannerfi.png";
             }
-            if (kieli == "en") {
+            if (lang == "en") {
                 otsikkoKuva.src = "kuvat/banneren.png";
             }
-            if (kieli == "ru") {
+            if (lang == "ru") {
                 otsikkoKuva.src = "kuvat/bannerrus.png";
             }
         }
 
-        function tarkastaKieli() {
+        function translateMenuElements() {
             var allnodes = document.body.getElementsByTagName('*');
 
             for (var i = 0, limit = allnodes.length; i < limit; i++) {
@@ -55,38 +55,38 @@
         <div class="alkuruutu">
             <div class="kielet">
                 <div>
-                    <img src="kuvat/suomi.jpg" class="kielikuvat" id="fi" onclick="vaihdaKieli('fi'), setGameLang('fi')">
+                    <img src="kuvat/suomi.jpg" class="kielikuvat" id="fi" onclick="setMenuLang('fi'), setGameLang('fi')">
                     <p>Suomi</p>
                 </div>
                 <div>
-                    <img src="kuvat/englanti.jpg" class="kielikuvat" id="en" onclick="vaihdaKieli('en'), setGameLang('en')">
+                    <img src="kuvat/englanti.jpg" class="kielikuvat" id="en" onclick="setMenuLang('en'), setGameLang('en')">
                     <p>English</p>
                 </div>
                 <div>
-                    <img src="kuvat/venaja.jpg" class="kielikuvat" id="ru" onclick="vaihdaKieli('ru'), setGameLang('ru')">
+                    <img src="kuvat/venaja.jpg" class="kielikuvat" id="ru" onclick="setMenuLang('ru'), setGameLang('ru')">
                     <p>ру́сский</p>
                 </div>
             </div>
             <h3 id="valitseAla_">Valitse ala</h3>
             <div class="alat">
                 <div>
-                    <img src="kuvat/perus.png" class="alakuvat" id="perus" width="128" height="128">
+                    <img src="kuvat/perus.png" class="alakuvat" id="perus" width="128" height="128" onclick="setProfession(perus)">
                     <p id="perus_">Perus</p>
                 </div>
                 <div>
-                    <img src="kuvat/autoala.png" class="alakuvat" id="auto">
+                    <img src="kuvat/autoala.png" class="alakuvat" id="auto" onclick="setProfession(auto)">
                     <p id="auto_">Autoala</p>
                 </div>
                 <div>
-                    <img src="kuvat/sahkoala.png" class="alakuvat" id="sahko">
+                    <img src="kuvat/sahkoala.png" class="alakuvat" id="sahko" onclick="setProfession(sahko)">
                     <p id="sahko_">Sähköala</p>
                 </div>
                 <div>
-                    <img src="kuvat/leipuriala.png" class="alakuvat" id="leipuri">
+                    <img src="kuvat/leipuriala.png" class="alakuvat" id="leipuri" onclick="setProfession(leipuri)">
                     <p id="leipuri_">Leipuriala</p>
                 </div>
             </div>
-            <button class="nappulat" id="aloitaPeli_" onclick="peliAloitus(), tarkastaKieli()">Aloita peli</button>
+            <button class="nappulat" id="aloitaPeli_" onclick="startGame(), translateMenuElements()">Aloita peli</button>
         </div>
 
         <div class="peliruutu" style="display: none">
@@ -139,7 +139,7 @@
                 </div>
             </div>
             <div id="dropattava" draggable="true" class="draggable">
-                <p id="dragP_">ES</p>
+                <p id="dragP_"></p>
             </div>
         </div>
     </div>
