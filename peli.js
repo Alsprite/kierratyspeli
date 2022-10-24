@@ -1,7 +1,7 @@
 var eramaara = 1;
 
-let gameLanguage;
-let selectedProfession;
+let gameLanguage = "fi";
+let selectedProfession = "perus";
 
 var astia1 = new Image()
 astia1.src = "kuvat/astiat/1metalli.png";
@@ -28,21 +28,22 @@ astia11.src = "kuvat/astiat/11pullonpalautus.png";
 var astia12 = new Image()
 astia12.src = "kuvat/astiat/12paristo.png";
 
-let valittuRoskaArray;
+let selectedTrashArray;
 
 function setGameLang(lang) {
-  gameLanguage = lang.value;
+  gameLanguage = lang;
 }
 
 function getTrashArray() {
-  fetch(x)
+  fetch(`roskat/${selectedProfession}/${gameLanguage}.json`)
+  .then((response) => response.json())
+  .then((data) => console.log(data))
+
 }
-
-
 
 function setProfession(ala) {
 
-  selectedProfession = ala.value;
+  selectedProfession = ala;
 
 }
 
@@ -71,25 +72,25 @@ function randomizeTrashBins() {
     document.getElementById(i + "paristonkerays_").style.display = "none";
   }
 
-  let tarkastusArray = [];
+  let checkArray = [];
   var j = 0;
   do {
     let randInt = Math.floor((Math.random() * 5) + 1);
 
-    if (!tarkastusArray.includes(randInt)) {
-      tarkastusArray.push(randInt)
+    if (!checkArray.includes(randInt)) {
+      checkArray.push(randInt)
     }
-  } while (tarkastusArray.length < 3)
+  } while (checkArray.length < 3)
 
-  let oikeaRoskaAstia = tarkastusArray[Math.floor(Math.random() * tarkastusArray.length)];
+  //let correctTrashBin = checkArray[Math.floor(Math.random() * checkArray.length)];
 
-  let roska = valittuRoskaArray[oikeaRoskaAstia];
+  //et trash = selectedTrashArray[correctTrashBin];
 
 
   var image = "";
   for (let i = 0; i < 3; i++) {
     j++;
-    switch (tarkastusArray[i]) {
+    switch (checkArray[i]) {
       case 1:
         image = astia1;
         break;
@@ -186,4 +187,5 @@ function startGame() {
   document.querySelector(".alkuruutu").style.display = "none";
   document.querySelector(".peliruutu").style.display = "block";
   randomizeTrashBins();
+  getTrashArray();
 }

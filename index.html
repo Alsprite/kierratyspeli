@@ -13,7 +13,10 @@
         var multilang;
         
         function multilangInit() {
-            multilang = new MultiLang('languages.json', 'fi');
+            multilang = new MultiLang('menulang.json', 'fi');
+            multilang.setLanguage('fi');
+
+            setMenuLang('fi');
         }
 
         function setMenuLang(lang) {
@@ -55,35 +58,35 @@
         <div class="alkuruutu">
             <div class="kielet">
                 <div>
-                    <img src="kuvat/suomi.jpg" class="kielikuvat" id="fi" onclick="setMenuLang('fi'), setGameLang('fi')">
+                    <img src="kuvat/suomi.jpg" class="kielikuvat" id="fi" onclick="setMenuLang(this.id), setGameLang(this.id)">
                     <p>Suomi</p>
                 </div>
                 <div>
-                    <img src="kuvat/englanti.jpg" class="kielikuvat" id="en" onclick="setMenuLang('en'), setGameLang('en')">
+                    <img src="kuvat/englanti.jpg" class="kielikuvat" id="en" onclick="setMenuLang(this.id), setGameLang(this.id)">
                     <p>English</p>
                 </div>
                 <div>
-                    <img src="kuvat/venaja.jpg" class="kielikuvat" id="ru" onclick="setMenuLang('ru'), setGameLang('ru')">
+                    <img src="kuvat/venaja.jpg" class="kielikuvat" id="ru" onclick="setMenuLang(this.id), setGameLang(this.id)">
                     <p>ру́сский</p>
                 </div>
             </div>
-            <h3 id="valitseAla_">Valitse ala</h3>
+            <h3 id="valitseAla_"></h3>
             <div class="alat">
                 <div>
-                    <img src="kuvat/perus.png" class="alakuvat" id="perus" width="128" height="128" onclick="setProfession(perus)">
-                    <p id="perus_">Perus</p>
+                    <img src="kuvat/perus.png" class="alakuvat" id="perus" width="128" height="128" onclick="setProfession(this.id)">
+                    <p id="perus_"></p>
                 </div>
                 <div>
-                    <img src="kuvat/autoala.png" class="alakuvat" id="auto" onclick="setProfession(auto)">
-                    <p id="auto_">Autoala</p>
+                    <img src="kuvat/autoala.png" class="alakuvat" id="auto" onclick="setProfession(this.id)">
+                    <p id="auto_"></p>
                 </div>
                 <div>
-                    <img src="kuvat/sahkoala.png" class="alakuvat" id="sahko" onclick="setProfession(sahko)">
-                    <p id="sahko_">Sähköala</p>
+                    <img src="kuvat/sahkoala.png" class="alakuvat" id="sahko" onclick="setProfession(this.id)">
+                    <p id="sahko_"></p>
                 </div>
                 <div>
-                    <img src="kuvat/leipuriala.png" class="alakuvat" id="leipuri" onclick="setProfession(leipuri)">
-                    <p id="leipuri_">Leipuriala</p>
+                    <img src="kuvat/leipuriala.png" class="alakuvat" id="leipuri" onclick="setProfession(this.id)">
+                    <p id="leipuri_"></p>
                 </div>
             </div>
             <button class="nappulat" id="aloitaPeli_" onclick="startGame(), translateMenuElements()">Aloita peli</button>
