@@ -83,10 +83,9 @@ function randomizeTrashBins() {
     }
   } while (checkArray.length < 3)
 
-  //let correctTrashBin = checkArray[Math.floor(Math.random() * checkArray.length)];
-
-  //let trash = selectedTrashArray[correctTrashBin];
-
+  let trashBinId1 = "";
+  let trashBinId2 = "";
+  let trashBinId3 = "";
 
   var image = "";
   for (let i = 0; i < 3; i++) {
@@ -94,39 +93,147 @@ function randomizeTrashBins() {
     switch (checkArray[i]) {
       case 1:
         image = astia1;
+        if (j == 1) {
+          trashBinId1 = "metallinkerays_";
+        }
+        if (j == 2) {
+          trashBinId2 = "metallinkerays_";
+        }
+        if (j == 3) {
+          trashBinId3 = "metallinkerays_";
+        }
         break;
       case 2:
         image = astia2;
+        if (j == 1) {
+          trashBinId1 = "vaarallinenjate_";
+        }
+        if (j == 2) {
+          trashBinId2 = "vaarallinenjate_";
+        }
+        if (j == 3) {
+          trashBinId3 = "vaarallinenjate_";
+        }
         break;
       case 3:
         image = astia3;
+        if (j == 1) {
+          trashBinId1 = "kerayskartonki_";
+        }
+        if (j == 2) {
+          trashBinId2 = "kerayskartonki_";
+        }
+        if (j == 3) {
+          trashBinId3 = "kerayskartonki_";
+        }
         break;
       case 4:
         image = astia4;
+        if (j == 1) {
+          trashBinId1 = "paperinkerays_";
+        }
+        if (j == 2) {
+          trashBinId2 = "paperinkerays_";
+        }
+        if (j == 3) {
+          trashBinId3 = "paperinkerays_";
+        }
         break;
       case 5:
         image = astia5;
+        if (j == 1) {
+          trashBinId1 = "sekajate_";
+        }
+        if (j == 2) {
+          trashBinId2 = "sekajate_";
+        }
+        if (j == 3) {
+          trashBinId3 = "sekajate_";
+        }
         break;
       case 6:
         image = astia6;
+        if (j == 1) {
+          trashBinId1 = "muovinkerays_";
+        }
+        if (j == 2) {
+          trashBinId2 = "muovinkerays_";
+        }
+        if (j == 3) {
+          trashBinId3 = "muovinkerays_";
+        }
         break;
       case 7:
         image = astia7;
+        if (j == 1) {
+          trashBinId1 = "lasinkerays_";
+        }
+        if (j == 2) {
+          trashBinId2 = "lasinkerays_";
+        }
+        if (j == 3) {
+          trashBinId3 = "lasinkerays_";
+        }
         break;
       case 8:
         image = astia8;
+        if (j == 1) {
+          trashBinId1 = "energiajate_";
+        }
+        if (j == 2) {
+          trashBinId2 = "energiajate_";
+        }
+        if (j == 3) {
+          trashBinId3 = "energiajate_";
+        }
         break;
       case 9:
         image = astia9;
+        if (j == 1) {
+          trashBinId1 = "biojate_";
+        }
+        if (j == 2) {
+          trashBinId2 = "biojate_";
+        }
+        if (j == 3) {
+          trashBinId3 = "biojate_";
+        }
         break;
       case 10:
         image = astia10;
+        if (j == 1) {
+          trashBinId1 = "ser_";
+        }
+        if (j == 2) {
+          trashBinId2 = "ser_";
+        }
+        if (j == 3) {
+          trashBinId3 = "ser_";
+        }
         break;
       case 11:
         image = astia11;
+        if (j == 1) {
+          trashBinId1 = "pullonpalautus_";
+        }
+        if (j == 2) {
+          trashBinId2 = "pullonpalautus_";
+        }
+        if (j == 3) {
+          trashBinId3 = "pullonpalautus_";
+        }
         break;
       case 12:
         image = astia12;
+        if (j == 1) {
+          trashBinId1 = "paristonkerays_";
+        }
+        if (j == 2) {
+          trashBinId2 = "paristonkerays_";
+        }
+        if (j == 3) {
+          trashBinId3 = "paristonkerays_";
+        }
         break;
     }
     document.getElementById("slot" + j).src = image.src;
@@ -181,9 +288,19 @@ function randomizeTrashBins() {
 
   }
 
+  let trashBinIdArray = [trashBinId1, trashBinId2, trashBinId3];
+  let correctTrashBin = trashBinIdArray[Math.floor(Math.random() * trashBinIdArray.length)];
+  let trash
+  do {
+    
 
+   
+  } while (selectedTrashArray[randInt.TrashBin])
+
+  //let trash = selectedTrashArray[correctTrashBin];
 
 }
+
 function startGame() {
   document.querySelector(".alkuruutu").style.display = "none";
   document.querySelector(".peliruutu").style.display = "block";
