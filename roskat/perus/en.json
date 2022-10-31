@@ -1,42 +1,42 @@
 [
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Cigarette butt",
+        "TrashBin": "sekajate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Empty bottle of soda",
+        "TrashBin": "pullonpalautus_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Cotton swab",
+        "TrashBin": "sekajate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Plastic wrap",
+        "TrashBin": "muovinkerays_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Aluminium foil",
+        "TrashBin": "metallinkerays_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "AAA-battery",
+        "TrashBin": "paristonkerays_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Socks with holes",
+        "TrashBin": "energiajate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Lozenge box",
+        "TrashBin": "kerayskartonki_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Food leftovers",
+        "TrashBin": "biojate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Broken vacuum cleaner",
+        "TrashBin": "ser_"
     }
 ]
