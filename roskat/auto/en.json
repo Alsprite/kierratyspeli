@@ -1,11 +1,11 @@
 [
     {
         "TrashItem": "Waste oil",
-        "TrashBin": "ongelmajate_"
+        "TrashBin": "vaarallinenjate_"
     },
     {
         "TrashItem": "Old battery",
-        "TrashBin": "ongelmajate_"
+        "TrashBin": "vaarallinenjate_"
     },
     {
         "TrashItem": "Empty spray can",
@@ -13,7 +13,7 @@
     },
     {
         "TrashItem": "Old tire",
-        "TrashBin": "ongelmajate_"
+        "TrashBin": "vaarallinenjate_"
     },
     {
         "TrashItem": "Cardboad box",
@@ -38,6 +38,17 @@
     {
         "TrashItem": "Dirty paper towels",
         "TrashBin": "enegiajate_"
+    },
+    {
+        "TrashItem": "Car magazine",
+        "TrashBin": "paperinkerays_"
+    },
+    {
+        "TrashItem": "Banana peel",
+        "TrashBin": "biojate_"
+    },
+    {
+        "TrashItem": "Undepositable glass bottle",
+        "TrashBin": "lasinkerays_"
     }
-    
 ]
