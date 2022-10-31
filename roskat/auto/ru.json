@@ -1,50 +1,54 @@
 [
     {
-    "TrashItem": "",
-    "TrashBin": ""
+        "TrashItem": "Jäteöljy",
+        "TrashBin": "vaarallinenjate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Vanha akku",
+        "TrashBin": "vaarallinenjate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Tyhjä spray-pullo",
+        "TrashBin": "metallinkerays_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Vanha rengas",
+        "TrashBin": "vaarallinenjate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Pahvilaatikko",
+        "TrashBin": "kerayskartonki_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Palanut halogeenilamppu",
+        "TrashBin": "sekajate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Rikkinäinen ajovaloumpio",
+        "TrashBin": "sekajate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Tyhjä pesuainepullo",
+        "TrashBin": "muovinkerays_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Rikkinäinen akkuporakone",
+        "TrashBin": "ser_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Likaiset paperipyyhkeet",
+        "TrashBin": "energiajate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Autolehti",
+        "TrashBin": "paperinkerays_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Banaaninkuori",
+        "TrashBin": "biojate_"
+    },
+    {
+        "TrashItem": "Pantiton lasipullo",
+        "TrashBin": "lasinkerays_"
     }
 ]

@@ -13,30 +13,34 @@
     },
     {
         "TrashItem": "Energiansäästölamppu",
-        "TrashBin": ""
+        "TrashBin": "ser_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Juotospasta",
+        "TrashBin": "vaarallinenjate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Paperipyyhkeet",
+        "TrashBin": "energiajate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Aikakauslehti",
+        "TrashBin": "paperinkerays_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Palanut halogeenilamppu",
+        "TrashBin": "sekajate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Styrox-levy",
+        "TrashBin": "muovinkerays_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Banaaninkuori",
+        "TrashBin": "biojate_"
+    },
+    {
+        "TrashItem": "Pantiton lasipullo",
+        "TrashBin": "lasinkerays_"
     }
 ]
