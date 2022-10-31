@@ -1,0 +1,42 @@
+[
+    {
+        "TrashItem": "Cigarette butt",
+        "TrashBin": "sekajate_"
+    },
+    {
+        "TrashItem": "Empty bottle of soda",
+        "TrashBin": "pullonpalautus_"
+    },
+    {
+        "TrashItem": "Cotton swab",
+        "TrashBin": "sekajate_"
+    },
+    {
+        "TrashItem": "Plastic wrap",
+        "TrashBin": "muovinkerays_"
+    },
+    {
+        "TrashItem": "Aluminium foil",
+        "TrashBin": "metallinkerays_"
+    },
+    {
+        "TrashItem": "AAA-battery",
+        "TrashBin": "paristonkerays_"
+    },
+    {
+        "TrashItem": "Socks with holes",
+        "TrashBin": "energiajate_"
+    },
+    {
+        "TrashItem": "Lozenge box",
+        "TrashBin": "kerayskartonki_"
+    },
+    {
+        "TrashItem": "Food leftovers",
+        "TrashBin": "biojate_"
+    },
+    {
+        "TrashItem": "Broken vacuum cleaner",
+        "TrashBin": "ser_"
+    }
+]
