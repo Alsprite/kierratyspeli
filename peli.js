@@ -42,9 +42,7 @@ function getTrashArray() {
 }
 
 function setProfession(ala) {
-
   selectedProfession = ala;
-
 }
 
 
@@ -84,7 +82,7 @@ function randomizeTrashBins() {
 
   //let correctTrashBin = checkArray[Math.floor(Math.random() * checkArray.length)];
 
-  //et trash = selectedTrashArray[correctTrashBin];
+  //let trash = selectedTrashArray[correctTrashBin];
 
 
   var image = "";
