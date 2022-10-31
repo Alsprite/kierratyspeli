@@ -38,5 +38,17 @@
     {
         "TrashItem": "Broken vacuum cleaner",
         "TrashBin": "ser_"
+    },
+    {
+        "TrashItem": "Paint",
+        "TrashBin": "vaarallinenjate_"
+    },
+    {
+        "TrashItem": "Newspaper",
+        "TrashBin": "paperinkerays_"
+    },
+    {
+        "TrashItem": "Jar",
+        "TrashBin": "lasinkerays_"
     }
 ]

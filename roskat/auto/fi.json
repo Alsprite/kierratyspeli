@@ -1,11 +1,11 @@
 [
     {
         "TrashItem": "Jäteöljy",
-        "TrashBin": "ongelmajate_"
+        "TrashBin": "vaarallinenjate_"
     },
     {
         "TrashItem": "Vanha akku",
-        "TrashBin": "ongelmajate_"
+        "TrashBin": "vaarallinenjate_"
     },
     {
         "TrashItem": "Tyhjä spray-pullo",
@@ -13,7 +13,7 @@
     },
     {
         "TrashItem": "Vanha rengas",
-        "TrashBin": "ongelmajate_"
+        "TrashBin": "vaarallinenjate_"
     },
     {
         "TrashItem": "Pahvilaatikko",
@@ -37,7 +37,14 @@
     },
     {
         "TrashItem": "Likaiset paperipyyhkeet",
-        "TrashBin": "enegiajate_"
+        "TrashBin": "energiajate_"
+    },
+    {
+        "TrashItem": "Autolehti",
+        "TrashBin": "paperinkerays_"
+    },
+    {
+        "TrashItem": "Banaaninkuori",
+        "TrashBin": "biojate_"
     }
-    
 ]

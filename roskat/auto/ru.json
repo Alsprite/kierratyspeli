@@ -1,43 +1,50 @@
 [
     {
-        "TrashItem": "Jäteöljy",
-        "TrashBin": "ongelmajate_"
+    "TrashItem": "",
+    "TrashBin": ""
     },
     {
-        "TrashItem": "Vanha akku",
-        "TrashBin": "ongelmajate_"
+        "TrashItem": "",
+        "TrashBin": ""
     },
     {
-        "TrashItem": "Tyhjä spray-pullo",
-        "TrashBin": "metallinkerays_"
+        "TrashItem": "",
+        "TrashBin": ""
     },
     {
-        "TrashItem": "Vanha rengas",
-        "TrashBin": "ongelmajate_"
+        "TrashItem": "",
+        "TrashBin": ""
     },
     {
-        "TrashItem": "Pahvilaatikko",
-        "TrashBin": "kerayskartonki_"
+        "TrashItem": "",
+        "TrashBin": ""
     },
     {
-        "TrashItem": "Palanut halogeenilamppu",
-        "TrashBin": "sekajate_"
+        "TrashItem": "",
+        "TrashBin": ""
     },
     {
-        "TrashItem": "Rikkinäinen valoumpio",
-        "TrashBin": "sekajate_"
+        "TrashItem": "",
+        "TrashBin": ""
     },
     {
-        "TrashItem": "Tyhjä pesuainepullo",
-        "TrashBin": "muovinkerays_"
+        "TrashItem": "",
+        "TrashBin": ""
     },
     {
-        "TrashItem": "Rikkinäinen akkuporakone",
-        "TrashBin": "ser_"
+        "TrashItem": "",
+        "TrashBin": ""
     },
     {
-        "TrashItem": "Likaiset paperipyyhkeet",
-        "TrashBin": "enegiajate_"
+        "TrashItem": "",
+        "TrashBin": ""
+    },
+    {
+        "TrashItem": "",
+        "TrashBin": ""
+    },
+    {
+        "TrashItem": "",
+        "TrashBin": ""
     }
-    
 ]

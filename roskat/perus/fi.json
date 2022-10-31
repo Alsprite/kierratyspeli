@@ -38,5 +38,17 @@
     {
         "TrashItem": "Rikkinäinen imuri",
         "TrashBin": "ser_"
+    },
+    {
+        "TrashItem": "Maali",
+        "TrashBin": "vaarallinenjate_"
+    },
+    {
+        "TrashItem": "Sanomalehti",
+        "TrashBin": "paperinkerays_"
+    },
+    {
+        "TrashItem": "Hillopurkki",
+        "TrashBin": "lasinkerays_"
     }
 ]

@@ -38,6 +38,13 @@
     {
         "TrashItem": "Dirty paper towels",
         "TrashBin": "enegiajate_"
+    },
+    {
+        "TrashItem": "Car magazine",
+        "TrashBin": "paperinkerays_"
+    },
+    {
+        "TrashItem": "Banana peel",
+        "TrashBin": "biojate_"
     }
-    
 ]
