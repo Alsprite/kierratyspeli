@@ -37,10 +37,13 @@ function setGameLang(lang) {
   document.querySelector(".loppuSivu").style.display = "block";
 }
 
-function getTrashArray() {
-  fetch(`roskat/${selectedProfession}/${gameLanguage}.json`)
-  .then((response) => response.json())
-  .then((data) => console.log(data))
+async function getTrashArray() {
+  const response = await fetch(`roskat/${selectedProfession}/${gameLanguage}.json`)
+  selectedTrashArray = await response.json();
+
+  console.log(gameLanguage);
+  console.log(selectedProfession);
+  console.log(selectedTrashArray);
 
 }
 
@@ -290,20 +293,22 @@ function randomizeTrashBins() {
 
   let trashBinIdArray = [trashBinId1, trashBinId2, trashBinId3];
   let correctTrashBin = trashBinIdArray[Math.floor(Math.random() * trashBinIdArray.length)];
-  let trash
+  let trash;
+
   do {
-    
+    let randInt = Math.floor((Math.random() * selectedTrashArray.length) + 1);
+    trash = selectedTrashArray[randInt];
 
-   
-  } while (selectedTrashArray[randInt.TrashBin])
+  } while (trash.TrashBin != correctTrashBin)
 
-  //let trash = selectedTrashArray[correctTrashBin];
+  console.log(trash);
 
 }
 
 function startGame() {
   document.querySelector(".alkuruutu").style.display = "none";
   document.querySelector(".peliruutu").style.display = "block";
-  randomizeTrashBins();
   getTrashArray();
+  randomizeTrashBins();
+
 }
