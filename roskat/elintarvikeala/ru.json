@@ -1,42 +1,42 @@
 [
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Käyttökelvoton kattila",
+        "TrashBin": "metallinkerays_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Pesuaineet",
+        "TrashBin": "vaarallinenjate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Pahvilaatikko",
+        "TrashBin": "kerayskartonki_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Turha ruokaresepti",
+        "TrashBin": "paperinkerays_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Saippua",
+        "TrashBin": "sekajate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Nakkipaketti",
+        "TrashBin": "muovinkerays_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Hillopurkki",
+        "TrashBin": "lasinkerays_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Likaiset paperipyyhkeet",
+        "TrashBin": "energiajate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Ruoantähteet",
+        "TrashBin": "biojate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Rikkinäinen sähkövatkain",
+        "TrashBin": "ser_"
     }
 ]

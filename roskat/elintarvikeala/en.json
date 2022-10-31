@@ -1,42 +1,42 @@
 [
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Unusable pot",
+        "TrashBin": "metallinkerays_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Detergents",
+        "TrashBin": "vaarallinenjate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Cardboard box",
+        "TrashBin": "kerayskartonki_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Unnecessary food recipe",
+        "TrashBin": "paperinkerays_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Soap",
+        "TrashBin": "sekajate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Sausage package",
+        "TrashBin": "muovinkerays_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Jar",
+        "TrashBin": "lasinkerays_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Dirty paper towels",
+        "TrashBin": "energiajate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Food leftovers",
+        "TrashBin": "biojate_"
     },
     {
-        "TrashItem": "",
-        "TrashBin": ""
+        "TrashItem": "Broken electric mixer",
+        "TrashBin": "ser_"
     }
 ]
