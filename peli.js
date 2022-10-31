@@ -76,7 +76,7 @@ function randomizeTrashBins() {
   let checkArray = [];
   var j = 0;
   do {
-    let randInt = Math.floor((Math.random() * 5) + 1);
+    let randInt = Math.floor((Math.random() * 12) + 1);
 
     if (!checkArray.includes(randInt)) {
       checkArray.push(randInt)
