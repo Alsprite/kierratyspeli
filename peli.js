@@ -28,10 +28,13 @@ astia11.src = "kuvat/astiat/11pullonpalautus.png";
 var astia12 = new Image()
 astia12.src = "kuvat/astiat/12paristo.png";
 
+
+
 let selectedTrashArray;
 
 function setGameLang(lang) {
   gameLanguage = lang;
+  document.querySelector(".loppuSivu").style.display = "block";
 }
 
 function getTrashArray() {
