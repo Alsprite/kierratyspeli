@@ -1,3 +1,5 @@
+// export let ses;
+
 interact('.dropzone').dropzone({
   // only accept elements matching this CSS selector
   accept: '#dropattava',
@@ -26,7 +28,9 @@ interact('.dropzone').dropzone({
     // event.relatedTarget.textContent = 'Dragged out'
   },
   ondrop: function (event) {
-    console.log("joo");
+    let ses = "ses";
+    console.log(ses);
+    
     // event.relatedTarget.textContent = 'Dropped'
   },
   ondropdeactivate: function (event) {

@@ -28,7 +28,8 @@ astia11.src = "kuvat/astiat/11pullonpalautus.png";
 var astia12 = new Image()
 astia12.src = "kuvat/astiat/12paristo.png";
 
-
+// import {ses} from "interact.js";
+// console.log(ses);
 
 let selectedTrashArray;
 
