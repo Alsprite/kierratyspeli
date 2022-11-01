@@ -28,27 +28,27 @@
         "TrashBin": "sekajate_"
     },
     {
-        "TrashItem": "Tyhjä pesuainepullo",
+        "TrashItem": "Пустая бутылка из-под моющего средства",
         "TrashBin": "muovinkerays_"
     },
     {
-        "TrashItem": "Rikkinäinen akkuporakone",
+        "TrashItem": "беспроводная дрель",
         "TrashBin": "ser_"
     },
     {
-        "TrashItem": "Likaiset paperipyyhkeet",
+        "TrashItem": "Грязные бумажные полотенца",
         "TrashBin": "energiajate_"
     },
     {
-        "TrashItem": "Autolehti",
+        "TrashItem": "Автомобильный журнал",
         "TrashBin": "paperinkerays_"
     },
     {
-        "TrashItem": "Banaaninkuori",
+        "TrashItem": "Банановая кожура",
         "TrashBin": "biojate_"
     },
     {
-        "TrashItem": "Pantiton lasipullo",
+        "TrashItem": "бутылка без залога",
         "TrashBin": "lasinkerays_"
     }
 ]

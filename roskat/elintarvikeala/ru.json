@@ -1,42 +1,42 @@
 [
     {
-        "TrashItem": "Käyttökelvoton kattila",
+        "TrashItem": "непригодная кастрюля",
         "TrashBin": "metallinkerays_"
     },
     {
-        "TrashItem": "Pesuaineet",
+        "TrashItem": "моющие средства",
         "TrashBin": "vaarallinenjate_"
     },
     {
-        "TrashItem": "Pahvilaatikko",
+        "TrashItem": "Картонная коробка",
         "TrashBin": "kerayskartonki_"
     },
     {
-        "TrashItem": "Turha ruokaresepti",
+        "TrashItem": "бесполезный рецепт еды",
         "TrashBin": "paperinkerays_"
     },
     {
-        "TrashItem": "Saippua",
+        "TrashItem": "мыло",
         "TrashBin": "sekajate_"
     },
     {
-        "TrashItem": "Nakkipaketti",
+        "TrashItem": "упаковка от сосисок",
         "TrashBin": "muovinkerays_"
     },
     {
-        "TrashItem": "Hillopurkki",
+        "TrashItem": "Банка от варенья",
         "TrashBin": "lasinkerays_"
     },
     {
-        "TrashItem": "Likaiset paperipyyhkeet",
+        "TrashItem": "Грязные бумажные полотенца",
         "TrashBin": "energiajate_"
     },
     {
-        "TrashItem": "Ruoantähteet",
+        "TrashItem": "остатки от еды",
         "TrashBin": "biojate_"
     },
     {
-        "TrashItem": "Rikkinäinen sähkövatkain",
+        "TrashItem": "сломанный миксер",
         "TrashBin": "ser_"
     }
 ]

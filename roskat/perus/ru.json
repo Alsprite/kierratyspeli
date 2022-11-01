@@ -1,14 +1,14 @@
 [
     {
-        "TrashItem": "Tupakantumppi",
+        "TrashItem": "окурок",
         "TrashBin": "sekajate_"
     },
     {
-        "TrashItem": "Limsapullo",
+        "TrashItem": "бутылка газировки",
         "TrashBin": "pullonpalautus_"
     },
     {
-        "TrashItem": "Pumpulipuikko",
+        "TrashItem": "ватная палочка",
         "TrashBin": "sekajate_"
     },
     {
@@ -48,7 +48,7 @@
         "TrashBin": "paperinkerays_"
     },
     {
-        "TrashItem": "Hillopurkki",
+        "TrashItem": "Банка от варенья",
         "TrashBin": "lasinkerays_"
     }
 ]

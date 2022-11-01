@@ -4,7 +4,7 @@
         "TrashBin": "metallinkerays_"
     },
     {
-        "TrashItem": "Pahvilaatikko",
+        "TrashItem": "Картонная коробка",
         "TrashBin": "kerayskartonki_"
     },
     {
@@ -20,7 +20,7 @@
         "TrashBin": "vaarallinenjate_"
     },
     {
-        "TrashItem": "Paperipyyhkeet",
+        "TrashItem": "Грязные бумажные полотенца",
         "TrashBin": "energiajate_"
     },
     {
@@ -28,7 +28,7 @@
         "TrashBin": "paperinkerays_"
     },
     {
-        "TrashItem": "Palanut halogeenilamppu",
+        "TrashItem": "Перегоревшая автомобильная лампочка",
         "TrashBin": "sekajate_"
     },
     {
@@ -36,11 +36,11 @@
         "TrashBin": "muovinkerays_"
     },
     {
-        "TrashItem": "Banaaninkuori",
+        "TrashItem": "Банановая кожура",
         "TrashBin": "biojate_"
     },
     {
-        "TrashItem": "Pantiton lasipullo",
+        "TrashItem": "бутылка без залога",
         "TrashBin": "lasinkerays_"
     }
 ]
