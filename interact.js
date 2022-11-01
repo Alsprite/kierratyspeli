@@ -1,5 +1,7 @@
 var eramaara = 1;
 
+let usedTrashArray = [];
+
 let gameLanguage = "fi";
 let selectedProfession = "perus";
 
@@ -95,153 +97,59 @@ function randomizeTrashBins() {
   let trashBinId2 = "";
   let trashBinId3 = "";
 
+  let trashBinIdArray = [trashBinId1, trashBinId2, trashBinId3];
+
   var image = "";
   for (let i = 0; i < 3; i++) {
     j++;
     switch (checkArray[i]) {
       case 1:
         image = astia1;
-        if (j == 1) {
-          trashBinId1 = "metallinkerays_";
-        }
-        if (j == 2) {
-          trashBinId2 = "metallinkerays_";
-        }
-        if (j == 3) {
-          trashBinId3 = "metallinkerays_";
-        }
+        trashBinIdArray[j - 1] = "metallinkerays_";
         break;
       case 2:
         image = astia2;
-        if (j == 1) {
-          trashBinId1 = "vaarallinenjate_";
-        }
-        if (j == 2) {
-          trashBinId2 = "vaarallinenjate_";
-        }
-        if (j == 3) {
-          trashBinId3 = "vaarallinenjate_";
-        }
+        trashBinIdArray[j - 1] = "vaarallinenjate_";
         break;
       case 3:
         image = astia3;
-        if (j == 1) {
-          trashBinId1 = "kerayskartonki_";
-        }
-        if (j == 2) {
-          trashBinId2 = "kerayskartonki_";
-        }
-        if (j == 3) {
-          trashBinId3 = "kerayskartonki_";
-        }
+        trashBinIdArray[j - 1] = "kerayskartonki_"
         break;
       case 4:
         image = astia4;
-        if (j == 1) {
-          trashBinId1 = "paperinkerays_";
-        }
-        if (j == 2) {
-          trashBinId2 = "paperinkerays_";
-        }
-        if (j == 3) {
-          trashBinId3 = "paperinkerays_";
-        }
+        trashBinIdArray[j - 1] = "paperinkerays_"
         break;
       case 5:
         image = astia5;
-        if (j == 1) {
-          trashBinId1 = "sekajate_";
-        }
-        if (j == 2) {
-          trashBinId2 = "sekajate_";
-        }
-        if (j == 3) {
-          trashBinId3 = "sekajate_";
-        }
+        trashBinIdArray[j - 1] = "sekajate_"
         break;
       case 6:
         image = astia6;
-        if (j == 1) {
-          trashBinId1 = "muovinkerays_";
-        }
-        if (j == 2) {
-          trashBinId2 = "muovinkerays_";
-        }
-        if (j == 3) {
-          trashBinId3 = "muovinkerays_";
-        }
+        trashBinIdArray[j - 1] = "muovinkerays_"
         break;
       case 7:
         image = astia7;
-        if (j == 1) {
-          trashBinId1 = "lasinkerays_";
-        }
-        if (j == 2) {
-          trashBinId2 = "lasinkerays_";
-        }
-        if (j == 3) {
-          trashBinId3 = "lasinkerays_";
-        }
+        trashBinIdArray[j - 1] = "lasinkerays_"
         break;
       case 8:
         image = astia8;
-        if (j == 1) {
-          trashBinId1 = "energiajate_";
-        }
-        if (j == 2) {
-          trashBinId2 = "energiajate_";
-        }
-        if (j == 3) {
-          trashBinId3 = "energiajate_";
-        }
+        trashBinIdArray[j - 1] = "energiajate_"
         break;
       case 9:
         image = astia9;
-        if (j == 1) {
-          trashBinId1 = "biojate_";
-        }
-        if (j == 2) {
-          trashBinId2 = "biojate_";
-        }
-        if (j == 3) {
-          trashBinId3 = "biojate_";
-        }
+        trashBinIdArray[j - 1] = "biojate_"
         break;
       case 10:
         image = astia10;
-        if (j == 1) {
-          trashBinId1 = "ser_";
-        }
-        if (j == 2) {
-          trashBinId2 = "ser_";
-        }
-        if (j == 3) {
-          trashBinId3 = "ser_";
-        }
+        trashBinIdArray[j - 1] = "ser_"
         break;
       case 11:
         image = astia11;
-        if (j == 1) {
-          trashBinId1 = "pullonpalautus_";
-        }
-        if (j == 2) {
-          trashBinId2 = "pullonpalautus_";
-        }
-        if (j == 3) {
-          trashBinId3 = "pullonpalautus_";
-        }
+        trashBinIdArray[j - 1] = "pullonpalautus_"
         break;
       case 12:
         image = astia12;
-        if (j == 1) {
-          trashBinId1 = "paristonkerays_";
-        }
-        if (j == 2) {
-          trashBinId2 = "paristonkerays_";
-        }
-        if (j == 3) {
-          trashBinId3 = "paristonkerays_";
-        }
+        trashBinIdArray[j - 1] = "paristonkerays_"
         break;
     }
     document.getElementById("slot" + j).src = image.src;
@@ -296,7 +204,7 @@ function randomizeTrashBins() {
 
   }
 
-  let trashBinIdArray = [trashBinId1, trashBinId2, trashBinId3];
+
   let correctTrashBin = trashBinIdArray[Math.floor(Math.random() * trashBinIdArray.length)];
   let trash;
 
@@ -304,11 +212,12 @@ function randomizeTrashBins() {
     let randInt = Math.floor((Math.random() * selectedTrashArray.length));
     trash = selectedTrashArray[randInt];
 
-  } while (trash.TrashBin != correctTrashBin)
+  } while (trash.TrashBin != correctTrashBin && !usedTrashArray.includes(trash))
 
   document.querySelector("#dragP").textContent = trash.TrashItem;
 
   console.log(trash);
+  usedTrashArray.push(trash)
 
 }
 
@@ -346,7 +255,7 @@ interact('.dropzone').dropzone({
     // event.relatedTarget.textContent = 'Dragged out'
   },
   ondrop: function (event) {
-        
+
     // event.relatedTarget.textContent = 'Dropped'
   },
   ondropdeactivate: function (event) {
@@ -356,7 +265,7 @@ interact('.dropzone').dropzone({
   }
 })
 
-  interact('.draggable')
+interact('.draggable')
   .draggable({
     inertia: true,
     modifiers: [
@@ -372,13 +281,13 @@ interact('.dropzone').dropzone({
       move: dragMoveListener,
 
       // call this function on every dragend event
-      end (event) {
-        
+      end(event) {
+
       }
     }
   })
 
-function dragMoveListener (event) {
+function dragMoveListener(event) {
   var target = event.target
   // keep the dragged position in the data-x/data-y attributes
   var x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx

@@ -28,6 +28,8 @@ astia11.src = "kuvat/astiat/11pullonpalautus.png";
 var astia12 = new Image()
 astia12.src = "kuvat/astiat/12paristo.png";
 
+
+
 let selectedTrashArray;
 
 function setGameLang(lang) {
@@ -35,16 +37,14 @@ function setGameLang(lang) {
   document.querySelector(".loppuSivu").style.display = "block";
 }
 
-function getTrashArray() {
-  fetch(`roskat/${selectedProfession}/${gameLanguage}.json`)
-    .then((response) => response.json())
-    .then(data => {
-      selectedTrashArray = data;
-      console.log(gameLanguage);
-      console.log(selectedProfession);
-      console.log(selectedTrashArray);
-      randomizeTrashBins();
-    })
+async function getTrashArray() {
+  const response = await fetch(`roskat/${selectedProfession}/${gameLanguage}.json`)
+  selectedTrashArray = await response.json();
+
+  console.log(gameLanguage);
+  console.log(selectedProfession);
+  console.log(selectedTrashArray);
+
 }
 
 function setProfession(ala) {
@@ -59,8 +59,8 @@ englantiKuva.src = "kuvat/englanti.jpg";
 var venajaKuva = new Image()
 venajaKuva.src = "kuvat/venaja.jpg";
 
+function randomizeTrashBins() {
 
-function hideBinLabels() {
   for (let i = 1; i <= 3; i++) {
     document.getElementById(i + "metallinkerays_").style.display = "none";
     document.getElementById(i + "vaarallinenjate_").style.display = "none";
@@ -75,11 +75,6 @@ function hideBinLabels() {
     document.getElementById(i + "pullonpalautus_").style.display = "none";
     document.getElementById(i + "paristonkerays_").style.display = "none";
   }
-}
-
-function randomizeTrashBins() {
-
-  hideBinLabels();
 
   let checkArray = [];
   var j = 0;
@@ -314,5 +309,6 @@ function startGame() {
   document.querySelector(".alkuruutu").style.display = "none";
   document.querySelector(".peliruutu").style.display = "block";
   getTrashArray();
-}
+  randomizeTrashBins();
 
+}
