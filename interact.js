@@ -301,10 +301,12 @@ function randomizeTrashBins() {
   let trash;
 
   do {
-    let randInt = Math.floor((Math.random() * selectedTrashArray.length) + 1);
+    let randInt = Math.floor((Math.random() * selectedTrashArray.length));
     trash = selectedTrashArray[randInt];
 
   } while (trash.TrashBin != correctTrashBin)
+
+  document.querySelector("#dragP").textContent = trash.TrashItem;
 
   console.log(trash);
 
