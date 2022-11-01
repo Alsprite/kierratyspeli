@@ -255,7 +255,7 @@ interact('.dropzone').dropzone({
     // event.relatedTarget.textContent = 'Dragged out'
   },
   ondrop: function (event) {
-
+    
     // event.relatedTarget.textContent = 'Dropped'
   },
   ondropdeactivate: function (event) {

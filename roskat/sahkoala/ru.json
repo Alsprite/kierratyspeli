@@ -1,6 +1,6 @@
 [
     {
-        "TrashItem": "Vanhat sähköjohdot",
+        "TrashItem": "старые электрические провода",
         "TrashBin": "metallinkerays_"
     },
     {
@@ -8,15 +8,15 @@
         "TrashBin": "kerayskartonki_"
     },
     {
-        "TrashItem": "LED-lamppu",
+        "TrashItem": "Светодиодная лампа",
         "TrashBin": "ser_"
     },
     {
-        "TrashItem": "Energiansäästölamppu",
+        "TrashItem": "Энергосберегающая лампа",
         "TrashBin": "ser_"
     },
     {
-        "TrashItem": "Juotospasta",
+        "TrashItem": "Паяльная паста",
         "TrashBin": "vaarallinenjate_"
     },
     {
@@ -24,7 +24,7 @@
         "TrashBin": "energiajate_"
     },
     {
-        "TrashItem": "Aikakauslehti",
+        "TrashItem": "Журнал",
         "TrashBin": "paperinkerays_"
     },
     {
@@ -32,7 +32,7 @@
         "TrashBin": "sekajate_"
     },
     {
-        "TrashItem": "Styrox-levy",
+        "TrashItem": "доска из стирокса",
         "TrashBin": "muovinkerays_"
     },
     {
