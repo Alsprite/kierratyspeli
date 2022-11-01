@@ -61,8 +61,8 @@ englantiKuva.src = "kuvat/englanti.jpg";
 var venajaKuva = new Image()
 venajaKuva.src = "kuvat/venaja.jpg";
 
-function randomizeTrashBins() {
 
+function hideBinLabels() {
   for (let i = 1; i <= 3; i++) {
     document.getElementById(i + "metallinkerays_").style.display = "none";
     document.getElementById(i + "vaarallinenjate_").style.display = "none";
@@ -77,6 +77,11 @@ function randomizeTrashBins() {
     document.getElementById(i + "pullonpalautus_").style.display = "none";
     document.getElementById(i + "paristonkerays_").style.display = "none";
   }
+}
+
+function randomizeTrashBins() {
+
+  hideBinLabels();
 
   let checkArray = [];
   var j = 0;
