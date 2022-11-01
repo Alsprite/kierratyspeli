@@ -37,14 +37,16 @@ function setGameLang(lang) {
   document.querySelector(".loppuSivu").style.display = "block";
 }
 
-async function getTrashArray() {
-  const response = await fetch(`roskat/${selectedProfession}/${gameLanguage}.json`)
-  selectedTrashArray = await response.json();
-
-  console.log(gameLanguage);
-  console.log(selectedProfession);
-  console.log(selectedTrashArray);
-
+function getTrashArray() {
+  fetch(`roskat/${selectedProfession}/${gameLanguage}.json`)
+    .then((response) => response.json())
+    .then(data => {
+      selectedTrashArray = data;
+      console.log(gameLanguage);
+      console.log(selectedProfession);
+      console.log(selectedTrashArray);
+      randomizeTrashBins();
+    })
 }
 
 function setProfession(ala) {
@@ -309,6 +311,4 @@ function startGame() {
   document.querySelector(".alkuruutu").style.display = "none";
   document.querySelector(".peliruutu").style.display = "block";
   getTrashArray();
-  randomizeTrashBins();
-
 }
