@@ -279,9 +279,14 @@ interact('.dropzone').dropzone({
     document.querySelector(".arvaus").style.display = "block";
     document.querySelector(".jateastiat").style.display = "none";
     document.querySelector(".draggable").style.display = "none";
-    var target = event.target
-    target.x = 200;
-    target.y = 200;
+    var target = document.querySelector(".draggable");
+    var x = 0;
+    var y = 0;
+
+    target.style.transform = 'translate(' + x + 'px, ' + y + 'px)'
+
+    target.setAttribute('data-x', x)
+    target.setAttribute('data-y', y)
     // event.relatedTarget.textContent = 'Dropped'
   },
   ondropdeactivate: function (event) {
