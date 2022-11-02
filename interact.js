@@ -262,7 +262,8 @@ interact('.dropzone').dropzone({
   },
   ondrop: function (event) {
     document.querySelector(".arvaus").style.display = "block";
-    
+    document.querySelector(".jateastiat").style.display = "none";
+    document.querySelector(".draggable").style.display = "none";
     // event.relatedTarget.textContent = 'Dropped'
   },
   ondropdeactivate: function (event) {
