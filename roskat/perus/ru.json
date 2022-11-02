@@ -12,39 +12,39 @@
         "TrashBin": "sekajate_"
     },
     {
-        "TrashItem": "Tuorekelmu",
+        "TrashItem": "пищевая плёнка",
         "TrashBin": "muovinkerays_"
     },
     {
-        "TrashItem": "Alumiinifolio",
+        "TrashItem": "фольга",
         "TrashBin": "metallinkerays_"
     },
     {
-        "TrashItem": "AAA-paristo",
+        "TrashItem": "батарейка ААА",
         "TrashBin": "paristonkerays_"
     },
     {
-        "TrashItem": "Reikäiset sukat",
+        "TrashItem": "носки с дырками",
         "TrashBin": "energiajate_"
     },
     {
-        "TrashItem": "Pastillirasia",
+        "TrashItem": "Картонная коробка",
         "TrashBin": "kerayskartonki_"
     },
     {
-        "TrashItem": "Ruoantähteet",
+        "TrashItem": "остатки от еды",
         "TrashBin": "biojate_"
     },
     {
-        "TrashItem": "Rikkinäinen imuri",
+        "TrashItem": "сломанный пылесос",
         "TrashBin": "ser_"
     },
     {
-        "TrashItem": "Maali",
+        "TrashItem": "краска",
         "TrashBin": "vaarallinenjate_"
     },
     {
-        "TrashItem": "Sanomalehti",
+        "TrashItem": "газета",
         "TrashBin": "paperinkerays_"
     },
     {
