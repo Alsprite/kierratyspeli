@@ -1,46 +1,46 @@
 [
     {
         "TrashItem": "Old electrical cables",
-        "TrashBin": "metallinkerays_"
+        "TrashBin": "metallinkerays"
     },
     {
         "TrashItem": "Cardboard box",
-        "TrashBin": "kerayskartonki_"
+        "TrashBin": "kerayskartonki"
     },
     {
         "TrashItem": "LED lamp",
-        "TrashBin": "ser_"
+        "TrashBin": "ser"
     },
     {
         "TrashItem": "Energy saving lamp",
-        "TrashBin": "ser_"
+        "TrashBin": "ser"
     },
     {
         "TrashItem": "Solder paste",
-        "TrashBin": "vaarallinenjate_"
+        "TrashBin": "vaarallinenjate"
     },
     {
         "TrashItem": "Paper towels",
-        "TrashBin": "energiajate_"
+        "TrashBin": "energiajate"
     },
     {
         "TrashItem": "Magazine",
-        "TrashBin": "paperinkerays_"
+        "TrashBin": "paperinkerays"
     },
     {
         "TrashItem": "Burnt halogen bulb",
-        "TrashBin": "sekajate_"
+        "TrashBin": "sekajate"
     },
     {
         "TrashItem": "Styrox plate",
-        "TrashBin": "muovinkerays_"
+        "TrashBin": "muovinkerays"
     },
     {
         "TrashItem": "Banana peel",
-        "TrashBin": "biojate_"
+        "TrashBin": "biojate"
     },
     {
         "TrashItem": "Undepositable glass bottle",
-        "TrashBin": "lasinkerays_"
+        "TrashBin": "lasinkerays"
     }
 ]

@@ -1,54 +1,54 @@
 [
     {
         "TrashItem": "Отработанное масло",
-        "TrashBin": "vaarallinenjate_"
+        "TrashBin": "vaarallinenjate"
     },
     {
         "TrashItem": "Старый аккумулятор",
-        "TrashBin": "vaarallinenjate_"
+        "TrashBin": "vaarallinenjate"
     },
     {
         "TrashItem": "пустая бутылка от распылителя",
-        "TrashBin": "metallinkerays_"
+        "TrashBin": "metallinkerays"
     },
     {
         "TrashItem": "Старая шина",
-        "TrashBin": "vaarallinenjate_"
+        "TrashBin": "vaarallinenjate"
     },
     {
         "TrashItem": "Картонная коробка",
-        "TrashBin": "kerayskartonki_"
+        "TrashBin": "kerayskartonki"
     },
     {
         "TrashItem": "Перегоревшая автомобильная лампочка",
-        "TrashBin": "sekajate_"
+        "TrashBin": "sekajate"
     },
     {
         "TrashItem": "крышка фары",
-        "TrashBin": "sekajate_"
+        "TrashBin": "sekajate"
     },
     {
         "TrashItem": "Пустая бутылка из-под моющего средства",
-        "TrashBin": "muovinkerays_"
+        "TrashBin": "muovinkerays"
     },
     {
         "TrashItem": "беспроводная дрель",
-        "TrashBin": "ser_"
+        "TrashBin": "ser"
     },
     {
         "TrashItem": "Грязные бумажные полотенца",
-        "TrashBin": "energiajate_"
+        "TrashBin": "energiajate"
     },
     {
         "TrashItem": "Автомобильный журнал",
-        "TrashBin": "paperinkerays_"
+        "TrashBin": "paperinkerays"
     },
     {
         "TrashItem": "Банановая кожура",
-        "TrashBin": "biojate_"
+        "TrashBin": "biojate"
     },
     {
         "TrashItem": "бутылка без залога",
-        "TrashBin": "lasinkerays_"
+        "TrashBin": "lasinkerays"
     }
 ]

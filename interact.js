@@ -3,6 +3,7 @@ var eramaara = 1;
 let usedTrashArray = [];
 
 let correctId;
+let numberOfId;
 
 let gameLanguage = "fi";
 let selectedProfession = "perus";
@@ -83,6 +84,8 @@ function hideBinLabels() {
 
 function randomizeTrashBins() {
 
+  //document.querySelector('.dz' + numberOfId).removeAttribute('')
+
   hideBinLabels();
 
   let checkArray = [];
@@ -107,51 +110,51 @@ function randomizeTrashBins() {
     switch (checkArray[i]) {
       case 1:
         image = astia1;
-        trashBinIdArray[j - 1] = "metallinkerays_";
+        trashBinIdArray[j - 1] = "metallinkerays";
         break;
       case 2:
         image = astia2;
-        trashBinIdArray[j - 1] = "vaarallinenjate_";
+        trashBinIdArray[j - 1] = "vaarallinenjate";
         break;
       case 3:
         image = astia3;
-        trashBinIdArray[j - 1] = "kerayskartonki_"
+        trashBinIdArray[j - 1] = "kerayskartonki"
         break;
       case 4:
         image = astia4;
-        trashBinIdArray[j - 1] = "paperinkerays_"
+        trashBinIdArray[j - 1] = "paperinkerays"
         break;
       case 5:
         image = astia5;
-        trashBinIdArray[j - 1] = "sekajate_"
+        trashBinIdArray[j - 1] = "sekajate"
         break;
       case 6:
         image = astia6;
-        trashBinIdArray[j - 1] = "muovinkerays_"
+        trashBinIdArray[j - 1] = "muovinkerays"
         break;
       case 7:
         image = astia7;
-        trashBinIdArray[j - 1] = "lasinkerays_"
+        trashBinIdArray[j - 1] = "lasinkerays"
         break;
       case 8:
         image = astia8;
-        trashBinIdArray[j - 1] = "energiajate_"
+        trashBinIdArray[j - 1] = "energiajate"
         break;
       case 9:
         image = astia9;
-        trashBinIdArray[j - 1] = "biojate_"
+        trashBinIdArray[j - 1] = "biojate"
         break;
       case 10:
         image = astia10;
-        trashBinIdArray[j - 1] = "ser_"
+        trashBinIdArray[j - 1] = "ser"
         break;
       case 11:
         image = astia11;
-        trashBinIdArray[j - 1] = "pullonpalautus_"
+        trashBinIdArray[j - 1] = "pullonpalautus"
         break;
       case 12:
         image = astia12;
-        trashBinIdArray[j - 1] = "paristonkerays_"
+        trashBinIdArray[j - 1] = "paristonkerays"
         break;
     }
     document.getElementById("slot" + j).src = image.src;
@@ -208,6 +211,7 @@ function randomizeTrashBins() {
 
   let correctTrashBin = trashBinIdArray[Math.floor(Math.random() * trashBinIdArray.length)];
   correctId = correctTrashBin
+  //document.querySelector('.dz' + numberOfId).id = correctId;
   let trash;
 
   do {

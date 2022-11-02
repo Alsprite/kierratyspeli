@@ -1,54 +1,54 @@
 [
     {
         "TrashItem": "Tupakantumppi",
-        "TrashBin": "sekajate_"
+        "TrashBin": "sekajate"
     },
     {
         "TrashItem": "Limsapullo",
-        "TrashBin": "pullonpalautus_"
+        "TrashBin": "pullonpalautus"
     },
     {
         "TrashItem": "Pumpulipuikko",
-        "TrashBin": "sekajate_"
+        "TrashBin": "sekajate"
     },
     {
         "TrashItem": "Tuorekelmu",
-        "TrashBin": "muovinkerays_"
+        "TrashBin": "muovinkerays"
     },
     {
         "TrashItem": "Alumiinifolio",
-        "TrashBin": "metallinkerays_"
+        "TrashBin": "metallinkerays"
     },
     {
         "TrashItem": "AAA-paristo",
-        "TrashBin": "paristonkerays_"
+        "TrashBin": "paristonkerays"
     },
     {
         "TrashItem": "Reikäiset sukat",
-        "TrashBin": "energiajate_"
+        "TrashBin": "energiajate"
     },
     {
         "TrashItem": "Pahvilaatikko",
-        "TrashBin": "kerayskartonki_"
+        "TrashBin": "kerayskartonki"
     },
     {
         "TrashItem": "Ruoantähteet",
-        "TrashBin": "biojate_"
+        "TrashBin": "biojate"
     },
     {
         "TrashItem": "Rikkinäinen imuri",
-        "TrashBin": "ser_"
+        "TrashBin": "ser"
     },
     {
         "TrashItem": "Maali",
-        "TrashBin": "vaarallinenjate_"
+        "TrashBin": "vaarallinenjate"
     },
     {
         "TrashItem": "Sanomalehti",
-        "TrashBin": "paperinkerays_"
+        "TrashBin": "paperinkerays"
     },
     {
         "TrashItem": "Hillopurkki",
-        "TrashBin": "lasinkerays_"
+        "TrashBin": "lasinkerays"
     }
 ]

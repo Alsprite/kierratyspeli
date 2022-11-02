@@ -1,54 +1,54 @@
 [
     {
         "TrashItem": "Waste oil",
-        "TrashBin": "vaarallinenjate_"
+        "TrashBin": "vaarallinenjate"
     },
     {
         "TrashItem": "Old battery",
-        "TrashBin": "vaarallinenjate_"
+        "TrashBin": "vaarallinenjate"
     },
     {
         "TrashItem": "Empty spray can",
-        "TrashBin": "metallinkerays_"
+        "TrashBin": "metallinkerays"
     },
     {
         "TrashItem": "Old tire",
-        "TrashBin": "vaarallinenjate_"
+        "TrashBin": "vaarallinenjate"
     },
     {
         "TrashItem": "Cardboad box",
-        "TrashBin": "kerayskartonki_"
+        "TrashBin": "kerayskartonki"
     },
     {
         "TrashItem": "Burnt out halogen lamp",
-        "TrashBin": "sekajate_"
+        "TrashBin": "sekajate"
     },
     {
         "TrashItem": "Broken headlight",
-        "TrashBin": "sekajate_"
+        "TrashBin": "sekajate"
     },
     {
         "TrashItem": "Empty cleaner bottle",
-        "TrashBin": "muovinkerays_"
+        "TrashBin": "muovinkerays"
     },
     {
         "TrashItem": "Broken cordless drill",
-        "TrashBin": "ser_"
+        "TrashBin": "ser"
     },
     {
         "TrashItem": "Dirty paper towels",
-        "TrashBin": "enegiajate_"
+        "TrashBin": "enegiajate"
     },
     {
         "TrashItem": "Car magazine",
-        "TrashBin": "paperinkerays_"
+        "TrashBin": "paperinkerays"
     },
     {
         "TrashItem": "Banana peel",
-        "TrashBin": "biojate_"
+        "TrashBin": "biojate"
     },
     {
         "TrashItem": "Undepositable glass bottle",
-        "TrashBin": "lasinkerays_"
+        "TrashBin": "lasinkerays"
     }
 ]

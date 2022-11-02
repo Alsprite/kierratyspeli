@@ -1,19 +1,19 @@
 [
     {
         "TrashItem": "окурок",
-        "TrashBin": "sekajate_"
+        "TrashBin": "sekajate"
     },
     {
         "TrashItem": "бутылка газировки",
-        "TrashBin": "pullonpalautus_"
+        "TrashBin": "pullonpalautus"
     },
     {
         "TrashItem": "ватная палочка",
-        "TrashBin": "sekajate_"
+        "TrashBin": "sekajate"
     },
     {
         "TrashItem": "пищевая плёнка",
-        "TrashBin": "muovinkerays_"
+        "TrashBin": "muovinkerays"
     },
     {
         "TrashItem": "фольга",
@@ -21,34 +21,34 @@
     },
     {
         "TrashItem": "батарейка ААА",
-        "TrashBin": "paristonkerays_"
+        "TrashBin": "paristonkerays"
     },
     {
         "TrashItem": "носки с дырками",
-        "TrashBin": "energiajate_"
+        "TrashBin": "energiajate"
     },
     {
         "TrashItem": "Картонная коробка",
-        "TrashBin": "kerayskartonki_"
+        "TrashBin": "kerayskartonki"
     },
     {
         "TrashItem": "остатки от еды",
-        "TrashBin": "biojate_"
+        "TrashBin": "biojate"
     },
     {
         "TrashItem": "сломанный пылесос",
-        "TrashBin": "ser_"
+        "TrashBin": "ser"
     },
     {
         "TrashItem": "краска",
-        "TrashBin": "vaarallinenjate_"
+        "TrashBin": "vaarallinenjate"
     },
     {
         "TrashItem": "газета",
-        "TrashBin": "paperinkerays_"
+        "TrashBin": "paperinkerays"
     },
     {
         "TrashItem": "Банка от варенья",
-        "TrashBin": "lasinkerays_"
+        "TrashBin": "lasinkerays"
     }
 ]

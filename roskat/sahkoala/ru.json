@@ -1,46 +1,46 @@
 [
     {
         "TrashItem": "старые электрические провода",
-        "TrashBin": "metallinkerays_"
+        "TrashBin": "metallinkerays"
     },
     {
         "TrashItem": "Картонная коробка",
-        "TrashBin": "kerayskartonki_"
+        "TrashBin": "kerayskartonki"
     },
     {
         "TrashItem": "Светодиодная лампа",
-        "TrashBin": "ser_"
+        "TrashBin": "ser"
     },
     {
         "TrashItem": "Энергосберегающая лампа",
-        "TrashBin": "ser_"
+        "TrashBin": "ser"
     },
     {
         "TrashItem": "Паяльная паста",
-        "TrashBin": "vaarallinenjate_"
+        "TrashBin": "vaarallinenjate"
     },
     {
         "TrashItem": "Грязные бумажные полотенца",
-        "TrashBin": "energiajate_"
+        "TrashBin": "energiajate"
     },
     {
         "TrashItem": "Журнал",
-        "TrashBin": "paperinkerays_"
+        "TrashBin": "paperinkerays"
     },
     {
         "TrashItem": "Перегоревшая автомобильная лампочка",
-        "TrashBin": "sekajate_"
+        "TrashBin": "sekajate"
     },
     {
         "TrashItem": "доска из стирокса",
-        "TrashBin": "muovinkerays_"
+        "TrashBin": "muovinkerays"
     },
     {
         "TrashItem": "Банановая кожура",
-        "TrashBin": "biojate_"
+        "TrashBin": "biojate"
     },
     {
         "TrashItem": "бутылка без залога",
-        "TrashBin": "lasinkerays_"
+        "TrashBin": "lasinkerays"
     }
 ]
