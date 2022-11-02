@@ -2,6 +2,8 @@ var eramaara = 1;
 
 let usedTrashArray = [];
 
+let correctId;
+
 let gameLanguage = "fi";
 let selectedProfession = "perus";
 
@@ -205,6 +207,7 @@ function randomizeTrashBins() {
   }
 
   let correctTrashBin = trashBinIdArray[Math.floor(Math.random() * trashBinIdArray.length)];
+  correctId = correctTrashBin
   let trash;
 
   do {
