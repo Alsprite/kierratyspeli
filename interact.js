@@ -2,8 +2,8 @@ var eramaara = 0;
 
 let usedTrashArray = [];
 
-let correctId;
-let numberOfId;
+let correctBinId;
+let numberOfId = 0;
 
 let gameLanguage = "fi";
 let selectedProfession = "perus";
@@ -89,6 +89,11 @@ function randomizeTrashBins() {
   document.querySelector(".draggable").style.display = "inline-block";
   document.querySelector(".arvaus").style.display = "none";
   //document.querySelector('.dz' + numberOfId).removeAttribute('')
+  
+  if (numberOfId != 0) {
+    document.querySelector('.dz' + numberOfId).removeAttribute(' id')
+    numberOfId = 0;
+  }
 
   hideBinLabels();
 
@@ -214,8 +219,14 @@ function randomizeTrashBins() {
   }
 
   let correctTrashBin = trashBinIdArray[Math.floor(Math.random() * trashBinIdArray.length)];
-  correctId = correctTrashBin
-  //document.querySelector('.dz' + numberOfId).id = correctId;
+  correctBinId = correctTrashBin
+  for (let i = 0; i < trashBinIdArray.length; i++) {
+    if (correctTrashBin == trashBinIdArray[i]) {
+      numberOfId = i + 1;
+    }
+  }
+
+  document.querySelector('.dz' + numberOfId).id = correctBinId;
   let trash;
 
   do {
