@@ -1,4 +1,4 @@
-var eramaara = 1;
+var eramaara = 0;
 
 let usedTrashArray = [];
 
@@ -83,7 +83,13 @@ function hideBinLabels() {
 }
 
 function randomizeTrashBins() {
-
+  eramaara = eramaara + 1;
+  document.getElementById("eraMaara").innerText = eramaara;
+  document.querySelector(".jateastiat").style.display = "flex";
+  document.querySelector(".draggable").style.display = "inline-block";
+  document.querySelector(".arvaus").style.display = "none";
+  //document.querySelector('.dz' + numberOfId).removeAttribute('')
+  
   if (numberOfId != 0) {
     document.querySelector('.dz' + numberOfId).removeAttribute(' id')
     numberOfId = 0;
@@ -275,6 +281,14 @@ interact('.dropzone').dropzone({
     document.querySelector(".arvaus").style.display = "block";
     document.querySelector(".jateastiat").style.display = "none";
     document.querySelector(".draggable").style.display = "none";
+    var target = document.querySelector(".draggable");
+    var x = 0;
+    var y = 0;
+
+    target.style.transform = 'translate(' + x + 'px, ' + y + 'px)'
+
+    target.setAttribute('data-x', x)
+    target.setAttribute('data-y', y)
     // event.relatedTarget.textContent = 'Dropped'
   },
   ondropdeactivate: function (event) {
