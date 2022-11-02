@@ -3,7 +3,7 @@ var eramaara = 0;
 let usedTrashArray = [];
 
 let correctBinId;
-let numberOfId = 0;
+let numberOfCorrectBin = 0;
 
 let gameLanguage = "fi";
 let selectedProfession = "perus";
@@ -88,11 +88,10 @@ function randomizeTrashBins() {
   document.querySelector(".jateastiat").style.display = "flex";
   document.querySelector(".draggable").style.display = "inline-block";
   document.querySelector(".arvaus").style.display = "none";
-  //document.querySelector('.dz' + numberOfId).removeAttribute('')
-  
-  if (numberOfId != 0) {
-    document.querySelector('.dz' + numberOfId).removeAttribute(' id')
-    numberOfId = 0;
+
+  if (numberOfCorrectBin != 0) {
+    document.querySelector('.dz' + numberOfCorrectBin).removeAttribute(' id')
+    numberOfCorrectBin = 0;
   }
 
   hideBinLabels();
@@ -114,126 +113,129 @@ function randomizeTrashBins() {
   let trashBinIdArray = [trashBinId1, trashBinId2, trashBinId3];
 
   var image = "";
-  for (let i = 0; i < 3; i++) {
-    j++;
-    switch (checkArray[i]) {
-      case 1:
-        image = astia1;
-        trashBinIdArray[j - 1] = "metallinkerays";
-        break;
-      case 2:
-        image = astia2;
-        trashBinIdArray[j - 1] = "vaarallinenjate";
-        break;
-      case 3:
-        image = astia3;
-        trashBinIdArray[j - 1] = "kerayskartonki"
-        break;
-      case 4:
-        image = astia4;
-        trashBinIdArray[j - 1] = "paperinkerays"
-        break;
-      case 5:
-        image = astia5;
-        trashBinIdArray[j - 1] = "sekajate"
-        break;
-      case 6:
-        image = astia6;
-        trashBinIdArray[j - 1] = "muovinkerays"
-        break;
-      case 7:
-        image = astia7;
-        trashBinIdArray[j - 1] = "lasinkerays"
-        break;
-      case 8:
-        image = astia8;
-        trashBinIdArray[j - 1] = "energiajate"
-        break;
-      case 9:
-        image = astia9;
-        trashBinIdArray[j - 1] = "biojate"
-        break;
-      case 10:
-        image = astia10;
-        trashBinIdArray[j - 1] = "ser"
-        break;
-      case 11:
-        image = astia11;
-        trashBinIdArray[j - 1] = "pullonpalautus"
-        break;
-      case 12:
-        image = astia12;
-        trashBinIdArray[j - 1] = "paristonkerays"
-        break;
-    }
-    document.getElementById("slot" + j).src = image.src;
+  do {
+    for (let i = 0; i < 3; i++) {
+      j++;
+      switch (checkArray[i]) {
+        case 1:
+          image = astia1;
+          trashBinIdArray[j - 1] = "metallinkerays";
+          break;
+        case 2:
+          image = astia2;
+          trashBinIdArray[j - 1] = "vaarallinenjate";
+          break;
+        case 3:
+          image = astia3;
+          trashBinIdArray[j - 1] = "kerayskartonki"
+          break;
+        case 4:
+          image = astia4;
+          trashBinIdArray[j - 1] = "paperinkerays"
+          break;
+        case 5:
+          image = astia5;
+          trashBinIdArray[j - 1] = "sekajate"
+          break;
+        case 6:
+          image = astia6;
+          trashBinIdArray[j - 1] = "muovinkerays"
+          break;
+        case 7:
+          image = astia7;
+          trashBinIdArray[j - 1] = "lasinkerays"
+          break;
+        case 8:
+          image = astia8;
+          trashBinIdArray[j - 1] = "energiajate"
+          break;
+        case 9:
+          image = astia9;
+          trashBinIdArray[j - 1] = "biojate"
+          break;
+        case 10:
+          image = astia10;
+          trashBinIdArray[j - 1] = "ser"
+          break;
+        case 11:
+          image = astia11;
+          trashBinIdArray[j - 1] = "pullonpalautus"
+          break;
+        case 12:
+          image = astia12;
+          trashBinIdArray[j - 1] = "paristonkerays"
+          break;
+      }
+      document.getElementById("slot" + j).src = image.src;
 
-    if (image == astia1) {
-      document.getElementById(j + "metallinkerays_").style.display = "block";
-    }
+      if (image == astia1) {
+        document.getElementById(j + "metallinkerays_").style.display = "block";
+      }
 
-    if (image == astia2) {
-      document.getElementById(j + "vaarallinenjate_").style.display = "block";
-    }
+      if (image == astia2) {
+        document.getElementById(j + "vaarallinenjate_").style.display = "block";
+      }
 
-    if (image == astia3) {
-      document.getElementById(j + "kerayskartonki_").style.display = "block";
-    }
+      if (image == astia3) {
+        document.getElementById(j + "kerayskartonki_").style.display = "block";
+      }
 
-    if (image == astia4) {
-      document.getElementById(j + "paperinkerays_").style.display = "block";
-    }
+      if (image == astia4) {
+        document.getElementById(j + "paperinkerays_").style.display = "block";
+      }
 
-    if (image == astia5) {
-      document.getElementById(j + "sekajate_").style.display = "block";
-    }
+      if (image == astia5) {
+        document.getElementById(j + "sekajate_").style.display = "block";
+      }
 
-    if (image == astia6) {
-      document.getElementById(j + "muovinkerays_").style.display = "block";
-    }
+      if (image == astia6) {
+        document.getElementById(j + "muovinkerays_").style.display = "block";
+      }
 
-    if (image == astia7) {
-      document.getElementById(j + "lasinkerays_").style.display = "block";
-    }
+      if (image == astia7) {
+        document.getElementById(j + "lasinkerays_").style.display = "block";
+      }
 
-    if (image == astia8) {
-      document.getElementById(j + "energiajate_").style.display = "block";
-    }
+      if (image == astia8) {
+        document.getElementById(j + "energiajate_").style.display = "block";
+      }
 
-    if (image == astia9) {
-      document.getElementById(j + "biojate_").style.display = "block";
-    }
+      if (image == astia9) {
+        document.getElementById(j + "biojate_").style.display = "block";
+      }
 
-    if (image == astia10) {
-      document.getElementById(j + "ser_").style.display = "block";
-    }
+      if (image == astia10) {
+        document.getElementById(j + "ser_").style.display = "block";
+      }
 
-    if (image == astia11) {
-      document.getElementById(j + "pullonpalautus_").style.display = "block";
-    }
+      if (image == astia11) {
+        document.getElementById(j + "pullonpalautus_").style.display = "block";
+      }
 
-    if (image == astia12) {
-      document.getElementById(j + "paristonkerays_").style.display = "block";
-    }
+      if (image == astia12) {
+        document.getElementById(j + "paristonkerays_").style.display = "block";
+      }
 
-  }
+    }
+  } while (!selectedTrashArray.includes(trashBinIdArray[0]) && !selectedTrashArray.includes(trashBinIdArray[1]) && !selectedTrashArray.includes(trashBinIdArray[2]))
+
 
   let correctTrashBin = trashBinIdArray[Math.floor(Math.random() * trashBinIdArray.length)];
   correctBinId = correctTrashBin
   for (let i = 0; i < trashBinIdArray.length; i++) {
     if (correctTrashBin == trashBinIdArray[i]) {
-      numberOfId = i + 1;
+      numberOfCorrectBin = i + 1;
     }
   }
 
-  document.querySelector('.dz' + numberOfId).id = correctBinId;
+  document.querySelector('.dz' + numberOfCorrectBin).id = correctBinId;
   let trash;
 
   do {
     let randInt = Math.floor((Math.random() * selectedTrashArray.length));
     trash = selectedTrashArray[randInt];
 
-  } while (trash.TrashBin != correctTrashBin && !usedTrashArray.includes(trash))
+  } while (trash.TrashBin != correctTrashBin /* && usedTrashArray.includes(trash)*/)
 
   document.querySelector("#dragP").textContent = trash.TrashItem;
 
@@ -286,7 +288,7 @@ interact('.dropzone').dropzone({
 
     target.style.transform = 'translate(' + x + 'px, ' + y + 'px)'
 
-  
+
     target.setAttribute('data-x', x)
     target.setAttribute('data-y', y)
     // event.relatedTarget.textContent = 'Dropped'
