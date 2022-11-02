@@ -240,12 +240,12 @@ interact('.dropzone').dropzone({
     event.target.classList.add('drop-active')
   },
   ondragenter: function (event) {
-    var draggableElement = event.relatedTarget
+    // var draggableElement = event.relatedTarget
     var dropzoneElement = event.target
 
     // feedback the possibility of a drop
     dropzoneElement.classList.add('drop-target')
-    draggableElement.classList.add('can-drop')
+    // draggableElement.classList.add('can-drop')
     // draggableElement.textContent = 'Dragged in'
   },
   ondragleave: function (event) {

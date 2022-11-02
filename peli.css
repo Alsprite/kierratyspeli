@@ -1,3 +1,6 @@
+.drop-target {
+    outline: 2px solid black;
+}
 body {
     background-color: rgba(255, 249, 133, 1);
 }
