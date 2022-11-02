@@ -257,6 +257,7 @@ interact('.dropzone').dropzone({
     // event.relatedTarget.textContent = 'Dragged out'
   },
   ondrop: function (event) {
+    document.querySelector(".arvaus").style.display = "block";
     
     // event.relatedTarget.textContent = 'Dropped'
   },
