@@ -204,7 +204,6 @@ function randomizeTrashBins() {
 
   }
 
-
   let correctTrashBin = trashBinIdArray[Math.floor(Math.random() * trashBinIdArray.length)];
   let trash;
 
