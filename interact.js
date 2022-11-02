@@ -1,4 +1,4 @@
-var eramaara = 1;
+var eramaara = 0;
 
 let usedTrashArray = [];
 
@@ -83,7 +83,11 @@ function hideBinLabels() {
 }
 
 function randomizeTrashBins() {
-
+  eramaara = eramaara + 1;
+  document.getElementById("eraMaara").innerText = eramaara;
+  document.querySelector(".jateastiat").style.display = "flex";
+  document.querySelector(".draggable").style.display = "inline-block";
+  document.querySelector(".arvaus").style.display = "none";
   //document.querySelector('.dz' + numberOfId).removeAttribute('')
 
   hideBinLabels();
@@ -264,6 +268,9 @@ interact('.dropzone').dropzone({
     document.querySelector(".arvaus").style.display = "block";
     document.querySelector(".jateastiat").style.display = "none";
     document.querySelector(".draggable").style.display = "none";
+    var target = event.target
+    target.x = 200;
+    target.y = 200;
     // event.relatedTarget.textContent = 'Dropped'
   },
   ondropdeactivate: function (event) {
