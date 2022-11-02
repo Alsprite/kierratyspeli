@@ -236,7 +236,6 @@ function randomizeTrashBins() {
   } while (trash.TrashBin != correctTrashBin && !usedTrashArray.includes(trash))
 
   document.querySelector("#dragP").textContent = trash.TrashItem;
-  document.querySelector('#dropattava').className = correctBinId;
 
   console.log(trash);
   usedTrashArray.push(trash)
@@ -246,7 +245,6 @@ function randomizeTrashBins() {
 function startGame() {
   document.querySelector(".alkuruutu").style.display = "none";
   document.querySelector(".peliruutu").style.display = "block";
-  hideBinLabels();
   getTrashArray();
 }
 
@@ -285,8 +283,10 @@ interact('.dropzone').dropzone({
     var x = 0;
     var y = 0;
 
+
     target.style.transform = 'translate(' + x + 'px, ' + y + 'px)'
 
+  
     target.setAttribute('data-x', x)
     target.setAttribute('data-y', y)
     // event.relatedTarget.textContent = 'Dropped'
