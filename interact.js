@@ -38,6 +38,21 @@ let selectedTrashArray;
 function setGameLang(lang) {
   gameLanguage = lang;
   document.querySelector(".loppuSivu").style.display = "block";
+  if (lang == "fi") {
+    document.querySelector("#fiKieli").style.color = "red";
+    document.querySelector("#enKieli").style.color = "black";
+    document.querySelector("#ruKieli").style.color = "black";
+  }
+  if (lang == "en") {
+    document.querySelector("#fiKieli").style.color = "black";
+    document.querySelector("#enKieli").style.color = "red";
+    document.querySelector("#ruKieli").style.color = "black";
+  }
+  if (lang == "ru") {
+    document.querySelector("#fiKieli").style.color = "black";
+    document.querySelector("#enKieli").style.color = "black";
+    document.querySelector("#ruKieli").style.color = "red";
+  }
 }
 
 function getTrashArray() {
@@ -54,6 +69,30 @@ function getTrashArray() {
 
 function setProfession(ala) {
   selectedProfession = ala;
+  if (ala == "perus") {
+    document.getElementById("perus_").style.color = "red";
+    document.getElementById("auto_").style.color = "black";
+    document.getElementById("sahko_").style.color = "black";
+    document.getElementById("leipuri_").style.color = "black";
+  }
+  if (ala == "auto") {
+    document.getElementById("perus_").style.color = "black";
+    document.getElementById("auto_").style.color = "red";
+    document.getElementById("sahko_").style.color = "black";
+    document.getElementById("leipuri_").style.color = "black";
+  }
+  if (ala == "sahkoala") {
+    document.getElementById("perus_").style.color = "black";
+    document.getElementById("auto_").style.color = "black";
+    document.getElementById("sahko_").style.color = "red";
+    document.getElementById("leipuri_").style.color = "black";
+  }
+  if (ala == "elintarvikeala") {
+    document.getElementById("perus_").style.color = "black";
+    document.getElementById("auto_").style.color = "black";
+    document.getElementById("sahko_").style.color = "black";
+    document.getElementById("leipuri_").style.color = "red";
+  }
 }
 
 
@@ -285,13 +324,9 @@ interact('.dropzone').dropzone({
     var x = 0;
     var y = 0;
 
-
     target.style.transform = 'translate(' + x + 'px, ' + y + 'px)'
-
-
     target.setAttribute('data-x', x)
     target.setAttribute('data-y', y)
-    // event.relatedTarget.textContent = 'Dropped'
   },
   ondropdeactivate: function (event) {
     // remove active dropzone feedback
