@@ -1,6 +1,6 @@
 var eramaara = 0;
 
-//let usedTrashArray = [];
+let usedTrashArray = [];
 
 let trash;
 
@@ -294,11 +294,15 @@ function setTrashAndBins() {
     randomizeTrash();
   } while (trash.TrashBin != correctTrashBin)
 
+  if (usedTrashArray.includes(trash)) {
+    setTrashAndBins();
+  }
+
   document.querySelector("#dragP").textContent = trash.TrashItem;
   document.querySelector(".dropattava").id = correctTrashBin;
 
   console.log(trash);
-  //usedTrashArray.push(trash)
+  usedTrashArray.push(trash)
 
 }
 
