@@ -275,6 +275,8 @@ function checkIfContainsBin() {
 }
 
 function setTrashAndBins() {
+  document.querySelector(".dropattava").removeAttribute = "id";
+
   eramaara = eramaara + 1;
   document.getElementById("eraMaara").innerText = eramaara;
   document.querySelector(".jateastiat").style.display = "flex";
