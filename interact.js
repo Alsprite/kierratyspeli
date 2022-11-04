@@ -1,8 +1,10 @@
 var eramaara = 0;
 
-let usedTrashArray = [];
+//let usedTrashArray = [];
 
 let trash;
+
+let trashArrayContainsBin
 
 let correctBinId;
 let correctTrashBin;
@@ -264,6 +266,16 @@ function hideBinLabels() {
   }
 }
 
+function checkIfContainsBin() {
+  trashArrayContainsBin = selectedTrashArray.some(element => {
+    if (element.TrashBin === trashBinIdArray[0] || element.TrashBin === trashBinIdArray[1] || element.TrashBin === trashBinIdArray[2]) {
+      return true;
+    }
+
+    return false;
+  })
+}
+
 function setTrashAndBins() {
   eramaara = eramaara + 1;
   document.getElementById("eraMaara").innerText = eramaara;
@@ -271,44 +283,39 @@ function setTrashAndBins() {
   document.querySelector(".draggable").style.display = "inline-block";
   document.querySelector(".arvaus").style.display = "none";
 
-  randomizeTrash();
+  //randomizeTrashBins();
+  checkIfContainsBin();
 
-  randomizeTrashBins();
-
-  let containsTrashBin1;
-  let containsTrashBin2;
-  let containsTrashBin3;
-
-
-  for (let i = 0; i < selectedTrashArray.length; i++) {
-
-  }
-
-  if (!selectedTrashArray.includes(trashBinIdArray[0]) || !selectedTrashArray.includes(trashBinIdArray[1]) || !selectedTrashArray.includes(trashBinIdArray[2])) {
-    while (!selectedTrashArray.includes(trashBinIdArray[0]) || !selectedTrashArray.includes(trashBinIdArray[1]) || !selectedTrashArray.includes(trashBinIdArray[2])) {
+  //if (!trashArrayContainsBin) {
+    do {
       randomizeTrashBins();
-    }
-  }
+      checkIfContainsBin();
+    } while (!trashArrayContainsBin)
+  //}
 
+  do {
+    randomizeTrash();
+  } while (trash.TrashBin != correctTrashBin)
+
+  
  
-
-  if (trash.TrashBin != trashBinIdArray[0] || trash.TrashBin != trashBinIdArray[1] || trash.TrashBin != trashBinIdArray[2]) {
+ /* if (trash.TrashBin != trashBinIdArray[0] || trash.TrashBin != trashBinIdArray[1] || trash.TrashBin != trashBinIdArray[2]) {
     while (trash.TrashBin != trashBinIdArray[0] || trash.TrashBin != trashBinIdArray[1] || trash.TrashBin != trashBinIdArray[2]) {
       randomizeTrash();
     }
-  } 
+  }
+*/
 
-  
   document.querySelector("#dragP").textContent = trash.TrashItem;
 
   console.log(trash);
-  usedTrashArray.push(trash)
+  //usedTrashArray.push(trash)
 
 }
 
 function randomizeTrash() {
-    let randInt = Math.floor((Math.random() * selectedTrashArray.length));
-    trash = selectedTrashArray[randInt];
+  let randInt = Math.floor((Math.random() * selectedTrashArray.length));
+  trash = selectedTrashArray[randInt];
 }
 
 function startGame() {
