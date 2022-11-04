@@ -266,6 +266,7 @@ function hideBinLabels() {
   }
 }
 
+//Check if at least one of the three randomized trash bins is in the trash array
 function checkIfContainsBins() {
   trashArrayContainsBins = selectedTrashArray.some(object => {
     if (object.TrashBin === trashBinIdArray[0] || object.TrashBin === trashBinIdArray[1] || object.TrashBin === trashBinIdArray[2]) {
@@ -276,6 +277,7 @@ function checkIfContainsBins() {
   })
 }
 
+//Check if the randomized correct trash bin is in the trash array
 function checkIfContainsCorrectBin() {
   trashArrayContainsCorrectBin = selectedTrashArray.some(object => {
     if (object.TrashBin === correctTrashBin) {
@@ -303,10 +305,12 @@ function setTrashAndBins() {
       checkIfContainsCorrectBin();
     } while (!trashArrayContainsCorrectBin)
   
+  //Trash is randomized from array until its bin matches the correct bin
   do {
     randomizeTrash();
   } while (trash.TrashBin != correctTrashBin)
 
+  //Check for duplicate trashes (if found then start the function over)
   if (usedTrashArray.includes(trash)) {
     setTrashAndBins();
   }
