@@ -295,10 +295,6 @@ function setTrashAndBins() {
   document.querySelector(".draggable").style.display = "inline-block";
   document.querySelector(".arvaus").style.display = "none";
 
-
-
-
-  if (!trashArrayContainsCorrectBin) {
     do {
       do {
         randomizeTrashBins();
@@ -306,8 +302,7 @@ function setTrashAndBins() {
       } while (!trashArrayContainsBins)
       checkIfContainsCorrectBin();
     } while (!trashArrayContainsCorrectBin)
-  }
-
+  
   do {
     randomizeTrash();
   } while (trash.TrashBin != correctTrashBin)
