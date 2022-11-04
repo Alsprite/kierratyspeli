@@ -107,6 +107,9 @@ p {
     outline: 2px solid black;
     cursor: pointer;
 }
+.dropattava:hover {
+    outline: 2px solid black;
+}
 .drop-target {
     outline: 2px solid black;
 }

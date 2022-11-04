@@ -356,6 +356,9 @@ interact('.dropzone').dropzone({
     document.querySelector(".arvaus").style.display = "block";
     document.querySelector(".jateastiat").style.display = "none";
     document.querySelector(".draggable").style.display = "none";
+
+    
+
     var target = document.querySelector(".draggable");
     var x = 0;
     var y = 0;
