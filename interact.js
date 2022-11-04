@@ -1,11 +1,12 @@
 var eramaara = 0;
-let rightAnswers = 0; 
+let rightAnswers = 0;
 
 let usedTrashArray = [];
 
 let trash;
 
-let trashArrayContainsBin
+let trashArrayContainsBins;
+let trashArrayContainsCorrectBin;
 
 let correctTrashBin;
 let numberOfCorrectBin = 0;
@@ -265,9 +266,19 @@ function hideBinLabels() {
   }
 }
 
-function checkIfContainsBin() {
-  trashArrayContainsBin = selectedTrashArray.some(element => {
-    if (element.TrashBin === trashBinIdArray[0] || element.TrashBin === trashBinIdArray[1] || element.TrashBin === trashBinIdArray[2]) {
+function checkIfContainsBins() {
+  trashArrayContainsBins = selectedTrashArray.some(object => {
+    if (object.TrashBin === trashBinIdArray[0] || object.TrashBin === trashBinIdArray[1] || object.TrashBin === trashBinIdArray[2]) {
+      return true;
+    }
+
+    return false;
+  })
+}
+
+function checkIfContainsCorrectBin() {
+  trashArrayContainsCorrectBin = selectedTrashArray.some(object => {
+    if (object.TrashBin === correctTrashBin) {
       return true;
     }
 
@@ -284,12 +295,18 @@ function setTrashAndBins() {
   document.querySelector(".draggable").style.display = "inline-block";
   document.querySelector(".arvaus").style.display = "none";
 
-  checkIfContainsBin();
 
+
+
+  if (!trashArrayContainsCorrectBin) {
     do {
-      randomizeTrashBins();
-      checkIfContainsBin();
-    } while (!trashArrayContainsBin)
+      do {
+        randomizeTrashBins();
+        checkIfContainsBins();
+      } while (!trashArrayContainsBins)
+      checkIfContainsCorrectBin();
+    } while (!trashArrayContainsCorrectBin)
+  }
 
   do {
     randomizeTrash();
@@ -362,9 +379,9 @@ interact('.dropzone').dropzone({
     // event.relatedTarget.textContent = 'Dragged out'
   },
   ondrop: function (event) {
-    
 
-    if (document.querySelector(".dropattava"). id == event.target.id) {
+
+    if (document.querySelector(".dropattava").id == event.target.id) {
       oikein();
     } else {
       vaarin();
