@@ -6,7 +6,6 @@ let trash;
 
 let trashArrayContainsBin
 
-let correctBinId;
 let correctTrashBin;
 let numberOfCorrectBin = 0;
 
@@ -238,14 +237,13 @@ function randomizeTrashBins() {
   }
 
   correctTrashBin = trashBinIdArray[Math.floor(Math.random() * trashBinIdArray.length)];
-  correctBinId = correctTrashBin
   for (let i = 0; i < trashBinIdArray.length; i++) {
     if (correctTrashBin == trashBinIdArray[i]) {
       numberOfCorrectBin = i + 1;
     }
   }
 
-  document.querySelector('.dz' + numberOfCorrectBin).id = correctBinId;
+  document.querySelector('.dz' + numberOfCorrectBin).id = correctTrashBin;
 
 }
 
@@ -297,7 +295,7 @@ function setTrashAndBins() {
     randomizeTrash();
   } while (trash.TrashBin != correctTrashBin)
 
-  
+
  
  /* if (trash.TrashBin != trashBinIdArray[0] || trash.TrashBin != trashBinIdArray[1] || trash.TrashBin != trashBinIdArray[2]) {
     while (trash.TrashBin != trashBinIdArray[0] || trash.TrashBin != trashBinIdArray[1] || trash.TrashBin != trashBinIdArray[2]) {
@@ -307,6 +305,7 @@ function setTrashAndBins() {
 */
 
   document.querySelector("#dragP").textContent = trash.TrashItem;
+  document.querySelector(".dropattava").id = correctTrashBin;
 
   console.log(trash);
   //usedTrashArray.push(trash)
@@ -326,7 +325,7 @@ function startGame() {
 
 interact('.dropzone').dropzone({
   // only accept elements matching this CSS selector
-  accept: '#dropattava',
+  accept: '.dropattava',
   // Require a 75% element overlap for a drop to be possible
   overlap: 0.75,
 
