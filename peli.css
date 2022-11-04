@@ -1,8 +1,9 @@
-.drop-target {
-    outline: 2px solid black;
-}
+
 body {
     background-color: rgba(255, 249, 133, 1);
+}
+h2 {
+    font-family: 'Trebuchet MS';
 }
 h3 {
     font-family: 'Trebuchet MS';
@@ -105,6 +106,9 @@ p {
 .dropzone:hover {
     outline: 2px solid black;
     cursor: pointer;
+}
+.drop-target {
+    outline: 2px solid black;
 }
 #slot1 {
     width: 50%;
