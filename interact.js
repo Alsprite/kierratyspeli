@@ -1,5 +1,6 @@
 var eramaara = 0;
 let rightAnswers = 0;
+let rightOrWrong = document.querySelector(".oikeinko");
 
 let usedTrashArray = [];
 
@@ -340,6 +341,8 @@ function oikein() {
   document.querySelector(".draggable").style.display = "none";
   rightOrWrong.setAttribute("id", "oikein_");
   rightOrWrong.innerText = "Oikein!";
+  rightAnswers++;
+  console.log("Oikein: "+ rightAnswers);
 }
 function vaarin() {
   console.log("väärin");
