@@ -285,28 +285,16 @@ function setTrashAndBins() {
   document.querySelector(".draggable").style.display = "inline-block";
   document.querySelector(".arvaus").style.display = "none";
 
-  //randomizeTrashBins();
   checkIfContainsBin();
 
-  //if (!trashArrayContainsBin) {
     do {
       randomizeTrashBins();
       checkIfContainsBin();
     } while (!trashArrayContainsBin)
-  //}
 
   do {
     randomizeTrash();
   } while (trash.TrashBin != correctTrashBin)
-
-
- 
- /* if (trash.TrashBin != trashBinIdArray[0] || trash.TrashBin != trashBinIdArray[1] || trash.TrashBin != trashBinIdArray[2]) {
-    while (trash.TrashBin != trashBinIdArray[0] || trash.TrashBin != trashBinIdArray[1] || trash.TrashBin != trashBinIdArray[2]) {
-      randomizeTrash();
-    }
-  }
-*/
 
   document.querySelector("#dragP").textContent = trash.TrashItem;
   document.querySelector(".dropattava").id = correctTrashBin;
