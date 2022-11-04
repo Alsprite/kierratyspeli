@@ -1,4 +1,5 @@
 var eramaara = 0;
+let rightAnswers = 0; 
 
 let usedTrashArray = [];
 
@@ -316,6 +317,22 @@ function startGame() {
   document.querySelector(".peliruutu").style.display = "block";
   getTrashArray();
 }
+function oikein() {
+  console.log("oikein");
+  document.querySelector(".arvaus").style.display = "block";
+  document.querySelector(".jateastiat").style.display = "none";
+  document.querySelector(".draggable").style.display = "none";
+  rightOrWrong.setAttribute("id", "oikein_");
+  rightOrWrong.innerText = "Oikein!";
+}
+function vaarin() {
+  console.log("väärin");
+  document.querySelector(".arvaus").style.display = "block";
+  document.querySelector(".jateastiat").style.display = "none";
+  document.querySelector(".draggable").style.display = "none";
+  rightOrWrong.setAttribute("id", "vaarin_");
+  rightOrWrong.innerText = "Väärin!";
+}
 
 interact('.dropzone').dropzone({
   // only accept elements matching this CSS selector
@@ -345,12 +362,12 @@ interact('.dropzone').dropzone({
     // event.relatedTarget.textContent = 'Dragged out'
   },
   ondrop: function (event) {
-    document.querySelector(".arvaus").style.display = "block";
-    document.querySelector(".jateastiat").style.display = "none";
-    document.querySelector(".draggable").style.display = "none";
+    
 
     if (document.querySelector(".dropattava"). id == event.target.id) {
-      console.log("pog");
+      oikein();
+    } else {
+      vaarin();
     }
 
     var target = document.querySelector(".draggable");
