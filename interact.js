@@ -1,8 +1,10 @@
 var eramaara = 0;
 
-let usedTrashArray = [];
+//let usedTrashArray = [];
 
 let trash;
+
+let trashArrayContainsBin
 
 let correctBinId;
 let correctTrashBin;
@@ -264,6 +266,16 @@ function hideBinLabels() {
   }
 }
 
+function checkIfContains() {
+  trashArrayContainsBin = selectedTrashArray.some(element => {
+    if (element.TrashBin === trashBinIdArray[0] || element.TrashBin === trashBinIdArray[1] || element.TrashBin === trashBinIdArray[2]) {
+      return true;
+    }
+
+    return false;
+  })
+}
+
 function setTrashAndBins() {
   eramaara = eramaara + 1;
   document.getElementById("eraMaara").innerText = eramaara;
@@ -274,21 +286,14 @@ function setTrashAndBins() {
   randomizeTrash();
 
   randomizeTrashBins();
+  checkIfContains();
 
-  let containsTrashBin1;
-  let containsTrashBin2;
-  let containsTrashBin3;
-
-
-  for (let i = 0; i < selectedTrashArray.length; i++) {
-
-  }
-
-  if (!selectedTrashArray.includes(trashBinIdArray[0]) || !selectedTrashArray.includes(trashBinIdArray[1]) || !selectedTrashArray.includes(trashBinIdArray[2])) {
-    while (!selectedTrashArray.includes(trashBinIdArray[0]) || !selectedTrashArray.includes(trashBinIdArray[1]) || !selectedTrashArray.includes(trashBinIdArray[2])) {
-      randomizeTrashBins();
-    }
-  }
+ if (!trashArrayContainsBin) {
+  do {
+    randomizeTrashBins();
+    checkIfContains();
+  } while (!trashArrayContainsBin)
+ }
 
  
 
@@ -302,7 +307,7 @@ function setTrashAndBins() {
   document.querySelector("#dragP").textContent = trash.TrashItem;
 
   console.log(trash);
-  usedTrashArray.push(trash)
+  //usedTrashArray.push(trash)
 
 }
 
