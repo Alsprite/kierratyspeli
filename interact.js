@@ -357,7 +357,9 @@ interact('.dropzone').dropzone({
     document.querySelector(".jateastiat").style.display = "none";
     document.querySelector(".draggable").style.display = "none";
 
-    
+    if (document.querySelector(".dropattava"). id == event.target.id) {
+      console.log("pog");
+    }
 
     var target = document.querySelector(".draggable");
     var x = 0;
