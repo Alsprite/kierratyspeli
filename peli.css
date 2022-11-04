@@ -76,7 +76,7 @@ p {
 .pelialue {
     width: 75%;
 }
-#dropattava {
+.dropattava {
     display: inline-block;
     min-width: 80px;
   padding: 10px;
