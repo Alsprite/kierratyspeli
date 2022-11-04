@@ -266,7 +266,7 @@ function hideBinLabels() {
   }
 }
 
-function checkIfContains() {
+function checkIfContainsBin() {
   trashArrayContainsBin = selectedTrashArray.some(element => {
     if (element.TrashBin === trashBinIdArray[0] || element.TrashBin === trashBinIdArray[1] || element.TrashBin === trashBinIdArray[2]) {
       return true;
@@ -283,27 +283,29 @@ function setTrashAndBins() {
   document.querySelector(".draggable").style.display = "inline-block";
   document.querySelector(".arvaus").style.display = "none";
 
-  randomizeTrash();
+  //randomizeTrashBins();
+  checkIfContainsBin();
 
-  randomizeTrashBins();
-  checkIfContains();
+  //if (!trashArrayContainsBin) {
+    do {
+      randomizeTrashBins();
+      checkIfContainsBin();
+    } while (!trashArrayContainsBin)
+  //}
 
- if (!trashArrayContainsBin) {
   do {
-    randomizeTrashBins();
-    checkIfContains();
-  } while (!trashArrayContainsBin)
- }
+    randomizeTrash();
+  } while (trash.TrashBin != correctTrashBin)
 
+  
  
-
-  if (trash.TrashBin != trashBinIdArray[0] || trash.TrashBin != trashBinIdArray[1] || trash.TrashBin != trashBinIdArray[2]) {
+ /* if (trash.TrashBin != trashBinIdArray[0] || trash.TrashBin != trashBinIdArray[1] || trash.TrashBin != trashBinIdArray[2]) {
     while (trash.TrashBin != trashBinIdArray[0] || trash.TrashBin != trashBinIdArray[1] || trash.TrashBin != trashBinIdArray[2]) {
       randomizeTrash();
     }
-  } 
+  }
+*/
 
-  
   document.querySelector("#dragP").textContent = trash.TrashItem;
 
   console.log(trash);
@@ -312,8 +314,8 @@ function setTrashAndBins() {
 }
 
 function randomizeTrash() {
-    let randInt = Math.floor((Math.random() * selectedTrashArray.length));
-    trash = selectedTrashArray[randInt];
+  let randInt = Math.floor((Math.random() * selectedTrashArray.length));
+  trash = selectedTrashArray[randInt];
 }
 
 function startGame() {
