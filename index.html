@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="fi">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="peli.css">
+    <link rel="icon" href="kuvat/perus.png" type="image/x-icon">
     <title>Kierrätys</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="multilang.js"></script>
@@ -58,106 +58,98 @@
         <div class="alkuruutu">
             <div class="kielet">
                 <div>
-                    <img src="kuvat/suomi.jpg" class="kielikuvat" id="fi"
-                        onclick="setMenuLang(this.id), setGameLang(this.id)">
+                    <img src="kuvat/suomi.jpg" class="kielikuvat" id="fi" onclick="setMenuLang(this.id), setGameLang(this.id), selectSound()">
                     <p id="fiKieli">Suomi</p>
                 </div>
                 <div>
-                    <img src="kuvat/englanti.jpg" class="kielikuvat" id="en"
-                        onclick="setMenuLang(this.id), setGameLang(this.id)">
+                    <img src="kuvat/englanti.jpg" class="kielikuvat" id="en" onclick="setMenuLang(this.id), setGameLang(this.id), selectSound()">
                     <p id="enKieli">English</p>
                 </div>
                 <div>
-                    <img src="kuvat/venaja.jpg" class="kielikuvat" id="ru"
-                        onclick="setMenuLang(this.id), setGameLang(this.id)">
+                    <img src="kuvat/venaja.jpg" class="kielikuvat" id="ru" onclick="setMenuLang(this.id), setGameLang(this.id), selectSound()">
                     <p id="ruKieli">ру́сский</p>
                 </div>
             </div>
             <div class="loppuSivu" style="display: none">
-                <h3 id="valitseAla_"></h3>
-                <div class="alat">
-
-                    <div>
-                        <img src="kuvat/perus.png" class="alakuvat" id="perus" width="128" height="128"
-                            onclick="setProfession(this.id)">
-                        <p id="perus_" style="color:red"></p>
-                    </div>
-                    <div>
-                        <img src="kuvat/autoala.png" class="alakuvat" id="auto" onclick="setProfession(this.id)">
-                        <p id="auto_"></p>
-                    </div>
-                    <div>
-                        <img src="kuvat/sahkoala.png" class="alakuvat" id="sahkoala" onclick="setProfession(this.id)">
-                        <p id="sahko_"></p>
-                    </div>
-                    <div>
-                        <img src="kuvat/leipuriala.png" class="alakuvat" id="elintarvikeala"
-                            onclick="setProfession(this.id)">
-                        <p id="leipuri_"></p>
-                    </div>
+               <h3 id="valitseAla_"></h3>
+            <div class="alat">
+                
+                <div>
+                    <img src="kuvat/perus.png" class="alakuvat" id="perus" width="128" height="128" onclick="setProfession(this.id), selectSound()">
+                    <p id="perus_" style="color:red"></p>
+                </div>
+                <div>
+                    <img src="kuvat/autoala.png" class="alakuvat" id="auto" onclick="setProfession(this.id), selectSound()">
+                    <p id="auto_"></p>
+                </div>
+                <div>
+                    <img src="kuvat/sahkoala.png" class="alakuvat" id="sahkoala" onclick="setProfession(this.id), selectSound()">
+                    <p id="sahko_"></p>
+                </div>
+                <div>
+                    <img src="kuvat/leipuriala.png" class="alakuvat" id="elintarvikeala" onclick="setProfession(this.id), selectSound()">
+                    <p id="leipuri_"></p>
                 </div>
                 <button class="nappulat" id="aloitaPeli_" onclick="startGame(), translateMenuElements()">Aloita
                     peli</button>
             </div>
-        </div>
-
-
+            <button class="nappulat" id="aloitaPeli_" onclick="startGame(), translateMenuElements(), selectSound()">Aloita peli</button>
+        </div> 
+            </div>
+            
+        
         <div class="peliruutu" style="display: none">
             <h1><span id="eraMaara">1</span>/10</h1>
             <div class="arvaus" style="display: block">
                 <h1 class="oikein" id="oikein_" style="display: none"></h1>
-                <div style="display: flex; flex-direction: row">
-                    <h1 class="vaarin" id="vaarin_" style="display: none"></h1>
-                    <span id="oikeaAstiaSpan"></span>
-                </div>
-
-                <button class="nappulat" id="jatkaPeli_" onclick="jatka()">Jatka</button>
+                <h1 class="vaarin" id="vaarin_" style="display: none"></h1>
+                <button class="nappulat" id="jatkaPeli_" onclick="jatka(), selectSound()">Jatka</button>
             </div>
             <div class="jateastiat" id="jateastiat">
                 <div class="dropzone dz1">
                     <img id="slot1" draggable="false">
-                    <h3 id="1metallinkerays_" style="display: none"></h3>
-                    <h3 id="1vaarallinenjate_" style="display: none"></h3>
-                    <h3 id="1kerayskartonki_" style="display: none"></h3>
-                    <h3 id="1paperinkerays_" style="display: none"></h3>
-                    <h3 id="1sekajate_" style="display: none"></h3>
-                    <h3 id="1muovinkerays_" style="display: none"></h3>
-                    <h3 id="1lasinkerays_" style="display: none"></h3>
-                    <h3 id="1energiajate_" style="display: none"></h3>
-                    <h3 id="1biojate_" style="display: none"></h3>
-                    <h3 id="1ser_" style="display: none"></h3>
-                    <h3 id="1pullonpalautus_" style="display: none"> </h3>
-                    <h3 id="1paristonkerays_" style="display: none"></h3>
+                    <h4 id="1metallinkerays_" style="display: none"></h4>
+                    <h4 id="1vaarallinenjate_" style="display: none"></h4>
+                    <h4 id="1kerayskartonki_" style="display: none"></h4>
+                    <h4 id="1paperinkerays_" style="display: none"></h4>
+                    <h4 id="1sekajate_" style="display: none"></h4>
+                    <h4 id="1muovinkerays_" style="display: none"></h4>
+                    <h4 id="1lasinkerays_" style="display: none"></h4>
+                    <h4 id="1energiajate_" style="display: none"></h4>
+                    <h4 id="1biojate_"style="display: none"></h4>
+                    <h4 id="1ser_" style="display: none"></h4>
+                    <h4 id="1pullonpalautus_"style="display: none"> </h4>
+                    <h4 id="1paristonkerays_" style="display: none"></h4>
                 </div>
                 <div class="dropzone dz2">
                     <img id="slot2" draggable="false">
-                    <h3 id="2metallinkerays_" style="display: none"></h3>
-                    <h3 id="2vaarallinenjate_" style="display: none"></h3>
-                    <h3 id="2kerayskartonki_" style="display: none"></h3>
-                    <h3 id="2paperinkerays_" style="display: none"></h3>
-                    <h3 id="2sekajate_" style="display: none"></h3>
-                    <h3 id="2muovinkerays_" style="display: none"></h3>
-                    <h3 id="2lasinkerays_" style="display: none"></h3>
-                    <h3 id="2energiajate_" style="display: none"></h3>
-                    <h3 id="2biojate_" style="display: none"></h3>
-                    <h3 id="2ser_" style="display: none"></h3>
-                    <h3 id="2pullonpalautus_" style="display: none"></h3>
-                    <h3 id="2paristonkerays_" style="display: none"></h3>
+                    <h4 id="2metallinkerays_" style="display: none"></h4>
+                    <h4 id="2vaarallinenjate_" style="display: none"></h4>
+                    <h4 id="2kerayskartonki_" style="display: none"></h4>
+                    <h4 id="2paperinkerays_" style="display: none"></h4>
+                    <h4 id="2sekajate_" style="display: none"></h4>
+                    <h4 id="2muovinkerays_" style="display: none"></h4>
+                    <h4 id="2lasinkerays_" style="display: none"></h4>
+                    <h4 id="2energiajate_" style="display: none"></h4>
+                    <h4 id="2biojate_" style="display: none"></h4>
+                    <h4 id="2ser_" style="display: none"></h4>
+                    <h4 id="2pullonpalautus_" style="display: none"></h4>
+                    <h4 id="2paristonkerays_" style="display: none"></h4>
                 </div>
                 <div class="dropzone dz3">
                     <img id="slot3" draggable="false">
-                    <h3 id="3metallinkerays_" style="display: none"></h3>
-                    <h3 id="3vaarallinenjate_" style="display: none"></h3>
-                    <h3 id="3kerayskartonki_" style="display: none"></h3>
-                    <h3 id="3paperinkerays_" style="display: none"></h3>
-                    <h3 id="3sekajate_" style="display: none"></h3>
-                    <h3 id="3muovinkerays_" style="display: none"></h3>
-                    <h3 id="3lasinkerays_" style="display: none"></h3>
-                    <h3 id="3energiajate_" style="display: none"></h3>
-                    <h3 id="3biojate_" style="display: none"></h3>
-                    <h3 id="3ser_" style="display: none"></h3>
-                    <h3 id="3pullonpalautus_" style="display: none"></h3>
-                    <h3 id="3paristonkerays_" style="display: none"></h3>
+                    <h4 id="3metallinkerays_" style="display: none"></h4>
+                    <h4 id="3vaarallinenjate_" style="display: none"></h4>
+                    <h4 id="3kerayskartonki_" style="display: none"></h4>
+                    <h4 id="3paperinkerays_" style="display: none"></h4>
+                    <h4 id="3sekajate_" style="display: none"></h4>
+                    <h4 id="3muovinkerays_" style="display: none"></h4>
+                    <h4 id="3lasinkerays_" style="display: none"></h4>
+                    <h4 id="3energiajate_" style="display: none"></h4>
+                    <h4 id="3biojate_" style="display: none"></h4>
+                    <h4 id="3ser_" style="display: none"></h4>
+                    <h4 id="3pullonpalautus_" style="display: none"></h4>
+                    <h4 id="3paristonkerays_" style="display: none"></h4>
                 </div>
             </div>
             <div draggable="true" class="draggable dropattava">
@@ -170,7 +162,7 @@
                 <h2 id="oikeinmeni_">Oikein meni: </h2>
                 <h2>&nbsp<span id="oikeat"></span>/10</h2>
             </div>
-
+            <button class="nappulat" id="takaisin_" onclick="selectSound(), location.reload()">Jatka</button>
         </div>
     </div>
     <div id="signature">

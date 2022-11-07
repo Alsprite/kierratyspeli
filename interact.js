@@ -49,6 +49,10 @@ astia12.src = "kuvat/astiat/12paristo.png";
 
 let selectedTrashArray;
 
+function selectSound() {
+  var audio = new Audio('kuvat/select.mp3');
+  audio.play();
+}
 function setGameLang(lang) {
   gameLanguage = lang;
   document.querySelector(".loppuSivu").style.display = "block";
@@ -453,7 +457,7 @@ function setCorrectBinText() {
 }
 
 function jatka() {
-  if (eramaara == 10) {
+  if (eramaara == 11) {
     document.querySelector(".peliruutu").style.display = "none";
     document.querySelector(".loppuruutu").style.display = "block";
     document.getElementById("oikeat").innerHTML = rightAnswers;
@@ -466,7 +470,7 @@ interact('.dropzone').dropzone({
   // only accept elements matching this CSS selector
   accept: '.dropattava',
   // Require a 75% element overlap for a drop to be possible
-  overlap: 0.75,
+  overlap: 0.5,
 
   // listen for drop related events:
 
