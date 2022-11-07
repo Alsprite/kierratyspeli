@@ -1,6 +1,8 @@
-
 body {
     background-color: rgba(255, 249, 133, 1);
+}
+h1 {
+    font-family: 'Trebuchet MS';
 }
 h2 {
     font-family: 'Trebuchet MS';
@@ -9,6 +11,12 @@ h3 {
     font-family: 'Trebuchet MS';
 }
 p {
+    font-family: 'Trebuchet MS';
+}
+.oikein {
+    font-family: 'Trebuchet MS';
+}
+.vaarin {
     font-family: 'Trebuchet MS';
 }
 .ylapalkki {
