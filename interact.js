@@ -1,4 +1,4 @@
-var eramaara = 1;
+var round = 1;
 let rightAnswers = 0;
 let right = document.querySelector(".oikein");
 let wrong = document.querySelector(".vaarin");
@@ -457,7 +457,7 @@ function setCorrectBinText() {
 }
 
 function jatka() {
-  if (eramaara == 11) {
+  if (round == 11) {
     document.querySelector(".peliruutu").style.display = "none";
     document.querySelector(".loppuruutu").style.display = "block";
     document.getElementById("oikeat").innerHTML = rightAnswers;
@@ -497,12 +497,12 @@ interact('.dropzone').dropzone({
 
     if (document.querySelector(".dropattava").id == event.target.id) {
       rightAnswers++;
-      eramaara = eramaara + 1;
-      document.getElementById("eraMaara").innerText = eramaara;
+      round = round + 1;
+      document.getElementById("eraMaara").innerText = round;
       oikein();
     } else {
-      eramaara = eramaara + 1;
-      document.getElementById("eraMaara").innerText = eramaara;
+      round = round + 1;
+      document.getElementById("eraMaara").innerText = round;
       vaarin();
     }
 
