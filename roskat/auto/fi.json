@@ -1,35 +1,35 @@
 [
     {
         "TrashItem": "Jäteöljy",
-        "TrashBin": "vaarallinenjate"
+        "TrashBin": "vaarallinen jäte"
     },
     {
         "TrashItem": "Vanha akku",
-        "TrashBin": "vaarallinenjate"
+        "TrashBin": "vaarallinen jäte"
     },
     {
         "TrashItem": "Tyhjä spray-pullo",
-        "TrashBin": "metallinkerays"
+        "TrashBin": "metallinkeräys"
     },
     {
         "TrashItem": "Vanha rengas",
-        "TrashBin": "vaarallinenjate"
+        "TrashBin": "vaarallinen jäte"
     },
     {
         "TrashItem": "Pahvilaatikko",
-        "TrashBin": "kerayskartonki"
+        "TrashBin": "keräyskartonki"
     },
     {
         "TrashItem": "Palanut halogeenilamppu",
-        "TrashBin": "sekajate"
+        "TrashBin": "sekajäte"
     },
     {
         "TrashItem": "Rikkinäinen ajovaloumpio",
-        "TrashBin": "sekajate"
+        "TrashBin": "sekajäte"
     },
     {
         "TrashItem": "Tyhjä pesuainepullo",
-        "TrashBin": "muovinkerays"
+        "TrashBin": "muovinkeräys"
     },
     {
         "TrashItem": "Rikkinäinen akkuporakone",
@@ -37,18 +37,18 @@
     },
     {
         "TrashItem": "Likaiset paperipyyhkeet",
-        "TrashBin": "energiajate"
+        "TrashBin": "energiajäte"
     },
     {
         "TrashItem": "Autolehti",
-        "TrashBin": "paperinkerays"
+        "TrashBin": "paperinkeräys"
     },
     {
         "TrashItem": "Banaaninkuori",
-        "TrashBin": "biojate"
+        "TrashBin": "biojäte"
     },
     {
         "TrashItem": "Pantiton lasipullo",
-        "TrashBin": "lasinkerays"
+        "TrashBin": "lasinkeräys"
     }
 ]

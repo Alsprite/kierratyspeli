@@ -1,42 +1,42 @@
 [
     {
         "TrashItem": "Unusable pot",
-        "TrashBin": "metallinkerays"
+        "TrashBin": "metal"
     },
     {
         "TrashItem": "Detergents",
-        "TrashBin": "vaarallinenjate"
+        "TrashBin": "dangerous waste"
     },
     {
         "TrashItem": "Cardboard box",
-        "TrashBin": "kerayskartonki"
+        "TrashBin": "carton/cardboard"
     },
     {
         "TrashItem": "Unnecessary food recipe",
-        "TrashBin": "paperinkerays"
+        "TrashBin": "paper"
     },
     {
         "TrashItem": "Soap",
-        "TrashBin": "sekajate"
+        "TrashBin": "mixed waste"
     },
     {
         "TrashItem": "Sausage package",
-        "TrashBin": "muovinkerays"
+        "TrashBin": "plastic"
     },
     {
         "TrashItem": "Jar",
-        "TrashBin": "lasinkerays"
+        "TrashBin": "glass"
     },
     {
         "TrashItem": "Dirty paper towels",
-        "TrashBin": "energiajate"
+        "TrashBin": "energy waste"
     },
     {
         "TrashItem": "Food leftovers",
-        "TrashBin": "biojate"
+        "TrashBin": "biodegradable waste"
     },
     {
         "TrashItem": "Broken electric mixer",
-        "TrashBin": "ser"
+        "TrashBin": "electronics"
     }
 ]

@@ -1,54 +1,54 @@
 [
     {
         "TrashItem": "Cigarette butt",
-        "TrashBin": "sekajate"
+        "TrashBin": "mixed waste"
     },
     {
         "TrashItem": "Empty bottle of soda",
-        "TrashBin": "pullonpalautus"
+        "TrashBin": "bottle deposti"
     },
     {
         "TrashItem": "Cotton swab",
-        "TrashBin": "sekajate"
+        "TrashBin": "mixed waste"
     },
     {
         "TrashItem": "Plastic wrap",
-        "TrashBin": "muovinkerays"
+        "TrashBin": "plastic"
     },
     {
         "TrashItem": "Aluminium foil",
-        "TrashBin": "metallinkerays"
+        "TrashBin": "metal"
     },
     {
         "TrashItem": "AAA-battery",
-        "TrashBin": "paristonkerays"
+        "TrashBin": "batteries"
     },
     {
         "TrashItem": "Socks with holes",
-        "TrashBin": "energiajate"
+        "TrashBin": "energy waste"
     },
     {
         "TrashItem": "Cardboard box",
-        "TrashBin": "kerayskartonki"
+        "TrashBin": "carton/cardboard"
     },
     {
         "TrashItem": "Food leftovers",
-        "TrashBin": "biojate"
+        "TrashBin": "biodegradable waste"
     },
     {
         "TrashItem": "Broken vacuum cleaner",
-        "TrashBin": "ser"
+        "TrashBin": "electronics"
     },
     {
         "TrashItem": "Paint",
-        "TrashBin": "vaarallinenjate"
+        "TrashBin": "dangerous waste"
     },
     {
         "TrashItem": "Newspaper",
-        "TrashBin": "paperinkerays"
+        "TrashBin": "paper"
     },
     {
         "TrashItem": "Jar",
-        "TrashBin": "lasinkerays"
+        "TrashBin": "glass"
     }
 ]

@@ -142,51 +142,147 @@ function randomizeTrashBins() {
     switch (checkArray[i]) {
       case 1:
         image = astia1;
-        trashBinIdArray[j - 1] = "metallinkerays";
+        if (gamelang == "fi") {
+          trashBinIdArray[j - 1] = "metallinkeräys";
+        }
+        if (gameLang == "en") {
+          trashBinIdArray[j - 1] = "metal";
+        }
+        if (gameLang == "ru") {
+          trashBinIdArray[j - 1] = "металл";
+        }
         break;
       case 2:
         image = astia2;
-        trashBinIdArray[j - 1] = "vaarallinenjate";
+        if (gameLang == "fi") {
+          trashBinIdArray[j - 1] = "vaarallinen jäte";
+        }
+        if (gameLang == "en") {
+          trashBinIdArray[j - 1] = "dangerous waste";
+        }
+        if (gameLang == "ru") {
+          trashBinIdArray[j - 1] = "опасные отходы";
+        }
         break;
       case 3:
         image = astia3;
-        trashBinIdArray[j - 1] = "kerayskartonki"
+        if (gameLang == "fi") {
+          trashBinIdArray[j - 1] = "keräyskartonki"
+        }
+        if (gameLang == "en") {
+          trashBinIdArray[j - 1] = "carton/cardboard"
+        }
+        if (gameLang == "ru") {
+          trashBinIdArray[j - 1] = "картонные отходы"
+        }
         break;
       case 4:
         image = astia4;
-        trashBinIdArray[j - 1] = "paperinkerays"
+        if (gameLang == "fi") {
+          trashBinIdArray[j - 1] = "paperinkeräys"
+        }
+        if (gameLang == "en") {
+          trashBinIdArray[j - 1] = "paper"
+        }
+        if (gameLang == "ru") {
+          trashBinIdArray[j - 1] = "бумажные отходы"
+        }
         break;
       case 5:
         image = astia5;
-        trashBinIdArray[j - 1] = "sekajate"
+        if (gameLang == "fi") {
+          trashBinIdArray[j - 1] = "sekajäte"
+        }
+        if (gameLang == "en") {
+          trashBinIdArray[j - 1] = "mixed waste"
+        }
+        if (gameLang == "ru") {
+          trashBinIdArray[j - 1] = "смешанные отходы"
+        }
         break;
       case 6:
         image = astia6;
-        trashBinIdArray[j - 1] = "muovinkerays"
+        if (gameLang == "fi") {
+          trashBinIdArray[j - 1] = "muovinkeräys"
+        }
+        if (gameLang == "en") {
+          trashBinIdArray[j - 1] = "plastic"
+        }
+        if (gameLang == "ru") {
+          trashBinIdArray[j - 1] = "пластик"
+        }
         break;
       case 7:
         image = astia7;
-        trashBinIdArray[j - 1] = "lasinkerays"
+        if (gameLang == "fi") {
+          trashBinIdArray[j - 1] = "lasinkeräys"
+        }
+        if (gameLang == "en") {
+          trashBinIdArray[j - 1] = "glass"
+        }
+        if (gameLang == "ru") {
+          trashBinIdArray[j - 1] = "стеклянные отходы"
+        }
         break;
       case 8:
         image = astia8;
-        trashBinIdArray[j - 1] = "energiajate"
+        if (gameLang == "fi"){
+          trashBinIdArray[j - 1] = "energiajäte"
+        }
+        if (gameLang == "en"){
+          trashBinIdArray[j - 1] = "energy waste"
+        }
+        if (gameLang == "ru"){
+          trashBinIdArray[j - 1] = "энергетические отходы"
+        }
         break;
       case 9:
         image = astia9;
-        trashBinIdArray[j - 1] = "biojate"
+        if (gameLang == "fi") {
+          trashBinIdArray[j - 1] = "biojäte"
+        }
+        if (gameLang == "en") {
+          trashBinIdArray[j - 1] = "biodegradable waste"
+        }
+        if (gameLang == "ru") {
+          trashBinIdArray[j - 1] = "био отходы"
+        }
         break;
       case 10:
         image = astia10;
-        trashBinIdArray[j - 1] = "ser"
+        if (gameLang == "fi") {
+          trashBinIdArray[j - 1] = "ser"
+        }
+        if (gameLang == "en") {
+          trashBinIdArray[j - 1] = "electronics"
+        }
+        if (gameLang == "ru") {
+          trashBinIdArray[j - 1] = "электронные устройства"
+        }
         break;
       case 11:
         image = astia11;
-        trashBinIdArray[j - 1] = "pullonpalautus"
+        if (gameLang == "fi") {
+          trashBinIdArray[j - 1] = "pullonpalautus"
+        }
+        if (gameLang == "en") {
+          trashBinIdArray[j - 1] = "bottle deposit"
+        }
+        if (gameLang == "ru") {
+          trashBinIdArray[j - 1] = "сдача тары"
+        }
         break;
       case 12:
         image = astia12;
-        trashBinIdArray[j - 1] = "paristonkerays"
+        if (gameLang == "fi") {
+          trashBinIdArray[j - 1] = "paristonkeräys"
+        }
+        if (gameLang == "en") {
+          trashBinIdArray[j - 1] = "batteries"
+        }
+        if (gameLang == "ru") {
+          trashBinIdArray[j - 1] = "батарейки"
+        }
         break;
     }
     document.getElementById("slot" + j).src = image.src;
@@ -345,7 +441,17 @@ function vaarin() {
   document.querySelector(".draggable").style.display = "none";
   document.querySelector(".oikein").style.display = "none";
   document.querySelector(".vaarin").style.display = "block";
+  document.querySelector('#oikeaAstiaSpan').textContent = correctTrashBin;
+ 
 }
+
+function setCorrectBinText() {
+  if (correctTrashBin == "metallinkerays" && gameLanguage == "fi") {
+    correctBinSpanText = "Metallinkeräys";
+  }
+  
+}
+
 function jatka() {
   if (eramaara == 10) {
     document.querySelector(".peliruutu").style.display = "none";

@@ -11,9 +11,9 @@
     <script type="text/javascript" src="multilang.js"></script>
     <script>
         var multilang;
-        
+
         function multilangInit() {
-            multilang = new MultiLang('menulang.json', 'fi');
+            multilang = new MultiLang('kielet/menulang.json', 'fi');
             multilang.setLanguage('fi');
 
             setMenuLang('fi');
@@ -58,49 +58,59 @@
         <div class="alkuruutu">
             <div class="kielet">
                 <div>
-                    <img src="kuvat/suomi.jpg" class="kielikuvat" id="fi" onclick="setMenuLang(this.id), setGameLang(this.id)">
+                    <img src="kuvat/suomi.jpg" class="kielikuvat" id="fi"
+                        onclick="setMenuLang(this.id), setGameLang(this.id)">
                     <p id="fiKieli">Suomi</p>
                 </div>
                 <div>
-                    <img src="kuvat/englanti.jpg" class="kielikuvat" id="en" onclick="setMenuLang(this.id), setGameLang(this.id)">
+                    <img src="kuvat/englanti.jpg" class="kielikuvat" id="en"
+                        onclick="setMenuLang(this.id), setGameLang(this.id)">
                     <p id="enKieli">English</p>
                 </div>
                 <div>
-                    <img src="kuvat/venaja.jpg" class="kielikuvat" id="ru" onclick="setMenuLang(this.id), setGameLang(this.id)">
+                    <img src="kuvat/venaja.jpg" class="kielikuvat" id="ru"
+                        onclick="setMenuLang(this.id), setGameLang(this.id)">
                     <p id="ruKieli">ру́сский</p>
                 </div>
             </div>
             <div class="loppuSivu" style="display: none">
-               <h3 id="valitseAla_"></h3>
-            <div class="alat">
-                
-                <div>
-                    <img src="kuvat/perus.png" class="alakuvat" id="perus" width="128" height="128" onclick="setProfession(this.id)">
-                    <p id="perus_" style="color:red"></p>
+                <h3 id="valitseAla_"></h3>
+                <div class="alat">
+
+                    <div>
+                        <img src="kuvat/perus.png" class="alakuvat" id="perus" width="128" height="128"
+                            onclick="setProfession(this.id)">
+                        <p id="perus_" style="color:red"></p>
+                    </div>
+                    <div>
+                        <img src="kuvat/autoala.png" class="alakuvat" id="auto" onclick="setProfession(this.id)">
+                        <p id="auto_"></p>
+                    </div>
+                    <div>
+                        <img src="kuvat/sahkoala.png" class="alakuvat" id="sahkoala" onclick="setProfession(this.id)">
+                        <p id="sahko_"></p>
+                    </div>
+                    <div>
+                        <img src="kuvat/leipuriala.png" class="alakuvat" id="elintarvikeala"
+                            onclick="setProfession(this.id)">
+                        <p id="leipuri_"></p>
+                    </div>
                 </div>
-                <div>
-                    <img src="kuvat/autoala.png" class="alakuvat" id="auto" onclick="setProfession(this.id)">
-                    <p id="auto_"></p>
-                </div>
-                <div>
-                    <img src="kuvat/sahkoala.png" class="alakuvat" id="sahkoala" onclick="setProfession(this.id)">
-                    <p id="sahko_"></p>
-                </div>
-                <div>
-                    <img src="kuvat/leipuriala.png" class="alakuvat" id="elintarvikeala" onclick="setProfession(this.id)">
-                    <p id="leipuri_"></p>
-                </div>
+                <button class="nappulat" id="aloitaPeli_" onclick="startGame(), translateMenuElements()">Aloita
+                    peli</button>
             </div>
-            <button class="nappulat" id="aloitaPeli_" onclick="startGame(), translateMenuElements()">Aloita peli</button>
-        </div> 
-            </div>
-            
-        
+        </div>
+
+
         <div class="peliruutu" style="display: none">
             <h1><span id="eraMaara">1</span>/10</h1>
             <div class="arvaus" style="display: block">
                 <h1 class="oikein" id="oikein_" style="display: none"></h1>
-                <h1 class="vaarin" id="vaarin_" style="display: none"></h1>
+                <div style="display: flex; flex-direction: row">
+                    <h1 class="vaarin" id="vaarin_" style="display: none"></h1>
+                    <span id="oikeaAstiaSpan"></span>
+                </div>
+
                 <button class="nappulat" id="jatkaPeli_" onclick="jatka()">Jatka</button>
             </div>
             <div class="jateastiat" id="jateastiat">
@@ -114,9 +124,9 @@
                     <h3 id="1muovinkerays_" style="display: none"></h3>
                     <h3 id="1lasinkerays_" style="display: none"></h3>
                     <h3 id="1energiajate_" style="display: none"></h3>
-                    <h3 id="1biojate_"style="display: none"></h3>
+                    <h3 id="1biojate_" style="display: none"></h3>
                     <h3 id="1ser_" style="display: none"></h3>
-                    <h3 id="1pullonpalautus_"style="display: none"> </h3>
+                    <h3 id="1pullonpalautus_" style="display: none"> </h3>
                     <h3 id="1paristonkerays_" style="display: none"></h3>
                 </div>
                 <div class="dropzone dz2">
@@ -158,9 +168,9 @@
             <h1 id="peliohi_">Peli ohi</h1>
             <div style="display: flex; flex-direction: row">
                 <h2 id="oikeinmeni_">Oikein meni: </h2>
-                <h2>&nbsp<span id="oikeat"></span>/10</h2>  
+                <h2>&nbsp<span id="oikeat"></span>/10</h2>
             </div>
-            
+
         </div>
     </div>
     <div id="signature">
@@ -171,4 +181,5 @@
 <!-- Interactjs tuonti -->
 <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
 <script src="interact.js"></script>
+
 </html>

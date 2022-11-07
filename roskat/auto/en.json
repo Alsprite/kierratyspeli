@@ -1,54 +1,54 @@
 [
     {
         "TrashItem": "Waste oil",
-        "TrashBin": "vaarallinenjate"
+        "TrashBin": "dangerous waste"
     },
     {
         "TrashItem": "Old battery",
-        "TrashBin": "vaarallinenjate"
+        "TrashBin": "dangerous waste"
     },
     {
         "TrashItem": "Empty spray can",
-        "TrashBin": "metallinkerays"
+        "TrashBin": "metal"
     },
     {
         "TrashItem": "Old tire",
-        "TrashBin": "vaarallinenjate"
+        "TrashBin": "dangerous waste"
     },
     {
         "TrashItem": "Cardboad box",
-        "TrashBin": "kerayskartonki"
+        "TrashBin": "carton/cardboard"
     },
     {
         "TrashItem": "Burnt out halogen lamp",
-        "TrashBin": "sekajate"
+        "TrashBin": "mixed waste"
     },
     {
         "TrashItem": "Broken headlight",
-        "TrashBin": "sekajate"
+        "TrashBin": "mixed waste"
     },
     {
         "TrashItem": "Empty cleaner bottle",
-        "TrashBin": "muovinkerays"
+        "TrashBin": "plastic"
     },
     {
         "TrashItem": "Broken cordless drill",
-        "TrashBin": "ser"
+        "TrashBin": "electronics"
     },
     {
         "TrashItem": "Dirty paper towels",
-        "TrashBin": "enegiajate"
+        "TrashBin": "energy waste"
     },
     {
         "TrashItem": "Car magazine",
-        "TrashBin": "paperinkerays"
+        "TrashBin": "paper"
     },
     {
         "TrashItem": "Banana peel",
-        "TrashBin": "biojate"
+        "TrashBin": "biodegradable waste"
     },
     {
         "TrashItem": "Undepositable glass bottle",
-        "TrashBin": "lasinkerays"
+        "TrashBin": "glass"
     }
 ]

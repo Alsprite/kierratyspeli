@@ -1,46 +1,46 @@
 [
     {
         "TrashItem": "Old electrical cables",
-        "TrashBin": "metallinkerays"
+        "TrashBin": "metal"
     },
     {
         "TrashItem": "Cardboard box",
-        "TrashBin": "kerayskartonki"
+        "TrashBin": "carton/cardboard"
     },
     {
         "TrashItem": "LED lamp",
-        "TrashBin": "ser"
+        "TrashBin": "electronics"
     },
     {
         "TrashItem": "Energy saving lamp",
-        "TrashBin": "ser"
+        "TrashBin": "electronics"
     },
     {
         "TrashItem": "Solder paste",
-        "TrashBin": "vaarallinenjate"
+        "TrashBin": "dangerous waste"
     },
     {
         "TrashItem": "Paper towels",
-        "TrashBin": "energiajate"
+        "TrashBin": "energy waste"
     },
     {
         "TrashItem": "Magazine",
-        "TrashBin": "paperinkerays"
+        "TrashBin": "paper"
     },
     {
         "TrashItem": "Burnt halogen bulb",
-        "TrashBin": "sekajate"
+        "TrashBin": "mixed waste"
     },
     {
         "TrashItem": "Styrox plate",
-        "TrashBin": "muovinkerays"
+        "TrashBin": "plastic"
     },
     {
         "TrashItem": "Banana peel",
-        "TrashBin": "biojate"
+        "TrashBin": "biodegradable waste"
     },
     {
         "TrashItem": "Undepositable glass bottle",
-        "TrashBin": "lasinkerays"
+        "TrashBin": "glass"
     }
 ]

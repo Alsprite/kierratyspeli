@@ -1,54 +1,54 @@
 [
     {
         "TrashItem": "окурок",
-        "TrashBin": "sekajate"
+        "TrashBin": "смешанные отходы"
     },
     {
         "TrashItem": "бутылка газировки",
-        "TrashBin": "pullonpalautus"
+        "TrashBin": "сдача тары"
     },
     {
         "TrashItem": "ватная палочка",
-        "TrashBin": "sekajate"
+        "TrashBin": "смешанные отходы"
     },
     {
         "TrashItem": "пищевая плёнка",
-        "TrashBin": "muovinkerays"
+        "TrashBin": "пластик"
     },
     {
         "TrashItem": "фольга",
-        "TrashBin": "metallinkerays_"
+        "TrashBin": "металл"
     },
     {
         "TrashItem": "батарейка ААА",
-        "TrashBin": "paristonkerays"
+        "TrashBin": "батарейки"
     },
     {
         "TrashItem": "носки с дырками",
-        "TrashBin": "energiajate"
+        "TrashBin": "энергетические отходы"
     },
     {
         "TrashItem": "Картонная коробка",
-        "TrashBin": "kerayskartonki"
+        "TrashBin": "картонные отходы"
     },
     {
         "TrashItem": "остатки от еды",
-        "TrashBin": "biojate"
+        "TrashBin": "био отходы"
     },
     {
         "TrashItem": "сломанный пылесос",
-        "TrashBin": "ser"
+        "TrashBin": "электронные устройства"
     },
     {
         "TrashItem": "краска",
-        "TrashBin": "vaarallinenjate"
+        "TrashBin": "опасные отходы"
     },
     {
         "TrashItem": "газета",
-        "TrashBin": "paperinkerays"
+        "TrashBin": "бумажные отходы"
     },
     {
         "TrashItem": "Банка от варенья",
-        "TrashBin": "lasinkerays"
+        "TrashBin": "стеклянные отходы"
     }
 ]

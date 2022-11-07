@@ -1,11 +1,11 @@
 [
     {
         "TrashItem": "Vanhat sähköjohdot",
-        "TrashBin": "metallinkerays"
+        "TrashBin": "metallinkeräys"
     },
     {
         "TrashItem": "Pahvilaatikko",
-        "TrashBin": "kerayskartonki"
+        "TrashBin": "keräyskartonki"
     },
     {
         "TrashItem": "LED-lamppu",
@@ -17,30 +17,30 @@
     },
     {
         "TrashItem": "Juotospasta",
-        "TrashBin": "vaarallinenjate"
+        "TrashBin": "vaarallinen jäte"
     },
     {
         "TrashItem": "Paperipyyhkeet",
-        "TrashBin": "energiajate"
+        "TrashBin": "energiajäte"
     },
     {
         "TrashItem": "Aikakauslehti",
-        "TrashBin": "paperinkerays"
+        "TrashBin": "paperinkeräys"
     },
     {
         "TrashItem": "Palanut halogeenilamppu",
-        "TrashBin": "sekajate"
+        "TrashBin": "sekajäte"
     },
     {
         "TrashItem": "Styrox-levy",
-        "TrashBin": "muovinkerays"
+        "TrashBin": "muovinkeräys"
     },
     {
         "TrashItem": "Banaaninkuori",
-        "TrashBin": "biojate"
+        "TrashBin": "biojäte"
     },
     {
         "TrashItem": "Pantiton lasipullo",
-        "TrashBin": "lasinkerays"
+        "TrashBin": "lasinkeräys"
     }
 ]

@@ -1,54 +1,54 @@
 [
     {
         "TrashItem": "Отработанное масло",
-        "TrashBin": "vaarallinenjate"
+        "TrashBin": "опасные отходы"
     },
     {
         "TrashItem": "Старый аккумулятор",
-        "TrashBin": "vaarallinenjate"
+        "TrashBin": "опасные отходы"
     },
     {
         "TrashItem": "пустая бутылка от распылителя",
-        "TrashBin": "metallinkerays"
+        "TrashBin": "металл"
     },
     {
         "TrashItem": "Старая шина",
-        "TrashBin": "vaarallinenjate"
+        "TrashBin": "опасные отходы"
     },
     {
         "TrashItem": "Картонная коробка",
-        "TrashBin": "kerayskartonki"
+        "TrashBin": "картонные отходы"
     },
     {
         "TrashItem": "Перегоревшая автомобильная лампочка",
-        "TrashBin": "sekajate"
+        "TrashBin": "смешанные отходы"
     },
     {
         "TrashItem": "крышка фары",
-        "TrashBin": "sekajate"
+        "TrashBin": "смешанные отходы"
     },
     {
         "TrashItem": "Пустая бутылка из-под моющего средства",
-        "TrashBin": "muovinkerays"
+        "TrashBin": "пластик"
     },
     {
         "TrashItem": "беспроводная дрель",
-        "TrashBin": "ser"
+        "TrashBin": "электронные устройства"
     },
     {
         "TrashItem": "Грязные бумажные полотенца",
-        "TrashBin": "energiajate"
+        "TrashBin": "энергетические отходы"
     },
     {
         "TrashItem": "Автомобильный журнал",
-        "TrashBin": "paperinkerays"
+        "TrashBin": "бумажные отходы"
     },
     {
         "TrashItem": "Банановая кожура",
-        "TrashBin": "biojate"
+        "TrashBin": "био отходы"
     },
     {
         "TrashItem": "бутылка без залога",
-        "TrashBin": "lasinkerays"
+        "TrashBin": "стеклянные отходы"
     }
 ]

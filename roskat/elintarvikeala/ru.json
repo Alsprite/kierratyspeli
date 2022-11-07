@@ -1,42 +1,42 @@
 [
     {
         "TrashItem": "непригодная кастрюля",
-        "TrashBin": "metallinkerays"
+        "TrashBin": "металл"
     },
     {
         "TrashItem": "моющие средства",
-        "TrashBin": "vaarallinenjate"
+        "TrashBin": "опасные отходы"
     },
     {
         "TrashItem": "Картонная коробка",
-        "TrashBin": "kerayskartonki"
+        "TrashBin": "картонные отходы"
     },
     {
         "TrashItem": "бесполезный рецепт еды",
-        "TrashBin": "paperinkerays"
+        "TrashBin": "бумажные отходы"
     },
     {
         "TrashItem": "мыло",
-        "TrashBin": "sekajate"
+        "TrashBin": "смешанные отходы"
     },
     {
         "TrashItem": "упаковка от сосисок",
-        "TrashBin": "muovinkerays"
+        "TrashBin": "пластик"
     },
     {
         "TrashItem": "Банка от варенья",
-        "TrashBin": "lasinkerays"
+        "TrashBin": "стеклянные отходы"
     },
     {
         "TrashItem": "Грязные бумажные полотенца",
-        "TrashBin": "energiajate"
+        "TrashBin": "энергетические отходы"
     },
     {
         "TrashItem": "остатки от еды",
-        "TrashBin": "biojate"
+        "TrashBin": "био отходы"
     },
     {
         "TrashItem": "сломанный миксер",
-        "TrashBin": "ser"
+        "TrashBin": "электронные устройства"
     }
 ]
