@@ -13,7 +13,7 @@ let trashArrayContainsCorrectBin;
 let correctTrashBin;
 let numberOfCorrectBin = 0;
 
-let gameLanguage = "fi";
+let gameLang = "fi";
 let selectedProfession = "perus";
 
 let trashBinId1 = "";
@@ -54,7 +54,7 @@ function selectSound() {
   audio.play();
 }
 function setGameLang(lang) {
-  gameLanguage = lang;
+  gameLang = lang;
   document.querySelector(".loppuSivu").style.display = "block";
   if (lang == "fi") {
     document.querySelector("#fiKieli").style.color = "red";
@@ -74,11 +74,11 @@ function setGameLang(lang) {
 }
 
 function getTrashArray() {
-  fetch(`roskat/${selectedProfession}/${gameLanguage}.json`)
+  fetch(`roskat/${selectedProfession}/${gameLang}.json`)
     .then((response) => response.json())
     .then(data => {
       selectedTrashArray = data;
-      console.log(gameLanguage);
+      console.log(gameLang);
       console.log(selectedProfession);
       console.log(selectedTrashArray);
       setTrashAndBins();
@@ -146,7 +146,7 @@ function randomizeTrashBins() {
     switch (checkArray[i]) {
       case 1:
         image = astia1;
-        if (gamelang == "fi") {
+        if (gameLang == "fi") {
           trashBinIdArray[j - 1] = "metallinkeräys";
         }
         if (gameLang == "en") {
@@ -255,7 +255,7 @@ function randomizeTrashBins() {
       case 10:
         image = astia10;
         if (gameLang == "fi") {
-          trashBinIdArray[j - 1] = "ser"
+          trashBinIdArray[j - 1] = "SER"
         }
         if (gameLang == "en") {
           trashBinIdArray[j - 1] = "electronics"
@@ -431,6 +431,7 @@ function startGame() {
   getTrashArray();
 }
 function oikein() {
+  document.querySelector('#oikeaAstiaSpan').style.display = "none";
   document.querySelector(".arvaus").style.display = "block";
   document.querySelector(".jateastiat").style.display = "none";
   document.querySelector(".draggable").style.display = "none";
@@ -445,15 +446,9 @@ function vaarin() {
   document.querySelector(".draggable").style.display = "none";
   document.querySelector(".oikein").style.display = "none";
   document.querySelector(".vaarin").style.display = "block";
+  document.querySelector('#oikeaAstiaSpan').style.display = "block";
   document.querySelector('#oikeaAstiaSpan').textContent = correctTrashBin;
  
-}
-
-function setCorrectBinText() {
-  if (correctTrashBin == "metallinkerays" && gameLanguage == "fi") {
-    correctBinSpanText = "Metallinkeräys";
-  }
-  
 }
 
 function jatka() {

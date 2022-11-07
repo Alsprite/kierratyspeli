@@ -90,8 +90,6 @@
                     <img src="kuvat/leipuriala.png" class="alakuvat" id="elintarvikeala" onclick="setProfession(this.id), selectSound()">
                     <p id="leipuri_"></p>
                 </div>
-                <button class="nappulat" id="aloitaPeli_" onclick="startGame(), translateMenuElements()">Aloita
-                    peli</button>
             </div>
             <button class="nappulat" id="aloitaPeli_" onclick="startGame(), translateMenuElements(), selectSound()">Aloita peli</button>
         </div> 
@@ -101,8 +99,9 @@
         <div class="peliruutu" style="display: none">
             <h1><span id="eraMaara">1</span>/10</h1>
             <div class="arvaus" style="display: block">
-                <h1 class="oikein" id="oikein_" style="display: none"></h1>
-                <h1 class="vaarin" id="vaarin_" style="display: none"></h1>
+                <h2 class="oikein" id="oikein_" style="display: none"></h2>
+                <h2 class="vaarin" id="vaarin_" style="display: none"></h2>
+                <h2 class="vaarin" id="oikeaAstiaSpan"></h2>
                 <button class="nappulat" id="jatkaPeli_" onclick="jatka(), selectSound()">Jatka</button>
             </div>
             <div class="jateastiat" id="jateastiat">
