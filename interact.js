@@ -452,6 +452,8 @@ function vaarin() {
 }
 
 function jatka() {
+  round++;
+  document.getElementById("eraMaara").innerHTML = round;
   if (round == 11) {
     document.querySelector(".peliruutu").style.display = "none";
     document.querySelector(".loppuruutu").style.display = "block";
@@ -492,12 +494,8 @@ interact('.dropzone').dropzone({
 
     if (document.querySelector(".dropattava").id == event.target.id) {
       rightAnswers++;
-      round = round + 1;
-      document.getElementById("eraMaara").innerText = round;
       oikein();
     } else {
-      round = round + 1;
-      document.getElementById("eraMaara").innerText = round;
       vaarin();
     }
 
