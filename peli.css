@@ -1,23 +1,27 @@
-
 body {
     background-color: rgba(255, 249, 133, 1);
 }
+
 h2 {
     font-family: 'Trebuchet MS';
 }
+
 h3 {
     font-family: 'Trebuchet MS';
 }
+
 p {
     font-family: 'Trebuchet MS';
 }
+
 .ylapalkki {
     width: 100%;
     color: black;
-    font-family:'Trebuchet MS';
+    font-family: 'Trebuchet MS';
     text-align: center;
     display: inline-block;
 }
+
 .nappulat {
     width: 100px;
     height: 30px;
@@ -25,40 +29,48 @@ p {
     color: white;
     margin-bottom: 1px;
 }
+
 .nappulat:hover {
     cursor: pointer;
     background-color: rgb(242, 69, 46);
 }
+
 .kielet {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 .kielikuvat {
     width: 80px;
     height: 80px;
     margin: 4px;
     border-style: none;
 }
+
 .kielikuvat:hover {
     outline: 2px solid black;
     cursor: pointer;
 }
+
 .alat {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 .alakuvat {
     width: 80px;
     height: 80px;
     margin: 4px;
     border-style: none;
 }
+
 .alakuvat:hover {
     outline: 2px solid black;
     cursor: pointer;
 }
+
 #page {
     display: flex;
     flex-direction: column;
@@ -69,59 +81,74 @@ p {
     border-width: 5px;
     text-align: center;
 }
+
 .alkuruutu {
     width: 75%;
 
 }
+
 .pelialue {
     width: 75%;
 }
+
 .dropattava {
     display: inline-block;
-    min-width: 80px;
-  padding: 10px;
-  color: black;
-  background-color: lightgray;
-  border: solid 2px white;
-  touch-action: none;
+    max-width: 150px;
+    padding: 5px;
+    color: black;
+    background-color: lightgray;
+    border: solid 2px white;
+    touch-action: none;
     user-select: none;
     transform: translate(0px, 0px);
+    font-size: 0.9em;
 }
+
 #dropattava:hover {
     outline: 2px solid black;
     cursor: pointer;
 }
+
 #dragP {
     font-family: 'Trebuchet MS';
 }
+
 .dropzone {
     background-color: #bfe4ff;
     margin: 10px 2px 30px;
     width: 50%;
 }
+
 .jateastiat {
     display: flex;
     flex-direction: row;
 }
+
 .dropzone:hover {
     outline: 2px solid black;
     cursor: pointer;
 }
+
 .dropattava:hover {
     outline: 2px solid black;
 }
+
 .drop-target {
     outline: 2px solid black;
 }
+
 #slot1 {
     width: 50%;
 }
+
 #slot2 {
     width: 50%;
 }
+
 #slot3 {
     width: 50%;
 }
+
 #signature {
     text-align: center;
     font-family: 'Trebuchet MS';

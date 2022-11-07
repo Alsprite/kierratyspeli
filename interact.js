@@ -311,14 +311,12 @@ function setTrashAndBins() {
   //Check for duplicate trashes (if found then start the function over)
   if (usedTrashArray.includes(trash)) {
     setTrashAndBins();
+  } else {
+    document.querySelector("#dragP").textContent = trash.TrashItem;
+    document.querySelector(".dropattava").id = correctTrashBin;
+    usedTrashArray.push(trash)
+    console.log(trash);
   }
-
-  document.querySelector("#dragP").textContent = trash.TrashItem;
-  document.querySelector(".dropattava").id = correctTrashBin;
-
-  console.log(trash);
-  usedTrashArray.push(trash)
-
 }
 
 function randomizeTrash() {
