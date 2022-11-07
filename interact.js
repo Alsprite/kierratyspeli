@@ -1,6 +1,6 @@
 var round = 1;
 let rightAnswers = 0;
-
+//array for trash that has been used to avoid duplicates
 let usedTrashArray = [];
 
 let trash;
@@ -78,9 +78,10 @@ function getTrashArray() {
     .then((response) => response.json())
     .then(data => {
       selectedTrashArray = data;
-      console.log(gameLang);
-      console.log(selectedProfession);
-      console.log(selectedTrashArray);
+      //Debug console logging
+      //console.log(gameLang);
+      //console.log(selectedProfession);
+      //console.log(selectedTrashArray);
       setTrashAndBins();
     })
 }
@@ -120,7 +121,7 @@ englantiKuva.src = "kuvat/englanti.jpg";
 var venajaKuva = new Image()
 venajaKuva.src = "kuvat/venaja.jpg";
 
-//Randomizing and checking the trash bins etc.
+//Randomizing the trash bins, setting the correct images to html and setting one correct trash bin
 function randomizeTrashBins() {
   hideBinLabels();
 
