@@ -7,11 +7,12 @@ h1 {
 h2 {
     font-family: 'Trebuchet MS';
 }
-
 h3 {
     font-family: 'Trebuchet MS';
 }
-
+h4 {
+    font-family: 'Trebuchet MS';
+}
 p {
     font-family: 'Trebuchet MS';
 }
@@ -30,8 +31,8 @@ p {
 }
 
 .nappulat {
-    width: 100px;
-    height: 30px;
+    width: 120px;
+    height: 35px;
     background-color: rgb(202, 69, 46);
     color: white;
     margin-bottom: 1px;
