@@ -99,8 +99,9 @@
         <div class="peliruutu" style="display: none">
             <h1><span id="eraMaara">1</span>/10</h1>
             <div class="arvaus" style="display: block">
-                <h1 class="oikeinko"></h1>
-                <button class="nappulat" id="jatkaPeli_" onclick="setTrashAndBins()">Jatka</button>
+                <h1 class="oikein" id="oikein_" style="display: none"></h1>
+                <h1 class="vaarin" id="vaarin_" style="display: none"></h1>
+                <button class="nappulat" id="jatkaPeli_" onclick="jatka()">Jatka</button>
             </div>
             <div class="jateastiat" id="jateastiat">
                 <div class="dropzone dz1">
@@ -153,8 +154,13 @@
                 <p id="dragP"></p>
             </div>
         </div>
-        <div class="loppuRuutu" style="display: none">
-            <h1></h1>
+        <div class="loppuruutu" style="display: none">
+            <h1 id="peliohi_">Peli ohi</h1>
+            <div style="display: flex; flex-direction: row">
+                <h2 id="oikeinmeni_">Oikein meni: </h2>
+                <h2>&nbsp<span id="oikeat"></span>/10</h2>  
+            </div>
+            
         </div>
     </div>
     <div id="signature">

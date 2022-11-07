@@ -1,6 +1,7 @@
 var eramaara = 1;
 let rightAnswers = 0;
-let rightOrWrong = document.querySelector(".oikeinko");
+let right = document.querySelector(".oikein");
+let wrong = document.querySelector(".vaarin");
 
 let usedTrashArray = [];
 
@@ -333,7 +334,8 @@ function oikein() {
   document.querySelector(".arvaus").style.display = "block";
   document.querySelector(".jateastiat").style.display = "none";
   document.querySelector(".draggable").style.display = "none";
-  rightOrWrong.setAttribute("id", "oikein_");
+  document.querySelector(".vaarin").style.display = "none";
+  document.querySelector(".oikein").style.display = "block";
   console.log("Oikein: "+ rightAnswers);
 }
 function vaarin() {
@@ -341,15 +343,18 @@ function vaarin() {
   document.querySelector(".arvaus").style.display = "block";
   document.querySelector(".jateastiat").style.display = "none";
   document.querySelector(".draggable").style.display = "none";
-  rightOrWrong.setAttribute("id", "vaarin_");
+  document.querySelector(".oikein").style.display = "none";
+  document.querySelector(".vaarin").style.display = "block";
 }
-function loppu() {
-  
+function jatka() {
+  if (eramaara == 10) {
+    document.querySelector(".peliruutu").style.display = "none";
+    document.querySelector(".loppuruutu").style.display = "block";
+    document.getElementById("oikeat").innerHTML = rightAnswers;
+  } else {
+    setTrashAndBins();
+  }
 }
-if (eramaara == 10) {
-  loppu();
-}
-
 
 interact('.dropzone').dropzone({
   // only accept elements matching this CSS selector
