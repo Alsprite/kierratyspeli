@@ -53,8 +53,11 @@
     <div class="ylapalkki">
         <img src="kuvat/bannerfi.png" id="otsikko" width="350" height="70">
     </div>
+    <!-- Kaikki vihreän borderin sisäpuolella -->
     <div id="page">
+        <!-- Menu kielen ja alan valitsemiselle -->
         <div class="alkuruutu">
+            <!-- Kielen valitseminen -->
             <div class="kielet">
                 <div>
                     <img src="kuvat/suomi.jpg" class="kielikuvat" id="fi" onclick="setMenuLang(this.id), setGameLang(this.id), selectSound()">
@@ -69,7 +72,8 @@
                     <p id="ruKieli">ру́сский</p>
                 </div>
             </div>
-            <div class="loppuSivu" style="display: none">
+            <!-- Alan valitseminen -->
+            <div class="alat" style="display: none">
                <h3 id="valitseAla_"></h3>
             <div class="alat">
                 <div>
@@ -89,18 +93,22 @@
                     <p id="leipuri_"></p>
                 </div>
             </div>
+            <!-- Pelin aloitus -->
             <button class="nappulat" id="aloitaPeli_" onclick="startGame(), translateMenuElements(), selectSound()">Aloita peli</button>
         </div>
     </div>
-
+    <!-- Pelinäkymä -->
     <div class="peliruutu" style="display: none">
+        <!-- Menossa oleva erä -->
         <h1><span id="eraMaara">1</span>/10</h1>
+            <!-- Vastaus oikein vai väärin -->
             <div class="arvaus" style="display: block">
                 <h2 class="oikein" id="oikein_" style="display: none"></h2>
                 <h2 class="vaarin" id="vaarin_" style="display: none"></h2>
                 <h2 class="vaarin" id="oikeaAstiaSpan"></h2>
-                <button class="nappulat" id="jatkaPeli_" onclick="jatka(), selectSound()">Jatka</button>
+                <button class="nappulat" id="jatkaPeli_" onclick="resume(), selectSound()">Jatka</button>
             </div>
+            <!-- Roska-astiat -->
             <div class="jateastiat" id="jateastiat">
                 <div class="dropzone dz1">
                     <img id="slot1" draggable="false">
@@ -148,10 +156,12 @@
                     <h4 id="3paristonkerays_" style="display: none"></h4>
                 </div>
             </div>
+            <!-- Drag and drop roska -->
             <div draggable="true" class="draggable dropattava">
                 <p id="dragP"></p>
             </div>
         </div>
+        <!-- Game over -näkymä -->
         <div class="loppuruutu" style="display: none">
             <h1 id="peliohi_">Peli ohi</h1>
             <div style="display: flex; flex-direction: row">

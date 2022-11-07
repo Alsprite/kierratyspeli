@@ -1,7 +1,5 @@
 var round = 1;
 let rightAnswers = 0;
-let right = document.querySelector(".oikein");
-let wrong = document.querySelector(".vaarin");
 
 let usedTrashArray = [];
 
@@ -49,13 +47,15 @@ astia12.src = "kuvat/astiat/12paristo.png";
 
 let selectedTrashArray;
 
+//Select-sound
 function selectSound() {
   var audio = new Audio('kuvat/select.mp3');
   audio.play();
 }
+//Setting the game language
 function setGameLang(lang) {
   gameLang = lang;
-  document.querySelector(".loppuSivu").style.display = "block";
+  document.querySelector(".alat").style.display = "block";
   if (lang == "fi") {
     document.querySelector("#fiKieli").style.color = "red";
     document.querySelector("#enKieli").style.color = "black";
@@ -84,7 +84,7 @@ function getTrashArray() {
       setTrashAndBins();
     })
 }
-
+//Setting the profession
 function setProfession(ala) {
   selectedProfession = ala;
   if (ala == "perus") {
@@ -113,7 +113,6 @@ function setProfession(ala) {
   }
 }
 
-
 var suomiKuva = new Image()
 suomiKuva.src = "kuvat/suomi.jpg";
 var englantiKuva = new Image()
@@ -121,8 +120,8 @@ englantiKuva.src = "kuvat/englanti.jpg";
 var venajaKuva = new Image()
 venajaKuva.src = "kuvat/venaja.jpg";
 
+//Randomizing and checking the trash bins etc.
 function randomizeTrashBins() {
-
   hideBinLabels();
 
   if (numberOfCorrectBin != 0) {
@@ -389,7 +388,7 @@ function checkIfContainsCorrectBin() {
     return false;
   })
 }
-
+//Setting the trash and bins
 function setTrashAndBins() {
   document.querySelector(".dropattava").removeAttribute = "id";
   document.querySelector(".jateastiat").style.display = "flex";
@@ -419,18 +418,19 @@ function setTrashAndBins() {
     console.log(trash);
   }
 }
-
+//Randomizing the trash
 function randomizeTrash() {
   let randInt = Math.floor((Math.random() * selectedTrashArray.length));
   trash = selectedTrashArray[randInt];
 }
-
+//Starting the game
 function startGame() {
   document.querySelector(".alkuruutu").style.display = "none";
   document.querySelector(".peliruutu").style.display = "block";
   getTrashArray();
 }
-function oikein() {
+//Answer was right
+function right() {
   document.querySelector('#oikeaAstiaSpan').style.display = "none";
   document.querySelector(".arvaus").style.display = "block";
   document.querySelector(".jateastiat").style.display = "none";
@@ -439,7 +439,8 @@ function oikein() {
   document.querySelector(".oikein").style.display = "block";
   console.log("Oikein: "+ rightAnswers);
 }
-function vaarin() {
+//Answer was wrong
+function wrong() {
   console.log("väärin");
   document.querySelector(".arvaus").style.display = "block";
   document.querySelector(".jateastiat").style.display = "none";
@@ -450,8 +451,8 @@ function vaarin() {
   document.querySelector('#oikeaAstiaSpan').textContent = correctTrashBin;
  
 }
-
-function jatka() {
+//Continuing the game
+function resume() {
   round++;
   document.getElementById("eraMaara").innerHTML = round;
   if (round == 11) {
@@ -463,53 +464,39 @@ function jatka() {
   }
 }
 
+//The whole interact thingy
 interact('.dropzone').dropzone({
   // only accept elements matching this CSS selector
   accept: '.dropattava',
-  // Require a 75% element overlap for a drop to be possible
+  // Require a 50% element overlap for a drop to be possible
   overlap: 0.5,
 
-  // listen for drop related events:
-
-  ondropactivate: function (event) {
-    // add active dropzone feedback
-    event.target.classList.add('drop-active')
-  },
   ondragenter: function (event) {
-    // var draggableElement = event.relatedTarget
+    //Add border to drop target
     var dropzoneElement = event.target
-
-    // feedback the possibility of a drop
     dropzoneElement.classList.add('drop-target')
-    // draggableElement.classList.add('can-drop')
-    // draggableElement.textContent = 'Dragged in'
   },
   ondragleave: function (event) {
-    // remove the drop feedback style
+    //Remove border from drop target
     event.target.classList.remove('drop-target')
-    event.relatedTarget.classList.remove('can-drop')
-    // event.relatedTarget.textContent = 'Dragged out'
   },
   ondrop: function (event) {
 
     if (document.querySelector(".dropattava").id == event.target.id) {
       rightAnswers++;
-      oikein();
+      right();
     } else {
-      vaarin();
+      wrong();
     }
-
+    //Resets the position of the trash div
     var target = document.querySelector(".draggable");
     var x = 0;
     var y = 0;
-
     target.style.transform = 'translate(' + x + 'px, ' + y + 'px)'
     target.setAttribute('data-x', x)
     target.setAttribute('data-y', y)
   },
   ondropdeactivate: function (event) {
-    // remove active dropzone feedback
-    event.target.classList.remove('drop-active')
     event.target.classList.remove('drop-target')
   }
 })
@@ -523,16 +510,10 @@ interact('.draggable')
         endOnly: true
       })
     ],
-    autoScroll: true,
 
     listeners: {
       // call this function on every dragmove event
       move: dragMoveListener,
-
-      // call this function on every dragend event
-      end(event) {
-
-      }
     }
   })
 
@@ -545,7 +526,7 @@ function dragMoveListener(event) {
   // translate the element
   target.style.transform = 'translate(' + x + 'px, ' + y + 'px)'
 
-  // update the posiion attributes
+  // update the position attributes
   target.setAttribute('data-x', x)
   target.setAttribute('data-y', y)
 }
