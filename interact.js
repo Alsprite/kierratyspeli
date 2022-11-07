@@ -1,4 +1,4 @@
-var eramaara = 0;
+var eramaara = 1;
 let rightAnswers = 0;
 let rightOrWrong = document.querySelector(".oikeinko");
 
@@ -291,9 +291,6 @@ function checkIfContainsCorrectBin() {
 
 function setTrashAndBins() {
   document.querySelector(".dropattava").removeAttribute = "id";
-
-  eramaara = eramaara + 1;
-  document.getElementById("eraMaara").innerText = eramaara;
   document.querySelector(".jateastiat").style.display = "flex";
   document.querySelector(".draggable").style.display = "inline-block";
   document.querySelector(".arvaus").style.display = "none";
@@ -335,13 +332,10 @@ function startGame() {
   getTrashArray();
 }
 function oikein() {
-  console.log("oikein");
   document.querySelector(".arvaus").style.display = "block";
   document.querySelector(".jateastiat").style.display = "none";
   document.querySelector(".draggable").style.display = "none";
   rightOrWrong.setAttribute("id", "oikein_");
-  rightOrWrong.innerText = "Oikein!";
-  rightAnswers++;
   console.log("Oikein: "+ rightAnswers);
 }
 function vaarin() {
@@ -350,8 +344,14 @@ function vaarin() {
   document.querySelector(".jateastiat").style.display = "none";
   document.querySelector(".draggable").style.display = "none";
   rightOrWrong.setAttribute("id", "vaarin_");
-  rightOrWrong.innerText = "Väärin!";
 }
+function loppu() {
+  
+}
+if (eramaara == 10) {
+  loppu();
+}
+
 
 interact('.dropzone').dropzone({
   // only accept elements matching this CSS selector
@@ -382,10 +382,14 @@ interact('.dropzone').dropzone({
   },
   ondrop: function (event) {
 
-
     if (document.querySelector(".dropattava").id == event.target.id) {
+      rightAnswers++;
+      eramaara = eramaara + 1;
+      document.getElementById("eraMaara").innerText = eramaara;
       oikein();
     } else {
+      eramaara = eramaara + 1;
+      document.getElementById("eraMaara").innerText = eramaara;
       vaarin();
     }
 
