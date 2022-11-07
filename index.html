@@ -47,7 +47,6 @@
         }
     </script>
 
-
 </head>
 
 <body onload="multilangInit()">
@@ -73,7 +72,6 @@
             <div class="loppuSivu" style="display: none">
                <h3 id="valitseAla_"></h3>
             <div class="alat">
-                
                 <div>
                     <img src="kuvat/perus.png" class="alakuvat" id="perus" width="128" height="128" onclick="setProfession(this.id), selectSound()">
                     <p id="perus_" style="color:red"></p>
@@ -92,12 +90,11 @@
                 </div>
             </div>
             <button class="nappulat" id="aloitaPeli_" onclick="startGame(), translateMenuElements(), selectSound()">Aloita peli</button>
-        </div> 
-            </div>
-            
-        
-        <div class="peliruutu" style="display: none">
-            <h1><span id="eraMaara">1</span>/10</h1>
+        </div>
+    </div>
+
+    <div class="peliruutu" style="display: none">
+        <h1><span id="eraMaara">1</span>/10</h1>
             <div class="arvaus" style="display: block">
                 <h2 class="oikein" id="oikein_" style="display: none"></h2>
                 <h2 class="vaarin" id="vaarin_" style="display: none"></h2>
@@ -168,9 +165,6 @@
         <p>© Henri & Juho Productions</p>
     </div>
 </body>
-<!-- <script src="peli.js"></script> -->
-<!-- Interactjs tuonti -->
 <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
 <script src="interact.js"></script>
-
 </html>
