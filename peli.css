@@ -47,6 +47,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 1em;
 }
 
 .kielikuvat {
@@ -65,6 +66,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 1em;
 }
 
 .alakuvat {
@@ -160,4 +162,12 @@ p {
 #signature {
     text-align: center;
     font-family: 'Trebuchet MS';
+}
+
+.peliruutu {
+    margin-bottom: 1em;
+}
+
+.loppuruutu {
+    margin-bottom: 1em;
 }
