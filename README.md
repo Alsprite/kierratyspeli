@@ -15,7 +15,7 @@
 - Alku, ja loppuruudut + vastauksen arviointi
 - Debug sekä bugien korjaaminen
 
-# Juho osuus
+# Juhon osuus
 - Monikielisyyden JavaScript
 - Roska-arrayden haku .json-tiedostosta
 - Roskien lisääminen
@@ -24,5 +24,5 @@
 - Arviointiruudussa oikea roska-astia
 - Debug sekä bugien korjaaminen
 
-# + Slava 
+# + Slavan osuus
 - Venäjänkieliset käännökset
